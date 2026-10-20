@@ -20,7 +20,7 @@
   --oro: #d9a640;            /* incumbent gold, refresh option only */
 
   --on-dark: #fbf6ee;
-  --on-dark-soft: color-mix(in oklab, var(--on-dark) 78%, transparent);
+  --on-dark-soft: color-mix(in oklab, var(--on-dark) 88%, transparent);
   --on-light: var(--inchiostro);
   --on-light-soft: color-mix(in oklab, var(--inchiostro) 74%, var(--bianco));
 
@@ -161,7 +161,7 @@ html[data-logo="b"] .logo--b, html:not([data-logo]) .logo--b { display: inline-f
 html[data-logo="a"] .logo--a { display: inline-flex; }
 .logo--b { align-items: center; gap: .6rem; }
 .logo--b svg { height: 2.1rem; width: auto; }
-.logo--b .logo-sub { font-size: .66rem; line-height: 1.05; font-weight: 700; font-stretch: 75%; font-variation-settings: "wdth" 75; letter-spacing: .14em; text-transform: uppercase; }
+.logo--b .logo-sub { font-size: .72rem; line-height: 1.05; font-weight: 700; font-stretch: 75%; font-variation-settings: "wdth" 75; letter-spacing: .14em; text-transform: uppercase; }
 .logo--a { flex-direction: column; align-items: center; background: var(--inchiostro); padding: .35rem .8rem .4rem; line-height: 1; }
 .logo--a .a-via { font-family: var(--f-mark-a); font-weight: 700; font-size: 1.7rem; letter-spacing: .06em; color: var(--oro); }
 .logo--a .a-sub { font-family: var(--f-text); font-size: .5rem; letter-spacing: .32em; color: var(--oro); text-transform: uppercase; margin-top: .15rem; }
@@ -314,16 +314,18 @@ html[data-logo="a"] .logo--a { display: inline-flex; }
 .tab + .tab { border-left: 2px dashed color-mix(in oklab, var(--p-fg) 45%, transparent); }
 .tab:hover { background: color-mix(in oklab, var(--p-bg) 68%, #000); }
 .tab svg { width: 1.05em; height: 1.05em; flex: none; }
+.poster--sun .tab { background: color-mix(in oklab, var(--p-bg) 90%, #000); }
+.poster--sun .tab:hover { background: color-mix(in oklab, var(--p-bg) 84%, #000); }
 .tab.is-torn { transform: translateY(14px) rotate(var(--tear, -7deg)); }
 
 /* Pasted-over remnant of an expired poster */
 .remnant {
   grid-column: span 3; align-self: start; position: relative; padding: var(--s-4); min-height: 9rem;
-  background: var(--muro-deep); color: color-mix(in oklab, var(--inchiostro) 70%, var(--muro-deep));
+  background: var(--muro-deep); color: var(--inchiostro);
   clip-path: polygon(0 0, 100% 0, 100% 62%, 88% 70%, 76% 64%, 60% 78%, 44% 69%, 30% 82%, 14% 72%, 0 80%);
   font-size: var(--t-small);
 }
-.remnant .h3 { color: color-mix(in oklab, var(--inchiostro) 55%, var(--muro-deep)); text-decoration: line-through; text-decoration-thickness: 2px; }
+.remnant .h3 { color: #3a312b; text-decoration: line-through; text-decoration-thickness: 2px; }
 
 /* Paste motion: posters arrive already visible; they settle onto the wall */
 @media (prefers-reduced-motion: no-preference) {
@@ -357,13 +359,13 @@ html[data-logo="a"] .logo--a { display: inline-flex; }
 .dish h4 { font-size: 1.02rem; font-weight: 800; line-height: 1.25; }
 .dish .price { font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .dish p { grid-column: 1 / -1; font-size: .95rem; color: var(--on-light-soft); line-height: 1.4; }
-.dish .tag { display: inline-block; font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: .1rem .35rem; margin-left: .4rem; vertical-align: .15em; background: var(--oliva); color: var(--on-dark); }
+.dish .tag { display: inline-block; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: .1rem .35rem; margin-left: .4rem; vertical-align: .15em; background: var(--oliva); color: var(--on-dark); }
 
 /* ---------- Rooms (seat maps) ---------- */
 .rooms { display: grid; grid-template-columns: 1.3fr 1fr 1.3fr; gap: var(--s-4); align-items: stretch; }
 .room { background: var(--prugna-soft); padding: var(--s-5); display: grid; gap: var(--s-4); align-content: start; min-width: 0; box-shadow: var(--paste); }
 .room .cap { font-size: clamp(3rem, 2rem + 3vw, 4.5rem); line-height: .85; }
-.room .cap small { font-size: .32em; letter-spacing: .06em; display: block; margin-top: .4rem; font-weight: 700; font-stretch: 80%; font-variation-settings: "wdth" 80; }
+.room .cap small { font-size: .95rem; letter-spacing: .06em; display: block; margin-top: .4rem; font-weight: 700; font-stretch: 80%; font-variation-settings: "wdth" 80; }
 .seats { display: grid; grid-template-columns: repeat(var(--cols, 9), 1fr); gap: 6px; max-width: 20rem; }
 .seats i { aspect-ratio: 1; border-radius: 50%; background: var(--zafferano); display: block; }
 .room--patio { background: var(--oliva); }
@@ -414,7 +416,7 @@ html[data-logo="a"] .logo--a { display: inline-flex; }
   padding: .7rem .8rem; min-height: 3rem; width: 100%; accent-color: var(--mattone);
 }
 .form textarea { min-height: 7rem; resize: vertical; }
-.form [aria-invalid="true"] { border-color: var(--mattone); box-shadow: inset 4px 0 0 var(--mattone); }
+.form [aria-invalid="true"] { border-color: var(--mattone); border-width: 3px; }
 .form .err { color: var(--mattone); font-size: var(--t-small); font-weight: 700; text-transform: none; letter-spacing: 0; min-height: 1.2em; }
 .form .hint { font-weight: 500; text-transform: none; letter-spacing: 0; color: var(--on-light-soft); }
 .form-done { display: none; background: var(--oliva); color: var(--on-dark); padding: var(--s-5); }
