@@ -3,22 +3,32 @@ title: Menus · VIA Italian Table
 desc: VIA Italian Table's dinner, lunch, dessert, PigFest and family-style to-go menus, with prices. Order takeout on Toast or delivery on DoorDash.
 active: menu
 ---
-<section class="field field--oliva page-head" aria-labelledby="menu-h">
-  <div class="wrap">
-    <span class="sun" aria-hidden="true"></span>
-    <h1 id="menu-h" class="poster-type" style="font-size:var(--t-poster)">Menus</h1>
-    <p class="lead" style="color:var(--on-dark-soft)">Pasta, grilled pizza, meats and fish, and gelato made in-house. Shown as published by VIA in October 2026, as a sample; final dishes and prices are VIA's.</p>
-    <div class="doors" id="order">
-      <a class="btn btn--sun" href="https://www.toasttab.com/local/order/via-italian-table-89-shrewsbury-st"><svg aria-hidden="true"><use href="#i-bag"/></svg>Order takeout</a>
-      <a class="btn btn--paper" href="https://www.doordash.com/store/via-italian-table-worcester-35208683/80673756/"><svg aria-hidden="true"><use href="#i-scooter"/></svg>Delivery on DoorDash</a>
-      <a class="btn btn--ghost" href="https://resy.com/cities/worcester-ma/venues/via-italian-table"><svg aria-hidden="true"><use href="#i-cal"/></svg>Book a table</a>
+<section class="field field--oliva lead-poster inner-lead" aria-labelledby="menu-h">
+  <div class="wrap lead-grid">
+    <div class="lead-copy">
+      <h1 id="menu-h" class="poster-type inner-title">Menus</h1>
+      <p class="lead">Pasta, grilled pizza, meats off the grill and the spit, and gelato made in the kitchen. Shown as VIA published them in October 2026, as a sample; final dishes and prices are VIA's.</p>
+      <nav class="chips" aria-label="Jump to a menu">
+        <a href="#dinner">Dinner</a><a href="#lunch">Lunch</a><a href="#dessert">Dessert</a><a href="#pigfest" data-end="2026-10-31">PigFest</a><a href="#family">Family style</a>
+      </nav>
+      <div class="doors" id="order">
+        <a class="btn btn--sun" href="https://www.toasttab.com/local/order/via-italian-table-89-shrewsbury-st"><svg aria-hidden="true"><use href="#i-bag"/></svg>Order takeout</a>
+        <a class="btn btn--paper" href="https://www.doordash.com/store/via-italian-table-worcester-35208683/80673756/"><svg aria-hidden="true"><use href="#i-scooter"/></svg>Delivery</a>
+        <a class="btn btn--ghost" href="https://resy.com/cities/worcester-ma/venues/via-italian-table"><svg aria-hidden="true"><use href="#i-cal"/></svg>Book a table</a>
+      </div>
+    </div>
+    <div class="lead-art" aria-hidden="true">
+      <span class="plate"></span>
+      <span class="stripe"></span>
+      <span class="sun"></span>
+      <figure class="photo-slot slot--olive" style="margin:0"><svg class="cam"><use href="#i-cam"/></svg><figcaption><b>VIA photo</b>Pappardelle Bolognese, overhead, on a white plate. 4:5.</figcaption></figure>
     </div>
   </div>
 </section>
 
-<section class="field field--muro">
+<section class="field field--muro after-lead">
   <div class="wrap stack-lg">
-    <div class="menu-sheet">
+    <div class="menu-sheet" id="menus">
       <div class="menu-tabs" role="tablist" aria-label="Menus" data-hash>
         <button role="tab" type="button" id="tab-dinner" aria-controls="dinner-p" aria-selected="true" data-key="dinner">Dinner</button>
         <button role="tab" type="button" id="tab-lunch" aria-controls="lunch-p" aria-selected="false" data-key="lunch">Lunch</button>

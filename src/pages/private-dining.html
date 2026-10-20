@@ -3,21 +3,35 @@ title: Private dining · VIA Italian Table
 desc: Private lunches and dinners at VIA Italian Table in Worcester: a private room for 36, a semi-private room for 16, and a year-round patio for 36. Send an event request.
 active: private
 ---
-<section class="field field--prugna page-head" aria-labelledby="pd-h">
-  <div class="wrap">
-    <span class="sun" aria-hidden="true"></span>
-    <h1 id="pd-h" class="poster-type" style="font-size:var(--t-poster)">Private dining</h1>
-    <p class="lead" style="color:var(--on-dark-soft)">Private lunches and dinners, Monday through Friday. Order from VIA's menu or work out a custom one that fits your budget. A/V equipment is free.</p>
-    <div class="doors">
-      <a class="btn btn--sun" href="#request">Send an event request <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-      <a class="btn btn--ghost" href="https://viaitaliantable.com/wp-content/uploads/2026/02/VIA-Function-Brochure-2026.pdf">2026 event brochure (PDF)</a>
+<section class="field field--mattone lead-poster inner-lead" aria-labelledby="pd-h">
+  <div class="wrap lead-grid">
+    <div class="lead-copy">
+      <h1 id="pd-h" class="poster-type inner-title">Private dining</h1>
+      <p class="lead">Private lunches and dinners, Monday through Friday. Order from VIA's menu or plan a custom one with Maria Hawley, the event coordinator. A/V equipment is free.</p>
+      <form class="headcount" data-headcount aria-label="Find the right room">
+        <label for="hc-n"><span class="lbl">How many guests?</span>
+          <input id="hc-n" type="number" inputmode="numeric" min="1" max="200" value="20">
+        </label>
+        <output for="hc-n" class="hc-out" aria-live="polite"><b data-hc-room>The private dining room or the patio</b><span data-hc-note>Each seats up to 36.</span></output>
+        <a class="btn" href="#request" data-hc-go>Request a room <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </form>
+      <div class="doors">
+        <a class="btn btn--ghost" href="https://viaitaliantable.com/wp-content/uploads/2026/02/VIA-Function-Brochure-2026.pdf">2026 event brochure (PDF)</a>
+        <a class="btn btn--ghost" href="tel:+15087983474"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="tnum">508-798-3474</span></a>
+      </div>
+    </div>
+    <div class="lead-art" aria-hidden="true">
+      <span class="plate" style="background:var(--zafferano)"></span>
+      <span class="table-half"></span><span class="table-bar" style="left:18%"></span><span class="table-bar" style="left:52%"></span>
+      <span class="sun" style="background:var(--prugna)"></span>
+      <figure class="photo-slot " style="margin:0"><svg class="cam"><use href="#i-cam"/></svg><figcaption><b>VIA photo</b>The private dining room set for 36, white linen and colourful napkins. 4:5.</figcaption></figure>
     </div>
   </div>
 </section>
 
-<section class="field field--muro" aria-labelledby="rooms-h">
+<section class="field field--muro after-lead" aria-labelledby="rooms-h">
   <div class="wrap stack-lg">
-    <h2 id="rooms-h" class="h2">Pick a room by headcount</h2>
+    <div class="paste-head"><h2 id="rooms-h">Pick a room by headcount</h2><p>Three spaces, shown seat by seat.</p></div>
     <div class="rooms">
       <div class="room" style="color:var(--on-dark)">
         <p class="cap poster-type">36<small>guests</small></p>

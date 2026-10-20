@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-logo="b">
+<html lang="en" data-logo="sole">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -11,17 +11,12 @@
 <link rel="icon" type="image/svg+xml" href="assets/logos/via-monogramma-on-mattone.svg">
 <link rel="preload" href="assets/fonts/archivo-var.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="assets/via.css">
-<script>document.documentElement.classList.add('js');try{var l=localStorage.getItem('via-logo');if(l==='a'||l==='b')document.documentElement.dataset.logo=l}catch(e){}</script>
+<script>(function(){var d=document.documentElement,ok=/^(a|sole|spiedo|arco|targa|tondo|biglietto|monogramma)$/,l=null;d.classList.add('js');try{l=new URLSearchParams(location.search).get('logo')}catch(e){}if(!l||!ok.test(l)){try{l=localStorage.getItem('via-logo')}catch(e){}}if(l==='b')l='sole';if(l&&ok.test(l))d.dataset.logo=l})();</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
-    <symbol id="mark-b" viewBox="0 0 294 120">
-      <polygon fill="currentColor" points="0,0 34,0 60,82 86,0 120,0 79,120 41,120"/>
-      <rect fill="currentColor" x="132" y="0" width="34" height="120"/>
-      <polygon fill="currentColor" points="178,120 216,0 256,0 294,120 260,120 236,44 212,120"/>
-      <path fill="var(--sun-fill, #eaa42a)" d="M216,120 A20,20 0 0 1 256,120 Z"/>
-    </symbol>
+    {{marks}}
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></symbol>
     <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h3l1.5 4.2-2 1.4a11 11 0 0 0 5.8 5.8l1.4-2 4.2 1.5v3a1.8 1.8 0 0 1-2 1.8A16.6 16.6 0 0 1 4.8 5.5a1.8 1.8 0 0 1 1.8-2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
     <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Zm4 0V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
@@ -44,11 +39,16 @@
   <div class="wrap">
     <span><strong>Spec redesign for VIA Italian Table</strong> by Jeremy Anderson · photos are placeholders for VIA's own</span>
     <span style="display:inline-flex;gap:.6rem;align-items:center;flex-wrap:wrap">
-      <span id="logo-label">Logo</span>
-      <span class="seg" role="group" aria-labelledby="logo-label">
-        <button type="button" data-logo-pick="a" aria-pressed="false">A · Refresh</button>
-        <button type="button" data-logo-pick="b" aria-pressed="true">B · Rebrand</button>
-      </span>
+      <label class="logo-pick" for="logo-pick">Logo
+        <select id="logo-pick" data-logo-select>
+          <optgroup label="B · new wordmark">
+            <option value="sole">B1 Sole</option><option value="spiedo">B2 Spiedo</option><option value="arco">B3 Arco</option>
+            <option value="targa">B4 Targa</option><option value="tondo">B5 Tondo</option><option value="biglietto">B6 Biglietto</option>
+            <option value="monogramma">B7 Monogramma</option>
+          </optgroup>
+          <optgroup label="A · keep today's mark"><option value="a">A Gold mark</option></optgroup>
+        </select>
+      </label>
       <a href="brand.html">Brand book</a>
       <a href="logos.html">Logos</a>
       <a href="layouts.html">Layouts</a>
@@ -58,7 +58,7 @@
 <header class="masthead">
   <div class="wrap">
     <a class="brand-link" href="index.html" aria-label="VIA Italian Table, home">
-      <span class="logo logo--b"><svg viewBox="0 0 294 120" aria-hidden="true"><use href="#mark-b"/></svg><span class="logo-sub">Italian<br>Table</span></span>
+      <span class="logo logo--b"><svg class="site-mark" viewBox="-12 -12 318 144" aria-hidden="true"><use href="#mark-sole"/></svg><span class="logo-sub">Italian<br>Table</span></span>
       <span class="logo logo--a" aria-hidden="true"><span class="a-via">VIA</span><span class="a-sub">Italian Table</span></span>
     </a>
     <nav class="nav" aria-label="Main">

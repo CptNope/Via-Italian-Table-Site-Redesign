@@ -48,9 +48,11 @@ def render(path: pathlib.Path) -> str:
     # {{logo:concept:ink:accent:ground}} -> inline SVG from tools/logos.py ("-" = no ground)
     body = re.sub(r"\{\{logo:(\w+):(\w+):(\w+):([\w-]+)\}\}",
                   lambda mm: logos.make(mm.group(1), mm.group(2), mm.group(3), None if mm.group(4) == "-" else mm.group(4)), body)
-    head = HEADER.replace("{{title}}", meta["title"]).replace("{{desc}}", meta["desc"])
+    head = HEADER.replace("{{marks}}", logos.symbols_html()).replace("{{title}}", meta["title"]).replace("{{desc}}", meta["desc"])
     for key in ("menu", "events", "private", "visit"):
         head = head.replace("{{cur:%s}}" % key, ' aria-current="page"' if meta.get("active") == key else "")
+    if meta.get("base"):  # pages served from any path (404.html) resolve links from the site root
+        head = head.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<base href="%s">' % meta["base"], 1)
     return head + body + FOOTER
 
 

@@ -149,16 +149,82 @@
     if (start) select(start);
   });
 
-  /* Logo option switch (pitch bar) */
-  function setLogo(v) {
-    document.documentElement.dataset.logo = v;
-    document.querySelectorAll('[data-logo-pick]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.logoPick === v)); });
-    try { localStorage.setItem('via-logo', v); } catch (e) {}
-  }
-  document.querySelectorAll('[data-logo-pick]').forEach(function (b) {
-    b.addEventListener('click', function () { setLogo(b.dataset.logoPick); });
+  /* Headcount finder: suggest a room, then carry the number into the request form */
+  document.querySelectorAll('[data-headcount]').forEach(function (form) {
+    var n = form.querySelector('input'), room = form.querySelector('[data-hc-room]'), note = form.querySelector('[data-hc-note]'), go = form.querySelector('[data-hc-go]');
+    function update() {
+      var v = parseInt(n.value, 10);
+      if (!v || v < 1) { room.textContent = 'Enter a headcount'; note.textContent = 'Even a rough number helps.'; return; }
+      if (v <= 16) { room.textContent = 'The semi-private room'; note.textContent = 'Seats up to 16. The larger rooms work too.'; }
+      else if (v <= 36) { room.textContent = 'The private dining room or the patio'; note.textContent = 'Each seats up to 36.'; }
+      else { room.textContent = 'More than any one room seats'; note.textContent = 'Call Maria at 508-798-3474 to talk it through.'; }
+    }
+    n.addEventListener('input', update);
+    form.addEventListener('submit', function (e) { e.preventDefault(); go.click(); });
+    go.addEventListener('click', function () {
+      var target = document.getElementById('ev-guests');
+      if (target && n.value) target.value = n.value;
+    });
+    update();
   });
-  setLogo(document.documentElement.dataset.logo || 'b');
+
+  /* Links to #dinner, #lunch ... open that menu tab and bring it into view */
+  window.addEventListener('hashchange', function () {
+    var key = location.hash.slice(1);
+    var tab = document.querySelector('[role="tab"][data-key="' + key + '"]');
+    if (!tab) return;
+    tab.click();
+    var sheet = tab.closest('.menu-sheet');
+    if (sheet) sheet.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  });
+
+  /* Logo picker (proposal bar): swaps every .site-mark to the chosen concept; "a" shows the gold mark */
+  var LOGOS = /^(a|sole|spiedo|arco|targa|tondo|biglietto|monogramma)$/;
+  function setLogo(v, remember) {
+    if (v === 'b') v = 'sole';
+    if (!LOGOS.test(v)) v = 'sole';
+    document.documentElement.dataset.logo = v;
+    if (v !== 'a') {
+      var sym = document.getElementById('mark-' + v);
+      var vb = sym && sym.getAttribute('viewBox');
+      document.querySelectorAll('.site-mark').forEach(function (svg) {
+        var use = svg.querySelector('use');
+        if (use) use.setAttribute('href', '#mark-' + v);
+        if (vb) svg.setAttribute('viewBox', vb);
+      });
+    }
+    document.querySelectorAll('[data-logo-select]').forEach(function (sel) { sel.value = v; });
+    document.querySelectorAll('[data-logo-pick]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.logoPick === v)); });
+    if (remember) { try { localStorage.setItem('via-logo', v); } catch (e) {} }
+  }
+  document.querySelectorAll('[data-logo-select]').forEach(function (sel) {
+    sel.addEventListener('change', function () { setLogo(sel.value, true); });
+  });
+  document.querySelectorAll('[data-logo-pick]').forEach(function (b) {
+    b.addEventListener('click', function () { setLogo(b.dataset.logoPick, true); });
+  });
+  setLogo(document.documentElement.dataset.logo || 'sole', false);
+
+  /* A shared ?logo= link keeps its logo as you click around */
+  function carryLogo(v) {
+    document.querySelectorAll('a[href]').forEach(function (a) {
+      var h = a.getAttribute('href');
+      if (!/^[\w-]+\.html/.test(h)) return;
+      var hash = h.indexOf('#') > -1 ? h.slice(h.indexOf('#')) : '';
+      var path = h.replace(/[?#].*$/, '');
+      a.setAttribute('href', path + '?logo=' + v + hash);
+    });
+  }
+  var hasParam = false;
+  try { hasParam = !!new URLSearchParams(location.search).get('logo'); } catch (e) {}
+  if (hasParam) carryLogo(document.documentElement.dataset.logo);
+  document.querySelectorAll('[data-logo-select]').forEach(function (sel) {
+    sel.addEventListener('change', function () {
+      if (!hasParam) return;
+      try { var u = new URL(location.href); u.searchParams.set('logo', sel.value); history.replaceState(null, '', u); } catch (e) {}
+      carryLogo(sel.value);
+    });
+  });
 
   /* Copy buttons (phone numbers, address) */
   document.querySelectorAll('[data-copy]').forEach(function (b) {

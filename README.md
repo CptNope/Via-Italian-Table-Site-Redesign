@@ -45,23 +45,26 @@ Why it fits VIA:
 | Page | Path | What it shows |
 | --- | --- | --- |
 | Home (layout A) | [`index.html`](index.html) | Lead poster with the wordmark, live open/closed status, the Resy booking strip and three doors (takeout, delivery, events). Then the poster wall, a menu preview, private rooms, awards and hours. |
-| Menus | [`menu.html`](menu.html) | Dinner, lunch, dessert and after-dinner, PigFest and family-style to-go, with prices, as tabs. Drink, gluten-free and kids' menus link to VIA's PDFs. |
-| What's on | [`events.html`](events.html) | Current posters (Cakebread Cellars wine dinner, PigFest, suckling pig, turkey kit) and every past pairing dinner. |
-| Private dining | [`private-dining.html`](private-dining.html) | The three rooms shown by headcount (36, 16, 36), an event request form, the coordinator's line. |
-| Visit | [`visit.html`](visit.html) | Hours with today highlighted, address, parking rules, gift cards, the story, awards. |
+| Not found | [`404.html`](404.html) | "This poster came down": served by GitHub Pages for any missing page, with routes back. |
+| Menus | [`menu.html`](menu.html) | Opens on an olive lead poster with menu chips and the takeout, delivery and booking doors. Then dinner, lunch, dessert and after-dinner, PigFest and family-style to-go, with prices, as tabs. Drink, gluten-free and kids' menus link to VIA's PDFs. |
+| What's on | [`events.html`](events.html) | Opens on a plum lead poster with a "next up" ticket. Then current posters (Cakebread Cellars wine dinner, PigFest, suckling pig, turkey kit) and every past pairing dinner. |
+| Private dining | [`private-dining.html`](private-dining.html) | Opens on a brick lead poster with a headcount finder that suggests the room. Then the three rooms shown seat by seat (36, 16, 36), the event request form, the coordinator's line. |
+| Visit | [`visit.html`](visit.html) | Opens on a saffron lead poster with live status, directions, booking and call. Then hours with today highlighted, address, parking rules, gift cards, the story, awards. |
 | Brand book | [`brand.html`](brand.html) | The idea, both logo options, colour with contrast pairs, type, the six cut-paper shapes, poster anatomy, photography, voice, applications. |
 | Logo variations | [`logos.html`](logos.html) | Seven option-B concepts and three option-A treatments, each on paper, reversed, in one colour and at 64/32/16px, with a comparison table. |
 | Layout variations | [`layouts.html`](layouts.html) | Four homepage layouts side by side with desktop and phone thumbnails. |
 | Layouts B–D | [`home-partenze.html`](home-partenze.html), [`home-manifesto.html`](home-manifesto.html), [`home-cucina.html`](home-cucina.html) | Full working alternatives to the current homepage. |
 | Design system | [`design-system/`](design-system/) | Tokens, usage rules, component previews, wordmark files, icons, fonts. |
 
-A dark **proposal bar** across the top of every page labels the site as a spec, switches between logo options A and B, and links to the brand book, logos and layouts. Remove it (in `src/_header.html`) before anything goes live.
+A dark **proposal bar** across the top of every page labels the site as a spec, carries the **logo menu** (all eight marks, live across the whole site) and links to the brand book, logos and layouts. Remove it (in `src/_header.html`) before anything goes live.
 
 ---
 
 ## Logo options
 
-VIA chooses between **A, refresh** (keep the existing gold Roman-capital mark) and **B, rebrand** (a new cut-paper wordmark). The logo switch in the proposal bar flips the whole site between them.
+VIA chooses between **A, refresh** (keep the existing gold Roman-capital mark) and **B, rebrand** (a new cut-paper wordmark, in one of seven concepts).
+
+**See any logo on the whole site:** pick it from the logo menu in the proposal bar. The masthead, the homepage hero, the layout openings and the footer all switch, each mark sized and coloured for its context (Tondo turns plum on the brick hero, Spiedo's disc goes saffron on dark fields, and so on). The choice is remembered per browser. To send VIA a link to a specific combination, add `?logo=` with `sole`, `spiedo`, `arco`, `targa`, `tondo`, `biglietto`, `monogramma` or `a`, for example `index.html?logo=tondo`; the choice then carries across every page they click to.
 
 All seven B concepts use the same three straight-cut letters, plus one device taken from VIA's own kitchen or street:
 
@@ -84,6 +87,8 @@ All marks are generated from one file, [`tools/logos.py`](tools/logos.py): chang
 ---
 
 ## Layout options
+
+The full site is built in **layout A, Lead poster**: the homepage and every inner page open on a full-bleed poster field with the title at poster scale, a working action, cut-paper art and a photo slot, and the page's first block is pasted over the poster's bottom edge.
 
 Every layout keeps the same working actions on its first screen (book on Resy, takeout, delivery, plan an event) and the same sections below it. Only the opening changes.
 
@@ -154,7 +159,10 @@ Plain HTML, one stylesheet ([`assets/via.css`](assets/via.css)) and one script (
 - **Tear-off tabs** on posters tear on press (320ms) and then follow the link; phone-number tabs tear and spring back.
 - **Today's row** in every hours table is highlighted.
 - **Menu tabs** are a real tablist with arrow-key support; `menu.html#lunch`, `#pigfest`, `#family` open a tab directly.
-- **Logo switch** (proposal bar) swaps A and B site-wide and is remembered per browser.
+- **Logo menu** (proposal bar) swaps every site mark between the eight options; remembered per browser, or set by `?logo=` in a shared link.
+- **Headcount finder** (private dining) suggests the room for a number of guests and carries it into the event request form.
+- **Menu chips** on the menus page open the matching tab; `menu.html#family` works from anywhere.
+- **Next up** (What's on) shows the first live item: PigFest while it runs, then the Cakebread dinner, then the suckling pig.
 - **Event request form** validates on the page and suggests a room for the headcount. In this proposal it sends nothing; on a live site it would post to VIA's Tripleseat lead form.
 - **Phone action bar** (Book · Order · Call) is fixed to the bottom of every page under 860px wide.
 
@@ -222,7 +230,9 @@ active: menu
 <section class="field field--oliva page-head">…</section>
 ```
 
-`active` underlines a nav item: `menu`, `events`, `private` or `visit`.
+`active` underlines a nav item: `menu`, `events`, `private` or `visit`. An optional `base:` line adds a `<base href>` (used by `404.html`, which GitHub Pages serves at any path; it's set to `/Via-Italian-Table-Site-Redesign/`, so change it if the site moves).
+
+To open an inner page the same way as the others, start it with a lead poster (`<section class="field field--… lead-poster inner-lead">` with `.lead-grid`, `.lead-copy` and `.lead-art`; copy one from `src/pages/menu.html`) and give the next section the class `after-lead` so its first block is pasted over the edge. If that block starts with a heading, wrap it in `<div class="paste-head">` so it sits on a paper label.
 
 ---
 
@@ -251,7 +261,7 @@ python3 tools/thumbs.py          # rewrites assets/layouts/*.jpg
 
 ```
 .
-├── index.html, menu.html, events.html,        built pages (served by GitHub Pages)
+├── index.html, menu.html, events.html, 404.html, built pages (served by GitHub Pages)
 │   private-dining.html, visit.html,
 │   brand.html, logos.html, layouts.html,
 │   home-partenze.html, home-manifesto.html,
