@@ -1,0 +1,32 @@
+<!-- @dsCard height=288 -->
+<div class="cv">
+  <!--
+    blocks: mattone 520x110 slab, oliva 220x110, prugna 220x110, zafferano half-sun r110 rising from the band's floor, inchiostro spit bar 10 tall
+    arrangement: one strip of unequal bands across the top, the sun and plate bleeding over the seams, like posters pasted edge to edge
+    pattern: cut-paper half-rounds and discs (README: the sun, the plate, the spit), the shapes VIA is built from
+    scales: seam (3px) between bands, radius-disc for every round, radius-square elsewhere, space-7 (48px) insets
+  -->
+  <svg class="band" viewBox="0 0 960 110" preserveAspectRatio="none" aria-hidden="true">
+    <rect class="c-mattone" x="0" y="0" width="517" height="110"/>
+    <rect class="c-oliva" x="520" y="0" width="217" height="110"/>
+    <rect class="c-prugna" x="740" y="0" width="220" height="110"/>
+    <path class="c-zafferano" d="M300,110 A110,110 0 0 1 520,110 Z"/>
+    <circle class="c-prugna" cx="250" cy="66" r="34"/>
+    <circle class="c-zafferano" cx="840" cy="55" r="34"/>
+    <circle class="c-mattone" cx="880" cy="55" r="34"/>
+    <rect class="c-ink" x="-20" y="54" width="640" height="10" transform="rotate(-4 300 59)"/>
+  </svg>
+  <div class="cv-text">
+    <p class="cv-name">VIA Italian Table</p>
+    <p class="cv-tag">Italian with a modern twist, pasted on Shrewsbury Street.</p>
+  </div>
+</div>
+<style>
+  .cv { width: 960px; height: 288px; background: var(--muro); position: relative; overflow: hidden; }
+  .band { position: absolute; left: 0; top: 0; width: 960px; height: 110px; display: block; }
+  .c-mattone { fill: var(--mattone); } .c-oliva { fill: var(--oliva); } .c-prugna { fill: var(--prugna); }
+  .c-zafferano { fill: var(--zafferano); } .c-ink { fill: var(--inchiostro); }
+  .cv-text { position: absolute; left: 48px; top: 146px; max-width: 864px; }
+  .cv-name { margin: 0; font-family: var(--font-archivo); font-weight: 900; font-stretch: 112%; font-variation-settings: "wdth" 112; font-size: 64px; line-height: .95; letter-spacing: -0.03em; color: var(--inchiostro); }
+  .cv-tag { margin: 14px 0 0; font-family: var(--font-archivo); font-size: 14px; color: var(--on-light-soft); }
+</style>

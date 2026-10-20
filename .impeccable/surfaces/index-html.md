@@ -1,7 +1,7 @@
 ---
 version: 1
-slug: "site-index-html"
-primary_target: "site/index.html"
+slug: "index-html"
+primary_target: "index.html"
 related_targets: []
 ---
 

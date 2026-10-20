@@ -11,7 +11,7 @@ active: menu|events|private|visit|home|brand
 import html, json, pathlib, re
 
 ROOT = pathlib.Path(__file__).parent
-SRC, OUT = ROOT / "src", ROOT / "site"
+SRC, OUT = ROOT / "src", ROOT  # built pages live at the repo root, which GitHub Pages serves from main
 HEADER = (SRC / "_header.html").read_text()
 FOOTER = (SRC / "_footer.html").read_text()
 MENUS = json.loads((ROOT / "data" / "menus.json").read_text())
