@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T17:09:45+00:00",
+  "generatedAt": "2026-10-20T18:55:43+00:00",
   "title": "Design System: VIA Italian Table",
   "extensions": {
     "colorMeta": {
@@ -213,12 +213,284 @@
           "#cdc8c1",
           "#f3eee6"
         ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "Soft Paper Type",
+        "canonical": "color-mix(in oklab, #fbf6ee 88%, transparent)",
+        "approxOnInk": "#ddd7d0",
+        "tonalRamp": [
+          "#0e0b06",
+          "#28241f",
+          "#45413b",
+          "#65615a",
+          "#86827b",
+          "#a9a49d",
+          "#cdc8c1",
+          "#f3eee6"
+        ]
+      },
+      "on-light-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "color-mix(in oklab, #1c1512 74%, #f3efe7)",
+        "approx": "#4d4641",
+        "tonalRamp": [
+          "#0f0a06",
+          "#2a241f",
+          "#47403c",
+          "#67605a",
+          "#88817b",
+          "#aba39d",
+          "#d0c7c1",
+          "#f5ede6"
+        ]
+      },
+      "mattone-tab": {
+        "role": "primary",
+        "displayName": "Mattone Tab",
+        "canonical": "oklch(41.0% 0.124 34.3)",
+        "derivation": "color-mix(in oklab, var(--mattone) 82%, black)",
+        "tonalRamp": [
+          "#190402",
+          "#3f170e",
+          "#692e20",
+          "#964633",
+          "#bc6854",
+          "#d69180",
+          "#f0bbad",
+          "#ffe5dc"
+        ]
+      },
+      "mattone-tab-hover": {
+        "role": "primary",
+        "displayName": "Mattone Tab, Hover",
+        "canonical": "oklch(33.9% 0.103 33.8)",
+        "derivation": "color-mix(in oklab, var(--mattone) 68%, black)",
+        "tonalRamp": [
+          "#170603",
+          "#3b1a13",
+          "#633227",
+          "#8e4c3d",
+          "#b36d5d",
+          "#cf9587",
+          "#eabdb2",
+          "#ffe7e0"
+        ]
+      },
+      "mattone-deep-tab": {
+        "role": "primary",
+        "displayName": "Mattone Scuro Tab",
+        "canonical": "oklch(32.9% 0.101 33.5)",
+        "derivation": "color-mix(in oklab, var(--mattone-deep) 82%, black)",
+        "tonalRamp": [
+          "#170603",
+          "#3b1b13",
+          "#623328",
+          "#8d4c3e",
+          "#b26e5e",
+          "#ce9588",
+          "#e9beb3",
+          "#ffe7e0"
+        ]
+      },
+      "mattone-deep-tab-hover": {
+        "role": "primary",
+        "displayName": "Mattone Scuro Tab, Hover",
+        "canonical": "oklch(27.2% 0.082 33.7)",
+        "derivation": "color-mix(in oklab, var(--mattone-deep) 68%, black)",
+        "tonalRamp": [
+          "#150705",
+          "#371d17",
+          "#5d362d",
+          "#865145",
+          "#aa7265",
+          "#c7988d",
+          "#e4c0b7",
+          "#ffe8e3"
+        ]
+      },
+      "oliva-tab": {
+        "role": "secondary",
+        "displayName": "Oliva Tab",
+        "canonical": "oklch(36.8% 0.066 119.5)",
+        "derivation": "color-mix(in oklab, var(--oliva) 82%, black)",
+        "tonalRamp": [
+          "#0a0c03",
+          "#232814",
+          "#3f4628",
+          "#5d663f",
+          "#7e885f",
+          "#a1aa89",
+          "#c6cdb4",
+          "#ecf1e1"
+        ]
+      },
+      "oliva-tab-hover": {
+        "role": "secondary",
+        "displayName": "Oliva Tab, Hover",
+        "canonical": "oklch(30.4% 0.056 120.6)",
+        "derivation": "color-mix(in oklab, var(--oliva) 68%, black)",
+        "tonalRamp": [
+          "#0a0c05",
+          "#232717",
+          "#3f452d",
+          "#5d6645",
+          "#7e8765",
+          "#a1a98e",
+          "#c6ccb8",
+          "#ecf1e3"
+        ]
+      },
+      "zafferano-tab": {
+        "role": "tertiary",
+        "displayName": "Zafferano Tab",
+        "canonical": "oklch(69.0% 0.135 75.6)",
+        "derivation": "color-mix(in oklab, var(--zafferano) 90%, black)",
+        "tonalRamp": [
+          "#160800",
+          "#381f00",
+          "#5f3900",
+          "#885500",
+          "#ac7614",
+          "#c89d5d",
+          "#e4c396",
+          "#ffebce"
+        ]
+      },
+      "zafferano-tab-hover": {
+        "role": "tertiary",
+        "displayName": "Zafferano Tab, Hover",
+        "canonical": "oklch(64.4% 0.126 75.6)",
+        "derivation": "color-mix(in oklab, var(--zafferano) 84%, black)",
+        "tonalRamp": [
+          "#150800",
+          "#371f00",
+          "#5d3900",
+          "#865600",
+          "#a97724",
+          "#c69d63",
+          "#e3c499",
+          "#ffebd0"
+        ]
+      },
+      "prugna-tab": {
+        "role": "tertiary",
+        "displayName": "Prugna Tab",
+        "canonical": "oklch(22.9% 0.055 339.4)",
+        "derivation": "color-mix(in oklab, var(--prugna) 82%, black)",
+        "tonalRamp": [
+          "#10080e",
+          "#2f202a",
+          "#503a49",
+          "#75566b",
+          "#97778c",
+          "#b79cad",
+          "#d7c2cf",
+          "#f8eaf2"
+        ]
+      },
+      "prugna-tab-hover": {
+        "role": "tertiary",
+        "displayName": "Prugna Tab, Hover",
+        "canonical": "oklch(19.1% 0.045 340.9)",
+        "derivation": "color-mix(in oklab, var(--prugna) 68%, black)",
+        "tonalRamp": [
+          "#10090d",
+          "#2d2128",
+          "#4e3b47",
+          "#725868",
+          "#94798a",
+          "#b49eab",
+          "#d5c3ce",
+          "#f6ebf1"
+        ]
+      },
+      "inchiostro-tab": {
+        "role": "neutral",
+        "displayName": "Inchiostro Tab",
+        "canonical": "oklch(16.6% 0.011 39.2)",
+        "derivation": "color-mix(in oklab, var(--inchiostro) 82%, black)",
+        "tonalRamp": [
+          "#0f0a08",
+          "#2a2321",
+          "#48403e",
+          "#675f5d",
+          "#89807d",
+          "#aca3a0",
+          "#d0c7c4",
+          "#f6ece9"
+        ]
+      },
+      "inchiostro-tab-hover": {
+        "role": "neutral",
+        "displayName": "Inchiostro Tab, Hover",
+        "canonical": "oklch(13.9% 0.009 52.6)",
+        "derivation": "color-mix(in oklab, var(--inchiostro) 68%, black)",
+        "tonalRamp": [
+          "#0e0a08",
+          "#292421",
+          "#46413e",
+          "#66605c",
+          "#87817d",
+          "#aaa4a0",
+          "#cec8c4",
+          "#f4ede9"
+        ]
+      },
+      "bianco-tab": {
+        "role": "neutral",
+        "displayName": "Bianco Tab",
+        "canonical": "oklch(78.1% 0.010 78.3)",
+        "derivation": "color-mix(in oklab, var(--bianco) 82%, black)",
+        "tonalRamp": [
+          "#0d0b07",
+          "#282520",
+          "#45413c",
+          "#64615b",
+          "#85827c",
+          "#a8a49e",
+          "#cdc8c2",
+          "#f2eee7"
+        ]
+      },
+      "bianco-tab-hover": {
+        "role": "neutral",
+        "displayName": "Bianco Tab, Hover",
+        "canonical": "oklch(64.8% 0.008 80.7)",
+        "derivation": "color-mix(in oklab, var(--bianco) 68%, black)",
+        "tonalRamp": [
+          "#0d0b08",
+          "#272521",
+          "#44423d",
+          "#64615c",
+          "#85827d",
+          "#a8a59f",
+          "#ccc9c3",
+          "#f1eee8"
+        ]
       }
     },
     "typographyMeta": {
       "poster": {
         "displayName": "Poster",
-        "purpose": "Page titles and poster titles; expanded black caps, the name of the thing."
+        "purpose": "The 6rem ceiling for proposal-page titles; the poster voice at its largest."
+      },
+      "page-title": {
+        "displayName": "Page title",
+        "purpose": "Lead-poster titles on every inner page; never splits a word at 320px."
+      },
+      "poster-title": {
+        "displayName": "Poster title",
+        "purpose": "A poster on the wall."
+      },
+      "poster-title-wide": {
+        "displayName": "Poster title, wide",
+        "purpose": "Posters spanning 7 columns or more."
+      },
+      "poster-title-phone": {
+        "displayName": "Poster title, phone",
+        "purpose": "Every poster title under 620px."
       },
       "headline-lg": {
         "displayName": "Headline (h1)",
@@ -238,11 +510,11 @@
       },
       "body": {
         "displayName": "Body",
-        "purpose": "All reading text, 66ch measure."
+        "purpose": "All reading text and form values, 66ch measure."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Buttons, tabs, nav: condensed bold caps."
+        "purpose": "Buttons, chips, tabs, nav: condensed bold caps at the small size."
       },
       "condensed": {
         "displayName": "Condensed",
@@ -250,11 +522,11 @@
       },
       "small": {
         "displayName": "Small",
-        "purpose": "Poster date lines, notes, captions."
+        "purpose": "Labels, buttons and small prose: poster date lines, notes, captions, hints."
       },
       "micro": {
         "displayName": "Micro",
-        "purpose": "Pitch bar, field labels, swatch meta."
+        "purpose": "Pitch bar, field labels, photo-slot heads, dish tags, copy buttons, action-bar captions."
       },
       "mark-a": {
         "displayName": "Logo A stand-in",
@@ -265,7 +537,7 @@
       {
         "name": "paste",
         "value": "0 1px 0 rgba(0,0,0,.06), 0 10px 24px -14px rgba(28,21,18,.55)",
-        "purpose": "Default for every pasted sheet: posters, buttons, room cards, photo slots, remnants."
+        "purpose": "Default for every pasted sheet: posters, buttons, room cards, photo slots, remnants, paste heads, the next-up card, the skip link."
       },
       {
         "name": "paste-lift",
@@ -275,7 +547,7 @@
       {
         "name": "strip",
         "value": "0 18px 40px -22px rgba(0,0,0,.6)",
-        "purpose": "The booking strip inside the lead poster."
+        "purpose": "The booking strip and the headcount finder inside a lead poster."
       },
       {
         "name": "sheet",
@@ -320,6 +592,11 @@
         "purpose": "Arrow link hover."
       },
       {
+        "name": "chip-fill",
+        "value": "background-color .2s",
+        "purpose": "Chip hover to solid ink."
+      },
+      {
         "name": "tab-tear",
         "value": "transform .45s ease-out; translateY(14px) rotate(-5deg..5deg); navigate after 320ms",
         "purpose": "Tear-off tab on press."
@@ -352,56 +629,281 @@
       "poster": "-0.9deg to +0.7deg (per poster, --tilt)",
       "wall-head-slip": "-0.6deg",
       "remnant": "1.4deg",
-      "photo-clipping": "up to 2.2deg"
+      "photo-clipping": "up to 2.2deg",
+      "paste-head": "-0.6deg",
+      "next-card": "-0.8deg",
+      "404-remnant": "4deg"
     },
     "cutPaperShapes": [
       {
         "name": "The sun, the fire",
         "form": "half-disc, top corners 999px, rising from a bottom edge",
-        "typicalColor": "mattone on zafferano, or zafferano on mattone"
+        "typicalColor": "mattone on zafferano, or zafferano on mattone",
+        "artClass": "art-sunspit"
       },
       {
         "name": "The plate",
         "form": "full disc",
-        "typicalColor": "prugna"
+        "typicalColor": "prugna",
+        "artClass": "art-sunspit (.s-plate), lead-art .plate"
       },
       {
         "name": "The spit",
         "form": "10-14px stripe at -4deg to -24deg, may skewer a plate",
-        "typicalColor": "inchiostro"
+        "typicalColor": "inchiostro",
+        "artClass": "art-sunspit (.s-spit), lead-art .stripe"
       },
       {
         "name": "The glass",
         "form": "bowl with bottom corners 999px on an 8px stem",
-        "typicalColor": "prugna-soft on prugna"
+        "typicalColor": "prugna-soft on prugna",
+        "artClass": "art-glass"
       },
       {
         "name": "The coins, a deal",
         "form": "three equal circles in a row, half sunk",
-        "typicalColor": "zafferano, mattone, bianco on oliva"
+        "typicalColor": "zafferano, mattone, bianco on oliva",
+        "artClass": "art-coins"
       },
       {
         "name": "The table set",
         "form": "bianco disc or half-disc flanked by two 6px uprights",
-        "typicalColor": "bianco and zafferano on mattone-deep"
+        "typicalColor": "bianco and zafferano on mattone-deep",
+        "artClass": "art-table"
       }
     ],
     "logos": {
-      "default": "b",
-      "switch": "html[data-logo] set from the pitch bar; persisted in localStorage key via-logo",
-      "a": {
-        "name": "Option A · Refresh",
-        "font": "Cinzel 700 stand-in for VIA master artwork",
-        "color": "oro on inchiostro or prugna"
+      "default": "sole",
+      "switch": "html[data-logo] in {a, sole, spiedo, arco, targa, tondo, biglietto, monogramma}; legacy 'b' maps to sole; unknown falls back to sole. Set before paint from ?logo=, else localStorage 'via-logo'. The proposal-bar select ([data-logo-select]) repoints every svg.site-mark <use> to #mark-NAME and copies that symbol's viewBox, persists the choice, and when opened from ?logo= rewrites the URL and every internal .html link to carry it.",
+      "source": "tools/logos.py: one definition of the three straight-cut letters plus one device per concept; writes assets/logos/via-NAME-WAY.svg colourways and the <symbol id=\"mark-NAME\"> set (symbols_html) inlined into every page by build.py; #mark-b kept as a Sole alias with var(--sun-fill).",
+      "favicon": "assets/logos/via-monogramma-on-mattone.svg",
+      "recolourProps": {
+        "--m-ink": "letters (currentColor)",
+        "--m-accent": "sun / disc / arc (#eaa42a)",
+        "--m-ground": "Tondo disc (#a8381f)",
+        "--m-on": "letters on Tondo disc (#fbf6ee)",
+        "--m-frame": "Targa frame and rule (#a8381f)",
+        "--m-plate": "Targa plate (#f3efe7)",
+        "--m-plate-ink": "Targa letters (#1c1512)",
+        "--m-ticket": "Biglietto ticket (#eaa42a)",
+        "--m-ticket-ink": "Biglietto letters and tear line (#1c1512)",
+        "--m-tabs": "Biglietto tabs (#a8381f)"
       },
-      "b": {
-        "name": "Option B · Rebrand",
-        "symbol": "#mark-b in src/_header.html, viewBox 0 0 294 120",
-        "sunFill": "var(--sun-fill, #eaa42a); mattone on a zafferano ground",
-        "minSize": "64px wide on screen, 18mm print",
-        "clearSpace": "height of the sun on every side"
+      "contextOverrides": [
+        "spiedo: --m-accent mattone by default; zafferano on mattone, prugna, inchiostro, oliva fields and the footer",
+        "tondo on field--mattone: --m-ground prugna",
+        "targa on field--mattone: --m-frame zafferano",
+        "biglietto on field--zafferano: --m-ticket bianco",
+        "arco on field--zafferano: --m-accent mattone"
+      ],
+      "sizes": {
+        "masthead": "2.1rem high (tondo, monogramma, targa, biglietto 2.9rem)",
+        "footer": "2.6rem high",
+        "homeLead": "width min(100%, 26rem); arco 24rem; targa and biglietto 22rem; tondo and monogramma min(70%, 15rem)"
+      },
+      "concepts": [
+        {
+          "id": "sole",
+          "label": "B1 Sole",
+          "viewBox": "-12 -12 318 144",
+          "device": "radius-20 half-sun inside the base of the A",
+          "role": "Primary"
+        },
+        {
+          "id": "spiedo",
+          "label": "B2 Spiedo",
+          "viewBox": "-12 -12 318 144",
+          "device": "10-unit spit cut through the letters at -5deg, radius-19 disc on the I",
+          "role": "Alternate primary"
+        },
+        {
+          "id": "arco",
+          "label": "B3 Arco",
+          "viewBox": "-12 -36 318 168",
+          "device": "radius-120 half-sun behind the letters",
+          "role": "Posters, banners"
+        },
+        {
+          "id": "targa",
+          "label": "B4 Targa",
+          "viewBox": "0 0 380 200",
+          "device": "street plate: frame rx14, plate rx6, inset 3-unit rule rx2",
+          "role": "Building sign, door"
+        },
+        {
+          "id": "tondo",
+          "label": "B5 Tondo",
+          "viewBox": "0 0 300 300",
+          "device": "disc ground, sun rising from its base, letters at .694",
+          "role": "Stamp, avatar, stickers"
+        },
+        {
+          "id": "biglietto",
+          "label": "B6 Biglietto",
+          "viewBox": "0 0 324 222",
+          "device": "ticket with dashed tear line and three tabs",
+          "role": "Tickets, gift cards"
+        },
+        {
+          "id": "monogramma",
+          "label": "B7 Monogramma",
+          "viewBox": "-10 -10 140 140",
+          "device": "the V alone with a radius-15 sun in its valley",
+          "role": "Favicon, embroidery"
+        },
+        {
+          "id": "a",
+          "label": "A Gold mark",
+          "font": "Cinzel 700 stand-in for VIA master artwork",
+          "color": "oro on inchiostro or prugna",
+          "role": "Keep today's mark"
+        }
+      ],
+      "minSize": "64px wide on screen, 18mm print",
+      "clearSpace": "height of the sun on every side"
+    },
+    "artBands": [
+      {
+        "class": "art-sunspit",
+        "children": [
+          ".s-sun",
+          ".s-plate (optional)",
+          ".s-spit"
+        ],
+        "vars": {
+          "--sun": "var(--mattone)",
+          "--sun-w": "20rem",
+          "--sun-x": "8%",
+          "--spit": "var(--inchiostro)",
+          "--spit-y": "4rem",
+          "--spit-tilt": "3deg",
+          "--plate": "var(--prugna)"
+        },
+        "use": "PigFest, suckling pig"
+      },
+      {
+        "class": "art-coins",
+        "children": [
+          ".s-coin x3"
+        ],
+        "vars": {},
+        "geometry": "7rem discs at left 0 / 5.5rem / 11rem, bottom -3.5rem; zafferano, mattone, bianco",
+        "use": "$25 entrees, deals"
+      },
+      {
+        "class": "art-glass",
+        "children": [
+          ".s-cup",
+          ".s-cup (optional second)",
+          ".s-stem"
+        ],
+        "vars": {
+          "--cup": "8rem",
+          "--glass": "var(--prugna-soft)",
+          "--glass-2": "var(--mattone)"
+        },
+        "geometry": "cup right 3rem from top edge; 8px x 3rem stem; second cup .8 cup-widths left at 85% opacity",
+        "use": "wine dinners"
+      },
+      {
+        "class": "art-table",
+        "children": [
+          ".s-plate",
+          ".s-bar x2"
+        ],
+        "vars": {},
+        "geometry": "6rem bianco disc half-sunk at centre; 6px x 4rem zafferano bars at 50% -4.5rem and +4.2rem",
+        "use": "holiday kits"
+      },
+      {
+        "class": "art-pair",
+        "children": [
+          ".s-disc x2"
+        ],
+        "vars": {},
+        "geometry": "7rem discs sunk 2rem; zafferano at right 5.5rem, oliva multiply at right 1.5rem",
+        "use": "takeout, VIA at home"
       }
-    }
+    ],
+    "fonts": [
+      {
+        "family": "Archivo",
+        "files": [
+          "assets/fonts/archivo-var.woff2",
+          "assets/fonts/archivo-var.woff"
+        ],
+        "axes": "wght 100-900, wdth 62-125%",
+        "display": "swap",
+        "preload": true
+      },
+      {
+        "family": "Cinzel",
+        "files": [
+          "assets/fonts/cinzel-var.woff2",
+          "assets/fonts/cinzel-var.woff"
+        ],
+        "axes": "wght 400-900",
+        "display": "swap",
+        "preload": false,
+        "note": "Only fetched when Logo A is shown (the .logo--a block is display:none otherwise)."
+      }
+    ],
+    "touchTarget": {
+      "min": "2.75rem (44px)",
+      "applies": [
+        "buttons (3rem; masthead 2.75rem)",
+        "copy buttons (2.75rem square min)",
+        "nav links (phone)",
+        "booking-strip selects",
+        "chips",
+        "logo picker",
+        "pitch-bar links",
+        "footer family and social links",
+        "skip link"
+      ],
+      "larger": {
+        "tear-off-tab": "3.25rem",
+        "actionbar": "3.6rem"
+      }
+    },
+    "pageOpenings": {
+      "innerLead": {
+        "padding": "3rem top, 4.5rem + 1rem bottom (3rem + 1rem under 860px)",
+        "artMinHeight": "24rem (18rem under 860px)",
+        "stocks": {
+          "menu": "oliva",
+          "events": "prugna",
+          "private-dining": "mattone",
+          "visit": "zafferano",
+          "404": "mattone"
+        }
+      },
+      "afterLead": "no top padding or seam; first block pulled -3rem (-2.25rem under 620px), z-index 3",
+      "pageHead": "legacy; proposal pages only (logos, layouts)"
+    },
+    "alternateHomepages": [
+      {
+        "id": "B",
+        "name": "Partenze",
+        "page": "home-partenze.html",
+        "summary": "Split-flap departures board of what's coming up; booking as a paper ticket."
+      },
+      {
+        "id": "C",
+        "name": "Manifesto",
+        "page": "home-manifesto.html",
+        "summary": "One paper playbill on a mattone field in mixed wood-type widths."
+      },
+      {
+        "id": "D",
+        "name": "Cucina",
+        "page": "home-cucina.html",
+        "summary": "Olive field with a tilted paper menu sheet of signature dishes and prices."
+      },
+      {
+        "note": "Layout A (index.html) is the default and the system reference; alternates are proposals with page-local styles."
+      }
+    ]
   },
   "components": [
     {
@@ -410,7 +912,7 @@
       "refersTo": "button-primary",
       "description": "Mattone Book button; square, condensed caps, pasted.",
       "html": "<a class=\"ds-btn\" href=\"#\">Book a table</a>",
-      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}"
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}"
     },
     {
       "name": "Sun Button",
@@ -418,7 +920,7 @@
       "refersTo": "button-sun",
       "description": "Saffron with ink type; \"Find a table\" inside the booking strip.",
       "html": "<div style=\"background:#a8381f;padding:1.5rem\"><a class=\"ds-btn ds-btn-sun\" href=\"#\">Find a table</a></div>",
-      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-sun{--b-bg:var(--zafferano);--b-fg:var(--inchiostro)}"
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-sun{--b-bg:var(--zafferano);--b-fg:var(--inchiostro)}"
     },
     {
       "name": "Door Buttons (paper, plum)",
@@ -426,7 +928,7 @@
       "refersTo": "button-paper",
       "description": "Sibling doors on the lead poster: Order takeout, Delivery (paper), Plan an event (plum).",
       "html": "<div style=\"background:#a8381f;padding:1.5rem;display:flex;gap:.75rem;flex-wrap:wrap\"><a class=\"ds-btn ds-btn-paper\" href=\"#\">Order takeout</a><a class=\"ds-btn ds-btn-paper\" href=\"#\">Delivery</a><a class=\"ds-btn ds-btn-plum\" href=\"#\">Plan an event</a></div>",
-      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-paper{--b-bg:var(--bianco);--b-fg:var(--inchiostro)}.ds-btn-plum{--b-bg:var(--prugna);--b-fg:var(--on-dark)}"
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-paper{--b-bg:var(--bianco);--b-fg:var(--inchiostro)}.ds-btn-plum{--b-bg:var(--prugna);--b-fg:var(--on-dark)}"
     },
     {
       "name": "Ghost Button",
@@ -434,7 +936,7 @@
       "refersTo": "button-ghost",
       "description": "Transparent with a printed 2px inset edge in the current colour.",
       "html": "<div style=\"background:#f3efe7;color:#1c1512;padding:1.5rem\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\">Download PDF</a></div>",
-      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-ghost{--b-bg:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}.ds-btn-ghost:hover{box-shadow:inset 0 0 0 3px currentColor}"
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-ghost{--b-bg:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}.ds-btn-ghost:hover{box-shadow:inset 0 0 0 3px currentColor}"
     },
     {
       "name": "Booking Strip",
@@ -442,7 +944,15 @@
       "refersTo": "booking-strip",
       "description": "Party + date to Resy inside the lead poster; no time field.",
       "html": "<div style=\"background:#a8381f;padding:1.5rem\"><form class=\"ds-book\" onsubmit=\"return false\"><label><span>Party</span><select><option>2 guests</option><option>4 guests</option><option>9 or more</option></select></label><label><span>Date</span><select><option>Today</option><option>Tomorrow</option><option disabled>Sun, Oct 25 · closed</option></select></label><button class=\"ds-btn ds-btn-sun\" type=\"submit\">Find a table</button></form></div>",
-      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-sun{--b-bg:var(--zafferano);--b-fg:var(--inchiostro)}.ds-book{display:grid;grid-template-columns:repeat(2,minmax(0,1fr)) auto;gap:2px;background:var(--mattone-deep);padding:2px;max-width:40rem;box-shadow:0 18px 40px -22px rgba(0,0,0,.6);font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-book label{display:grid;gap:2px;background:var(--bianco);color:var(--inchiostro);padding:.5rem .75rem .45rem}.ds-book label span{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:color-mix(in oklab,var(--inchiostro) 74%,var(--bianco))}.ds-book select{font:inherit;font-weight:700;font-size:1.05rem;color:var(--inchiostro);background:transparent;border:0;padding:0;min-height:1.8rem}.ds-book select:focus-visible{outline:2px solid var(--mattone);outline-offset:2px}.ds-book .ds-btn{min-height:100%;box-shadow:none;padding-inline:1.4rem}"
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-sun{--b-bg:var(--zafferano);--b-fg:var(--inchiostro)}.ds-book{display:grid;grid-template-columns:repeat(2,minmax(0,1fr)) auto;gap:2px;background:var(--mattone-deep);padding:2px;max-width:40rem;box-shadow:0 18px 40px -22px rgba(0,0,0,.6);font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-book label{display:grid;gap:0;background:var(--bianco);color:var(--inchiostro);padding:.45rem .75rem .15rem}.ds-book label span{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:color-mix(in oklab,var(--inchiostro) 74%,var(--bianco))}.ds-book select{font:inherit;font-weight:700;font-size:1.0625rem;color:var(--inchiostro);background:transparent;border:0;padding:0;min-height:2.75rem;width:100%}.ds-book select:focus-visible{outline:2px solid var(--mattone);outline-offset:2px}.ds-book .ds-btn{min-height:100%;box-shadow:none;padding-inline:1.4rem}"
+    },
+    {
+      "name": "Headcount Finder",
+      "kind": "input",
+      "refersTo": "headcount",
+      "description": "Private-dining lead poster: guest count suggests a room live, then prefills the request form.",
+      "html": "<div style=\"background:#a8381f;padding:1.5rem\"><form class=\"ds-hc\" onsubmit=\"return false\"><label><span class=\"l\">How many guests?</span><input type=\"number\" value=\"20\" min=\"1\"></label><output class=\"o\"><b>The private dining room or the patio</b><span>Each seats up to 36.</span></output><a class=\"ds-btn ds-btn-sun\" href=\"#\">Request a room</a></form></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1);--on-dark-soft:color-mix(in oklab,#fbf6ee 88%,transparent);--on-light-soft:color-mix(in oklab,#1c1512 74%,#f3efe7)}.ds-hc{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px;background:var(--mattone-deep);padding:2px;max-width:40rem;box-shadow:0 18px 40px -22px rgba(0,0,0,.6);font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-hc label{display:grid;gap:2px;background:var(--bianco);color:var(--inchiostro);padding:.5rem .75rem .45rem}.ds-hc .l{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--on-light-soft)}.ds-hc input{font:inherit;font-weight:800;font-size:1.4rem;width:6.5rem;border:0;background:transparent;color:var(--inchiostro);padding:0;min-height:2rem;font-variant-numeric:tabular-nums}.ds-hc input:focus-visible{outline:2px solid var(--mattone);outline-offset:2px}.ds-hc .o{display:grid;align-content:center;gap:.15rem;background:var(--bianco);color:var(--inchiostro);padding:.5rem .9rem}.ds-hc .o b{font-weight:800;line-height:1.2}.ds-hc .o span{font-size:.9rem;color:var(--on-light-soft)}.ds-btn{grid-column:1/-1;display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:.7rem 1.25rem;background:var(--zafferano);color:var(--inchiostro);font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;text-decoration:none}.ds-btn:focus-visible{outline:3px solid var(--prugna);outline-offset:3px}"
     },
     {
       "name": "Text Field",
@@ -453,27 +963,59 @@
       "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-label{display:grid;gap:.35rem;font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:700;font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;color:var(--inchiostro)}.ds-input{font:inherit;font-size:1rem;text-transform:none;letter-spacing:0;font-weight:500;color:var(--inchiostro);background:var(--bianco);border:2px solid var(--inchiostro);border-radius:0;padding:.7rem .8rem;min-height:3rem}.ds-input:focus-visible{outline:3px solid var(--prugna);outline-offset:3px}.ds-input[aria-invalid=true]{border-color:var(--mattone);border-width:3px}.ds-err{color:var(--mattone);font-size:.9rem;font-weight:700;text-transform:none;letter-spacing:0}"
     },
     {
+      "name": "Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Quick jumps inside a lead poster; square, printed on the poster, 2.75rem tall, solid ink on hover.",
+      "html": "<div style=\"background:#4f5b23;padding:1.5rem\"><nav class=\"ds-chips\"><a href=\"#\">Dinner</a><a href=\"#\">Lunch</a><a href=\"#\">Dessert</a><a href=\"#\">PigFest</a><a href=\"#\">Family style</a></nav></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-chips{display:flex;flex-wrap:wrap;gap:.4rem;font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-chips a{display:inline-flex;align-items:center;min-height:2.75rem;padding:.5rem .85rem;text-decoration:none;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;background:rgba(28,21,18,.24);color:var(--on-dark);transition:background-color .2s}.ds-chips a:hover{background:var(--inchiostro)}.ds-chips a:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}"
+    },
+    {
       "name": "Masthead",
       "kind": "nav",
       "refersTo": "masthead",
-      "description": "Sticky paper bar, 3px ink seam, Logo B, condensed caps nav with mattone underline, Book button.",
+      "description": "Sticky paper bar, 3px ink seam, the chosen logo, condensed caps nav with mattone underline, Book button.",
       "html": "<header class=\"ds-mast\"><a class=\"ds-brand\" href=\"#\"><svg viewBox=\"0 0 294 120\" style=\"height:2.1rem;width:auto;display:block\" aria-label=\"VIA\"><polygon fill=\"currentColor\" points=\"0,0 34,0 60,82 86,0 120,0 79,120 41,120\"/><rect fill=\"currentColor\" x=\"132\" y=\"0\" width=\"34\" height=\"120\"/><polygon fill=\"currentColor\" points=\"178,120 216,0 256,0 294,120 260,120 236,44 212,120\"/><path fill=\"#eaa42a\" d=\"M216,120 A20,20 0 0 1 256,120 Z\"/></svg><span>Italian<br>Table</span></a><nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Menu</a><a href=\"#\">What's on</a><a href=\"#\">Private dining</a><a href=\"#\">Visit</a></nav><a class=\"ds-btn\" href=\"#\">Book a table</a></header>",
-      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-mast{display:flex;align-items:center;gap:1.5rem;min-height:4.25rem;padding:0 16px;background:var(--bianco);color:var(--inchiostro);border-bottom:3px solid var(--inchiostro);font-family:Archivo,'Helvetica Neue',Arial,sans-serif;flex-wrap:wrap}.ds-brand{display:inline-flex;align-items:center;gap:.6rem;margin-right:auto;color:inherit;text-decoration:none}.ds-brand span{font-size:.72rem;line-height:1.05;font-weight:700;font-stretch:75%;font-variation-settings:'wdth' 75;letter-spacing:.14em;text-transform:uppercase}.ds-nav{display:flex;gap:1.5rem}.ds-nav a{color:inherit;text-decoration:none;font-weight:700;font-stretch:80%;font-variation-settings:'wdth' 80;text-transform:uppercase;letter-spacing:.04em;font-size:.92rem;padding-block:.5rem;border-bottom:3px solid transparent}.ds-nav a:hover,.ds-nav a[aria-current=page]{border-bottom-color:var(--mattone)}.ds-nav a:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-mast .ds-btn{min-height:2.75rem}"
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-mast{display:flex;align-items:center;gap:1.5rem;min-height:4.25rem;padding:0 16px;background:var(--bianco);color:var(--inchiostro);border-bottom:3px solid var(--inchiostro);font-family:Archivo,'Helvetica Neue',Arial,sans-serif;flex-wrap:wrap}.ds-brand{display:inline-flex;align-items:center;gap:.6rem;margin-right:auto;color:inherit;text-decoration:none}.ds-brand span{font-size:.72rem;line-height:1.05;font-weight:700;font-stretch:75%;font-variation-settings:'wdth' 75;letter-spacing:.14em;text-transform:uppercase}.ds-nav{display:flex;gap:1.5rem}.ds-nav a{color:inherit;text-decoration:none;font-weight:700;font-stretch:80%;font-variation-settings:'wdth' 80;text-transform:uppercase;letter-spacing:.04em;font-size:.9rem;padding-block:.5rem;border-bottom:3px solid transparent}.ds-nav a:hover,.ds-nav a[aria-current=page]{border-bottom-color:var(--mattone)}.ds-nav a:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-mast .ds-btn{min-height:2.75rem}"
+    },
+    {
+      "name": "Logo Picker and Skip Link",
+      "kind": "nav",
+      "refersTo": "logo-picker",
+      "description": "Proposal-bar pill select that swaps every site mark; and the skip link, a paper tab shown on keyboard focus. Both 2.75rem tall.",
+      "html": "<div class=\"ds-pitch\"><span><strong>Spec redesign for VIA Italian Table</strong></span><label class=\"ds-pick\">Logo <select><optgroup label=\"B · new wordmark\"><option>B1 Sole</option><option>B2 Spiedo</option><option>B3 Arco</option><option>B4 Targa</option><option>B5 Tondo</option><option>B6 Biglietto</option><option>B7 Monogramma</option></optgroup><optgroup label=\"A · keep today's mark\"><option>A Gold mark</option></optgroup></select></label><a href=\"#\">Brand book</a></div><a class=\"ds-skip\" href=\"#\">Skip to content</a>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1);--on-dark-soft:color-mix(in oklab,#fbf6ee 88%,transparent);--on-light-soft:color-mix(in oklab,#1c1512 74%,#f3efe7)}.ds-pitch{display:flex;flex-wrap:wrap;gap:0 1.25rem;align-items:center;background:var(--inchiostro);color:var(--on-dark-soft);font-size:.78rem;line-height:1.3;padding:.1rem 16px;font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-pitch strong{color:var(--on-dark)}.ds-pitch a{color:var(--zafferano-pale,#f6d58e);display:inline-flex;align-items:center;min-height:2.75rem}.ds-pick{display:inline-flex;align-items:center;gap:.5rem}.ds-pick select{font:inherit;font-weight:700;color:var(--inchiostro);background:var(--zafferano);border:0;border-radius:999px;padding:.35rem 1.9rem .35rem .8rem;min-height:2.75rem;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--inchiostro) 50%),linear-gradient(135deg,var(--inchiostro) 50%,transparent 50%);background-position:calc(100% - 13px) 55%,calc(100% - 8px) 55%;background-size:5px 5px;background-repeat:no-repeat}.ds-pick select:focus-visible{outline:3px solid #f6d58e;outline-offset:2px}.ds-skip{display:inline-flex;align-items:center;min-height:2.75rem;margin:1rem 16px;padding:.6rem 1rem;background:var(--bianco);color:var(--inchiostro);font-weight:800;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;box-shadow:var(--paste);outline:3px solid var(--mattone);outline-offset:2px;font-family:Archivo,'Helvetica Neue',Arial,sans-serif}"
     },
     {
       "name": "Poster with Tear-off Tabs",
       "kind": "card",
       "refersTo": "poster",
-      "description": "The signature unit: art band, dates, title, body, tear-off tabs; pasted with a slight tilt.",
-      "html": "<div style=\"background:#d8cfc0;padding:2rem\"><article class=\"ds-poster\"><div class=\"ds-art\" aria-hidden=\"true\"><span style=\"width:8rem;height:8rem;border-radius:0 0 4rem 4rem;background:var(--prugna-soft);right:3rem;top:0\"></span><span style=\"width:8px;height:3rem;background:var(--prugna-soft);right:calc(3rem + 3.75rem - 4px);top:7.9rem\"></span></div><p class=\"ds-dates\"><b>Tuesday, Dec 8 · 6:30 pm</b><span>Wine dinner</span></p><h3 class=\"ds-ptype\">Cake&shy;bread Cellars</h3><p class=\"ds-pbody\">Several courses from the kitchen, each paired with a Cakebread Cellars wine. Register ahead.</p><div class=\"ds-tabs\"><a class=\"ds-tab\" href=\"#\">Reserve a seat</a><a class=\"ds-tab\" href=\"#\">Ask about it</a></div></article></div>",
-      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-poster{--p-bg:var(--prugna);--p-fg:var(--on-dark);position:relative;display:flex;flex-direction:column;gap:1rem;max-width:30rem;background:var(--p-bg);color:var(--p-fg);padding:1.5rem 1.5rem 0;box-shadow:var(--paste);transform:rotate(.4deg);overflow:hidden;font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-art{position:relative;height:9rem;margin:-1.5rem -1.5rem 0;overflow:hidden}.ds-art span{position:absolute}.ds-dates{margin:0;font-size:.9rem;display:flex;gap:.25rem .75rem;flex-wrap:wrap;color:color-mix(in oklab,var(--on-dark) 88%,transparent)}.ds-dates b{color:var(--p-fg);font-weight:800}.ds-ptype{margin:0;font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125;letter-spacing:-.035em;line-height:.86;text-transform:uppercase;font-size:clamp(2rem,1.4rem + 2.4vw,3.4rem)}.ds-pbody{margin:0;max-width:46ch;line-height:1.55;color:color-mix(in oklab,var(--on-dark) 88%,transparent)}.ds-tabs{display:flex;margin:1rem -1.5rem 0;border-top:2px dashed color-mix(in oklab,var(--p-fg) 45%,transparent)}.ds-tab{flex:1 1 0;display:flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.6rem .5rem;font-weight:800;font-stretch:78%;font-variation-settings:'wdth' 78;text-transform:uppercase;letter-spacing:.05em;font-size:.86rem;text-decoration:none;color:var(--p-fg);background:color-mix(in oklab,var(--p-bg) 82%,#000);transform-origin:50% 0;transition:background-color .2s,transform .45s var(--ease-out)}.ds-tab+.ds-tab{border-left:2px dashed color-mix(in oklab,var(--p-fg) 45%,transparent)}.ds-tab:hover{background:color-mix(in oklab,var(--p-bg) 68%,#000)}.ds-tab:active{transform:translateY(14px) rotate(-5deg)}.ds-tab:focus-visible{outline:3px solid var(--zafferano);outline-offset:-3px}"
+      "description": "The signature unit: art band (an art-* composition), dates, title, body, tear-off tabs on the stock's tab shade; pasted with a slight tilt.",
+      "html": "<div style=\"background:#d8cfc0;padding:2rem\"><article class=\"ds-poster\"><div class=\"ds-art ds-art-glass\" aria-hidden=\"true\"><span class=\"s-cup\"></span><span class=\"s-stem\"></span></div><p class=\"ds-dates\"><b>Tuesday, Dec 8 · 6:30 pm</b><span>Wine dinner</span></p><h3 class=\"ds-ptype\">Cake&shy;bread Cellars</h3><p class=\"ds-pbody\">Several courses from the kitchen, each paired with a Cakebread Cellars wine. Register ahead.</p><div class=\"ds-tabs\"><a class=\"ds-tab\" href=\"#\">Reserve a seat</a><a class=\"ds-tab\" href=\"#\">Ask about it</a></div></article></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1);--prugna-tab:#2d1125;--prugna-tab-hover:#210b1a}.ds-poster{--p-bg:var(--prugna);--p-fg:var(--on-dark);--p-tab:var(--prugna-tab);--p-tab-hover:var(--prugna-tab-hover);position:relative;display:flex;flex-direction:column;gap:1rem;max-width:30rem;background:var(--p-bg);color:var(--p-fg);padding:1.5rem 1.5rem 0;box-shadow:var(--paste);transform:rotate(.4deg);overflow:hidden;font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-art{position:relative;height:9rem;margin:-1.5rem -1.5rem 0;overflow:hidden}.ds-art span{position:absolute}.ds-dates{margin:0;font-size:.9rem;display:flex;gap:.25rem .75rem;flex-wrap:wrap;color:color-mix(in oklab,var(--on-dark) 88%,transparent)}.ds-dates b{color:var(--p-fg);font-weight:800}.ds-ptype{margin:0;font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125;letter-spacing:-.035em;line-height:.86;text-transform:uppercase;font-size:clamp(2rem,1.4rem + 2.4vw,3.4rem)}.ds-pbody{margin:0;max-width:46ch;line-height:1.55;color:color-mix(in oklab,var(--on-dark) 88%,transparent)}.ds-tabs{display:flex;margin:1rem -1.5rem 0;border-top:2px dashed color-mix(in oklab,var(--p-fg) 45%,transparent)}.ds-tab{flex:1 1 0;display:flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.6rem .5rem;font-weight:800;font-stretch:78%;font-variation-settings:'wdth' 78;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;text-decoration:none;color:var(--p-fg);background:var(--p-tab);transform-origin:50% 0;transition:background-color .2s,transform .45s var(--ease-out)}.ds-tab+.ds-tab{border-left:2px dashed color-mix(in oklab,var(--p-fg) 45%,transparent)}.ds-tab:hover{background:var(--p-tab-hover)}.ds-tab:active{transform:translateY(14px) rotate(-5deg)}.ds-tab:focus-visible{outline:3px solid var(--zafferano);outline-offset:-3px}.ds-art-glass{--cup:8rem;--glass:var(--prugna-soft)}.ds-art-glass .s-cup{width:var(--cup);height:var(--cup);border-radius:0 0 calc(var(--cup)/2) calc(var(--cup)/2);background:var(--glass);right:3rem;top:0}.ds-art-glass .s-stem{width:8px;height:3rem;background:var(--glass);right:calc(3rem + var(--cup)/2 - 4px);top:calc(var(--cup) - .1rem)}"
     },
     {
-      "name": "Logo Options A and B",
+      "name": "Next-up Card",
+      "kind": "card",
+      "refersTo": "next-card",
+      "description": "First live item on the What's on lead poster; saffron card pasted at -0.8deg; expired candidates removed by data-end.",
+      "html": "<div style=\"background:#3e1a33;padding:1.5rem\"><a class=\"ds-next\" href=\"#\"><span class=\"d\">On now · through Friday, Oct 31</span><b>PigFest</b><span class=\"go\">See the menu <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"square\"/></svg></span></a></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-next{display:grid;gap:.3rem;padding:1rem 1.5rem;background:var(--zafferano);color:var(--inchiostro);text-decoration:none;box-shadow:var(--paste);transform:rotate(-.8deg);max-width:32rem;border-bottom:2px dashed color-mix(in oklab,var(--inchiostro) 40%,transparent);font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-next .d{font-weight:700;font-stretch:70%;font-variation-settings:'wdth' 70;text-transform:uppercase;letter-spacing:.06em;font-size:.9rem}.ds-next b{font-size:clamp(1.35rem,1.15rem + .8vw,1.75rem);font-weight:900;font-stretch:112%;font-variation-settings:'wdth' 112;text-transform:uppercase;line-height:1;letter-spacing:-.01em}.ds-next .go{display:inline-flex;gap:.4rem;align-items:center;font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem}.ds-next .go svg{width:1em;height:1em;transition:transform .25s var(--ease-out)}.ds-next:hover .go svg{transform:translateX(3px)}.ds-next:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}"
+    },
+    {
+      "name": "Paste Head over a Lead Poster",
       "kind": "custom",
-      "description": "A: existing gold mark (Cinzel stand-in) on ink. B: cut-paper VIA wordmark (#mark-b) with saffron sun.",
-      "html": "<div class=\"ds-logos\"><div class=\"ds-logo-a\"><span class=\"v\">VIA</span><span class=\"s\">Italian Table</span></div><div class=\"ds-logo-b\"><svg viewBox=\"0 0 294 120\" style=\"height:2.1rem;width:auto;display:block\" aria-label=\"VIA\"><polygon fill=\"currentColor\" points=\"0,0 34,0 60,82 86,0 120,0 79,120 41,120\"/><rect fill=\"currentColor\" x=\"132\" y=\"0\" width=\"34\" height=\"120\"/><polygon fill=\"currentColor\" points=\"178,120 216,0 256,0 294,120 260,120 236,44 212,120\"/><path fill=\"#eaa42a\" d=\"M216,120 A20,20 0 0 1 256,120 Z\"/></svg><span>Italian<br>Table</span></div></div>",
-      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-logos{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center;background:var(--muro);padding:1.5rem;font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-logo-a{display:inline-flex;flex-direction:column;align-items:center;background:var(--inchiostro);padding:.35rem .8rem .4rem;line-height:1;color:var(--oro)}.ds-logo-a .v{font-family:Cinzel,'Trajan Pro',Georgia,serif;font-weight:700;font-size:1.7rem;letter-spacing:.06em}.ds-logo-a .s{font-size:.5rem;letter-spacing:.32em;text-transform:uppercase;margin-top:.15rem}.ds-logo-b{display:inline-flex;align-items:center;gap:.6rem;background:var(--mattone);color:var(--on-dark);padding:1rem 1.25rem}.ds-logo-b span{font-size:.72rem;line-height:1.05;font-weight:700;font-stretch:75%;font-variation-settings:'wdth' 75;letter-spacing:.14em;text-transform:uppercase}"
+      "refersTo": "paste-head",
+      "description": "The after-lead pattern: the next field's first block pulled 3rem over the lead poster's edge, headed by a paper label slip.",
+      "html": "<div class=\"ds-lead\"><p class=\"t\">Private dining</p></div><div class=\"ds-after\"><div class=\"ds-ph\"><h2>Pick a room by headcount</h2><p>Three spaces, shown seat by seat.</p></div></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1);--on-dark-soft:color-mix(in oklab,#fbf6ee 88%,transparent);--on-light-soft:color-mix(in oklab,#1c1512 74%,#f3efe7)}.ds-lead{background:var(--mattone);color:var(--on-dark);padding:2rem 1.5rem 4rem;font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-lead .t{margin:0;font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125;letter-spacing:-.035em;line-height:.86;text-transform:uppercase;font-size:clamp(2.2rem,9.6vw,4rem)}.ds-after{background:var(--muro);padding:0 1.5rem 2rem;font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-ph{position:relative;top:-3rem;margin-bottom:-3rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem 1.25rem;width:fit-content;max-width:100%;padding:.85rem 1.25rem;background:var(--bianco);color:var(--inchiostro);box-shadow:var(--paste);transform:rotate(-.6deg)}.ds-ph h2{margin:0;font-size:clamp(1.35rem,1.15rem + .8vw,1.75rem);font-weight:900;font-stretch:112%;font-variation-settings:'wdth' 112;letter-spacing:-.02em;line-height:1.02}.ds-ph p{margin:0;font-size:.9rem;color:var(--on-light-soft)}"
+    },
+    {
+      "name": "Logo Options (A and B1 to B7)",
+      "kind": "custom",
+      "description": "A: existing gold mark (Cinzel stand-in) on ink. B family: seven cut-paper wordmarks from #mark-NAME symbols, recoloured with --m-* properties; Sole (B1) default, Monogramma (B7) as favicon.",
+      "html": "<div class=\"ds-logos\"><div class=\"ds-logo-a\"><span class=\"v\">VIA</span><span class=\"s\">Italian Table</span></div><div class=\"ds-logo-b\"><svg viewBox=\"-12 -12 318 144\" aria-label=\"VIA, Sole\"><g fill=\"var(--m-ink,currentColor)\"><polygon points=\"0,0 34,0 60,82 86,0 120,0 79,120 41,120\"/><rect x=\"132\" y=\"0\" width=\"34\" height=\"120\"/><polygon points=\"178,120 216,0 256,0 294,120 260,120 236,44 212,120\"/></g><path fill=\"var(--m-accent,#eaa42a)\" d=\"M216,120 A20,20 0 0 1 256,120 Z\"/></svg><span>B1 Sole</span></div><div class=\"ds-logo-b ds-on-paper\"><svg viewBox=\"-12 -36 318 168\" aria-label=\"VIA, Arco\"><path fill=\"var(--m-accent,#eaa42a)\" d=\"M27,120 A120,120 0 0 1 267,120 Z\"/><g fill=\"var(--m-ink,currentColor)\"><polygon points=\"0,0 34,0 60,82 86,0 120,0 79,120 41,120\"/><rect x=\"132\" y=\"0\" width=\"34\" height=\"120\"/><polygon points=\"178,120 216,0 256,0 294,120 260,120 236,44 212,120\"/></g></svg><span>B3 Arco</span></div><div class=\"ds-logo-b ds-on-paper\"><svg viewBox=\"0 0 300 300\" aria-label=\"VIA, Tondo\"><clipPath id=\"ds-tondo\"><circle cx=\"150\" cy=\"150\" r=\"150\"/></clipPath><circle cx=\"150\" cy=\"150\" r=\"150\" fill=\"var(--m-ground,#a8381f)\"/><g clip-path=\"url(#ds-tondo)\"><path fill=\"var(--m-accent,#eaa42a)\" d=\"M40,300 A110,110 0 0 1 260,300 Z\"/></g><g fill=\"var(--m-on,#fbf6ee)\" transform=\"translate(48 70) scale(.694)\"><polygon points=\"0,0 34,0 60,82 86,0 120,0 79,120 41,120\"/><rect x=\"132\" y=\"0\" width=\"34\" height=\"120\"/><polygon points=\"178,120 216,0 256,0 294,120 260,120 236,44 212,120\"/></g></svg><span>B5 Tondo</span></div><div class=\"ds-logo-b\"><svg viewBox=\"-10 -10 140 140\" aria-label=\"VIA, Monogramma\"><g fill=\"var(--m-ink,currentColor)\"><polygon points=\"0,0 34,0 60,82 86,0 120,0 79,120 41,120\"/></g><circle cx=\"60\" cy=\"27\" r=\"15\" fill=\"var(--m-accent,#eaa42a)\"/></svg><span>B7 Monogramma</span></div></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-logos{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;background:var(--muro);padding:1.5rem;font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-logo-a{display:inline-flex;flex-direction:column;align-items:center;background:var(--inchiostro);padding:.35rem .8rem .4rem;line-height:1;color:var(--oro)}.ds-logo-a .v{font-family:Cinzel,'Trajan Pro',Georgia,serif;font-weight:700;font-size:1.7rem;letter-spacing:.06em}.ds-logo-a .s{font-size:.5rem;letter-spacing:.32em;text-transform:uppercase;margin-top:.15rem}.ds-logo-b{display:inline-flex;flex-direction:column;align-items:center;gap:.5rem;background:var(--mattone);color:var(--on-dark);padding:1rem 1.25rem}.ds-logo-b svg{height:2.9rem;width:auto;display:block}.ds-logo-b.ds-on-paper{background:var(--bianco);color:var(--inchiostro)}.ds-logo-b span{font-size:.78rem;font-weight:700;font-stretch:75%;font-variation-settings:'wdth' 75;letter-spacing:.14em;text-transform:uppercase}"
     }
   ],
   "narrative": {
@@ -485,7 +1027,8 @@
       "Square-cut rectangles and whole cut-paper curves; nothing in between.",
       "Depth is paper on plaster: a paste shadow and a hair of rotation, no cards, no glass.",
       "Dates lead, expired content disappears, and the three doors (book, order, plan an event) are one tap from anywhere.",
-      "Two switchable identities (A: existing gold mark; B: cut-paper VIA wordmark) inside the same poster world."
+      "Switchable identities inside the same poster world: A (the existing gold mark) or one of seven cut-paper VIA wordmarks (B1 to B7), picked from the proposal bar.",
+      "Every page opens on a lead poster, and the next sheet is pasted over its bottom edge."
     ],
     "rules": [
       {
@@ -505,7 +1048,7 @@
       },
       {
         "name": "The One Family Rule",
-        "body": "Archivo is the only typeface of the world. Contrast comes from the width axis (125 / 112 / 100 / 85 / 70) and weight, never from a second display face. Cinzel exists only as Logo A's placeholder.",
+        "body": "Archivo is the only typeface of the world. Contrast comes from the width axis (125 / 112 / 100 / 85 / 70) and weight, never from a second display face. Cinzel exists only as Logo A's placeholder, and is only downloaded when Logo A is on screen.",
         "section": "typography"
       },
       {
@@ -524,6 +1067,11 @@
         "section": "layout"
       },
       {
+        "name": "The Thumb Rule",
+        "body": "Every interactive control is at least 2.75rem (44px) tall: buttons (3rem; 2.75rem in the masthead), copy buttons (2.75rem square minimum), nav links (2.75rem at every width), booking-strip selects, the headcount input, chips, the logo picker, pitch-bar links, footer family and social links (2.75rem square), and the skip link. Tear-off tabs (3.25rem) and the phone action bar (3.6rem) run larger.",
+        "section": "layout"
+      },
+      {
         "name": "The Pasted, Not Floating Rule",
         "body": "Every raised element uses the paste shadow and stays square to the wall or tilted by under 1deg (photo clippings up to about 2.2deg). Nothing hovers with a large diffuse glow.",
         "section": "elevation"
@@ -538,7 +1086,12 @@
       "Do keep rectangles square-cut and use curves only as whole cut-paper circles and half-discs from the six shapes.",
       "Do paste sheets with the paste shadow (`0 1px 0 rgba(0,0,0,.06), 0 10px 24px -14px rgba(28,21,18,.55)`) and a tilt under 1deg.",
       "Do keep book, order and plan-an-event one tap away on every page.",
-      "Do put photos in labelled slots, pasted like clippings, with the shot and ratio named."
+      "Do put photos in labelled slots, pasted like clippings, with the shot and ratio named.",
+      "Do open every inner page on its own lead poster and paste the next block over its bottom edge, headed by a paper paste head.",
+      "Do compose art bands from the five art classes (sun and spit, coins, glass, table, pair) and tune them with their custom properties, not inline geometry.",
+      "Do make every interactive control at least 2.75rem (44px) tall.",
+      "Do use the tab shade tokens for tear-off tabs, set through `--p-tab` and `--p-tab-hover`.",
+      "Do keep type to three small roles: body 1.0625rem, small .9rem, micro .78rem."
     ],
     "donts": [
       "Don't fall back to the category default this world replaces: a dark full-bleed food photo with a gold serif and a lone \"Reserve\" button.",
@@ -547,7 +1100,9 @@
       "Don't put paper type on saffron (2.0:1) or ink type on brick (2.8:1).",
       "Don't add gradients, outlines or textures to cut-paper shapes, or put more than three shapes in one poster.",
       "Don't round the corners of posters, buttons, tabs or fields.",
-      "Don't stretch, outline or shadow Logo B, recolour its sun beyond saffron (or brick on saffron), or mix Options A and B in one piece.",
+      "Don't stretch, outline or shadow a B mark, recolour it outside the poster palette through anything but its `--m-*` properties, or mix two logo options in one piece.",
+      "Don't preload Cinzel or load it anywhere Logo A is not shown.",
+      "Don't treat the alternate homepages (Partenze, Manifesto, Cucina) as system patterns; layout A is the default.",
       "Don't let a promotion linger past its date or show a poster before its start date."
     ]
   }

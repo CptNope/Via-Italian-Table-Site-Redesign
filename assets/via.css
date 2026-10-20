@@ -187,7 +187,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .nav a {
   text-decoration: none; font-weight: 700; font-stretch: 80%; font-variation-settings: "wdth" 80;
   text-transform: uppercase; letter-spacing: .04em; font-size: var(--t-small); padding-block: .5rem;
-  border-bottom: 3px solid transparent;
+  border-bottom: 3px solid transparent; min-height: 2.75rem; display: inline-flex; align-items: center;
 }
 .nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--mattone); }
 .masthead .btn { min-height: 2.75rem; }
