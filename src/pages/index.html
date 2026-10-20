@@ -48,7 +48,7 @@ active: home
   </div>
 </section>
 
-<section class="field field--muro" aria-labelledby="wall-title">
+<section class="field field--muro field--wall" aria-labelledby="wall-title">
   <div class="wrap">
     <div class="wall-head">
       <h2 id="wall-title" class="h2">On the wall this week</h2>
@@ -111,14 +111,14 @@ active: home
         </div>
       </article>
 
-      <article class="poster poster--brick w-4" style="--tilt:-.9deg" data-end="2026-11-23" aria-labelledby="p-turkey">
+      <article class="poster poster--brick w-4 overlaps-next" style="--tilt:-.9deg" data-end="2026-11-23" aria-labelledby="p-turkey">
         <div class="poster-art" aria-hidden="true">
           <span class="shape" style="width:6rem;height:6rem;border-radius:50%;background:var(--bianco);left:50%;bottom:-3rem;transform:translateX(-50%)"></span>
           <span class="shape" style="width:6px;height:4rem;background:var(--zafferano);left:calc(50% - 4.5rem);bottom:0"></span>
           <span class="shape" style="width:6px;height:4rem;background:var(--zafferano);left:calc(50% + 4.2rem);bottom:0"></span>
         </div>
         <p class="poster-dates"><b>Order by Mon, Nov 23</b><span>Pick up Wed, Nov 25</span></p>
-        <h3 class="h3" id="p-turkey" style="font-size:2rem;font-stretch:118%;font-variation-settings:'wdth' 118;text-transform:uppercase;font-weight:900">Thanksgiving turkey kit</h3>
+        <h3 class="poster-type" id="p-turkey" style="font-size:clamp(1.9rem,1.4rem + 1.2vw,2.4rem)">Thanks&shy;giving turkey kit</h3>
         <div class="poster-body">
           <p>Everything for the table, for up to 10 people. <b class="tnum" style="color:var(--on-dark)">$299</b>.</p>
         </div>
@@ -128,8 +128,8 @@ active: home
         </div>
       </article>
 
-      <div class="remnant" data-end="2026-06-16" aria-label="Past event">
-        <p class="cond" style="font-size:.8rem">Was Tue, Jun 16</p>
+      <div class="remnant" data-end="2026-06-16" aria-label="Past event, pasted over">
+        <p class="cond" style="font-size:.8rem">Was Tue, Jun 16 · pasted over</p>
         <p class="h3">G4 Tequila cocktail dinner</p>
       </div>
 
@@ -228,6 +228,7 @@ active: home
           </div>
         </div>
       </div>
+      <p class="sample-note">Sample from VIA's published menu, October 2026. Final dishes and prices are VIA's.</p>
     </div>
     <p style="color:var(--on-dark-soft)">Gluten-free penne and pizza crust on request. Gluten-free and kids' menus are on the <a href="menu.html" style="color:var(--on-dark)">menu page</a>.</p>
   </div>
@@ -267,17 +268,12 @@ active: home
 
 <section class="field field--zafferano" aria-labelledby="awards-title">
   <div class="wrap stack-lg">
-    <h2 id="awards-title" class="h2">Voted by Worcester</h2>
-    <ul class="awards">
-      <li class="award"><b>Best Italian</b><span>Telegram &amp; Gazette / Worcester Living</span></li>
-      <li class="award"><b>Best Italian</b><span>Worcester Magazine</span></li>
-      <li class="award"><b>Best Restaurant</b><span>Worcester Magazine</span></li>
-      <li class="award award--ws"><b>Award of Excellence</b><span>Wine Spectator, for the wine list</span></li>
-      <li class="award"><b>Best Romantic Dinner</b><span>Telegram &amp; Gazette / Worcester Living</span></li>
-      <li class="award"><b>Best Outdoor Dining</b><span>Telegram &amp; Gazette / Worcester Living</span></li>
-      <li class="award"><b>Best Business Lunch</b><span>Telegram &amp; Gazette / Worcester Living</span></li>
-      <li class="award"><b>Best High-Heeled Dinner Date</b><span>Worcester Magazine</span></li>
-    </ul>
+    <h2 id="awards-title" class="h2">Awards</h2>
+    <div class="award-bill">
+      <div><h3>Telegram &amp; Gazette / Worcester Living</h3><ul><li>Best Italian</li><li>Best Romantic Dinner</li><li>Best Outdoor Dining</li><li>Best Business Lunch</li></ul></div>
+      <div><h3>Worcester Magazine</h3><ul><li>Best Italian</li><li>Best Restaurant</li><li>Best High-Heeled Dinner Date</li></ul></div>
+      <div class="ws"><h3>Wine Spectator</h3><ul><li>Award of Excellence</li></ul></div>
+    </div>
   </div>
 </section>
 

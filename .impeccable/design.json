@@ -1,0 +1,554 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T17:09:45+00:00",
+  "title": "Design System: VIA Italian Table",
+  "extensions": {
+    "colorMeta": {
+      "mattone": {
+        "role": "primary",
+        "displayName": "Mattone, Brick Red",
+        "canonical": "oklch(50.0% 0.152 34.0)",
+        "tonalRamp": [
+          "#1d0200",
+          "#490a00",
+          "#781c05",
+          "#a6361d",
+          "#cd5a40",
+          "#f57e62",
+          "#feb4a2",
+          "#ffe9e4"
+        ]
+      },
+      "mattone-deep": {
+        "role": "primary",
+        "displayName": "Mattone Scuro, Shadow Brick",
+        "canonical": "oklch(40.1% 0.122 33.6)",
+        "tonalRamp": [
+          "#1d0100",
+          "#480b01",
+          "#75200e",
+          "#9a4230",
+          "#c06450",
+          "#e78772",
+          "#feb4a3",
+          "#ffe9e4"
+        ]
+      },
+      "oliva": {
+        "role": "secondary",
+        "displayName": "Oliva, Olive",
+        "canonical": "oklch(44.8% 0.081 119.9)",
+        "tonalRamp": [
+          "#090d00",
+          "#212900",
+          "#3d480d",
+          "#5b6830",
+          "#7c8a51",
+          "#9ead73",
+          "#c2d196",
+          "#e7f7ba"
+        ]
+      },
+      "oliva-deep": {
+        "role": "secondary",
+        "displayName": "Oliva Scura, Deep Olive",
+        "canonical": "oklch(36.7% 0.066 120.7)",
+        "tonalRamp": [
+          "#090d00",
+          "#212900",
+          "#3d471c",
+          "#5c673b",
+          "#7c895c",
+          "#9fac7d",
+          "#c3d0a0",
+          "#e8f6c5"
+        ]
+      },
+      "zafferano": {
+        "role": "tertiary",
+        "displayName": "Zafferano, Saffron",
+        "canonical": "oklch(76.8% 0.150 75.5)",
+        "tonalRamp": [
+          "#130900",
+          "#342101",
+          "#593b04",
+          "#81580b",
+          "#ac7614",
+          "#da950a",
+          "#febb51",
+          "#feebd2"
+        ]
+      },
+      "zafferano-pale": {
+        "role": "tertiary",
+        "displayName": "Zafferano Chiaro, Pale Saffron",
+        "canonical": "oklch(88.5% 0.097 85.6)",
+        "tonalRamp": [
+          "#110a00",
+          "#302302",
+          "#543e05",
+          "#7a5c0c",
+          "#9c7e37",
+          "#c0a15b",
+          "#e6c57e",
+          "#feedc7"
+        ]
+      },
+      "prugna": {
+        "role": "tertiary",
+        "displayName": "Prugna, Super Tuscan Plum",
+        "canonical": "oklch(28.0% 0.067 340.3)",
+        "tonalRamp": [
+          "#1b0013",
+          "#3a162f",
+          "#5a334d",
+          "#7b526d",
+          "#9e738f",
+          "#c395b2",
+          "#e8b9d7",
+          "#ffe6f5"
+        ]
+      },
+      "prugna-soft": {
+        "role": "tertiary",
+        "displayName": "Prugna Chiara, Soft Plum",
+        "canonical": "oklch(36.4% 0.085 341.3)",
+        "tonalRamp": [
+          "#1b0013",
+          "#3e1031",
+          "#5f2e4f",
+          "#824d6f",
+          "#a56e91",
+          "#ca90b5",
+          "#f0b4d9",
+          "#ffe7f5"
+        ]
+      },
+      "inchiostro": {
+        "role": "neutral",
+        "displayName": "Inchiostro, Ink",
+        "canonical": "oklch(20.3% 0.013 44.5)",
+        "tonalRamp": [
+          "#100907",
+          "#2b2320",
+          "#48403c",
+          "#685f5b",
+          "#89807c",
+          "#aca39f",
+          "#d1c7c2",
+          "#f6ece8"
+        ]
+      },
+      "bianco": {
+        "role": "neutral",
+        "displayName": "Bianco, Poster Paper",
+        "canonical": "oklch(95.3% 0.011 84.6)",
+        "tonalRamp": [
+          "#0d0b06",
+          "#28251f",
+          "#45423b",
+          "#64615a",
+          "#85827b",
+          "#a8a59d",
+          "#cdc9c1",
+          "#f2eee6"
+        ]
+      },
+      "muro": {
+        "role": "neutral",
+        "displayName": "Muro, Plaster Wall",
+        "canonical": "oklch(85.8% 0.023 80.7)",
+        "tonalRamp": [
+          "#100a02",
+          "#2b2418",
+          "#484134",
+          "#686053",
+          "#898173",
+          "#aca495",
+          "#d1c8b9",
+          "#f6edde"
+        ]
+      },
+      "muro-deep": {
+        "role": "neutral",
+        "displayName": "Muro Scuro, Old Plaster",
+        "canonical": "oklch(75.2% 0.031 80.6)",
+        "tonalRamp": [
+          "#120900",
+          "#2d2313",
+          "#4b402f",
+          "#6a604d",
+          "#8c816e",
+          "#afa390",
+          "#d4c7b3",
+          "#faedd8"
+        ]
+      },
+      "oro": {
+        "role": "neutral",
+        "displayName": "Oro, Incumbent Gold (Logo A only)",
+        "canonical": "oklch(75.4% 0.131 81.4)",
+        "tonalRamp": [
+          "#120900",
+          "#322200",
+          "#573d00",
+          "#7e5a01",
+          "#a87904",
+          "#ce9c33",
+          "#f4c05d",
+          "#ffeccc"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On-dark Paper Type",
+        "canonical": "oklch(97.5% 0.012 79.8)",
+        "tonalRamp": [
+          "#0e0b06",
+          "#28241f",
+          "#45413b",
+          "#65615a",
+          "#86827b",
+          "#a9a49d",
+          "#cdc8c1",
+          "#f3eee6"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "poster": {
+        "displayName": "Poster",
+        "purpose": "Page titles and poster titles; expanded black caps, the name of the thing."
+      },
+      "headline-lg": {
+        "displayName": "Headline (h1)",
+        "purpose": "Large section heads in sentence case."
+      },
+      "headline": {
+        "displayName": "Headline (h2)",
+        "purpose": "Section heads such as \"On the wall this week\"."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Facts, room names, the wall heading slip."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "One introductory paragraph, max 38ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text, 66ch measure."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, tabs, nav: condensed bold caps."
+      },
+      "condensed": {
+        "displayName": "Condensed",
+        "purpose": "Dates and short condensed lines (width 70)."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Poster date lines, notes, captions."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "Pitch bar, field labels, swatch meta."
+      },
+      "mark-a": {
+        "displayName": "Logo A stand-in",
+        "purpose": "Cinzel redraw of the existing VIA mark; Logo Option A only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "paste",
+        "value": "0 1px 0 rgba(0,0,0,.06), 0 10px 24px -14px rgba(28,21,18,.55)",
+        "purpose": "Default for every pasted sheet: posters, buttons, room cards, photo slots, remnants."
+      },
+      {
+        "name": "paste-lift",
+        "value": "0 1px 0 rgba(0,0,0,.06), 0 16px 26px -14px rgba(28,21,18,.6)",
+        "purpose": "Button hover, with a 2px rise."
+      },
+      {
+        "name": "strip",
+        "value": "0 18px 40px -22px rgba(0,0,0,.6)",
+        "purpose": "The booking strip inside the lead poster."
+      },
+      {
+        "name": "sheet",
+        "value": "0 30px 60px -36px rgba(0,0,0,.7)",
+        "purpose": "The menu sheet."
+      },
+      {
+        "name": "ghost-edge",
+        "value": "inset 0 0 0 2px currentColor",
+        "purpose": "Ghost button printed edge (3px on hover)."
+      },
+      {
+        "name": "paste-seam",
+        "value": "linear-gradient(180deg, rgba(0,0,0,.14), transparent) 10px band",
+        "purpose": "Overlap line where a sheet is glued over the next (defined, field--pasted; not currently applied in pages)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "The single house ease for every transition and keyframe."
+      },
+      {
+        "name": "settle",
+        "value": ".9s ease-out, stagger 90ms; from rotate(tilt*3) translateY(10px) scale(1.015)",
+        "purpose": "Posters arrive visible and settle onto the wall."
+      },
+      {
+        "name": "brush",
+        "value": "1.1s ease-out, delay index*90ms + 120ms; sheen translateX(-120%) to 120%",
+        "purpose": "One paste-brush sweep across each poster."
+      },
+      {
+        "name": "button-rise",
+        "value": "transform .25s ease-out; translateY(-2px)",
+        "purpose": "Button hover lift."
+      },
+      {
+        "name": "arrow-slide",
+        "value": "transform .25s ease-out; translateX(3px)",
+        "purpose": "Arrow link hover."
+      },
+      {
+        "name": "tab-tear",
+        "value": "transform .45s ease-out; translateY(14px) rotate(-5deg..5deg); navigate after 320ms",
+        "purpose": "Tear-off tab on press."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all durations .01ms, animations none; JS skips the tear",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wall-6col",
+        "value": "1060px"
+      },
+      {
+        "name": "phone-nav",
+        "value": "860px"
+      },
+      {
+        "name": "single-column",
+        "value": "620px"
+      },
+      {
+        "name": "narrow",
+        "value": "400px"
+      }
+    ],
+    "tilts": {
+      "poster": "-0.9deg to +0.7deg (per poster, --tilt)",
+      "wall-head-slip": "-0.6deg",
+      "remnant": "1.4deg",
+      "photo-clipping": "up to 2.2deg"
+    },
+    "cutPaperShapes": [
+      {
+        "name": "The sun, the fire",
+        "form": "half-disc, top corners 999px, rising from a bottom edge",
+        "typicalColor": "mattone on zafferano, or zafferano on mattone"
+      },
+      {
+        "name": "The plate",
+        "form": "full disc",
+        "typicalColor": "prugna"
+      },
+      {
+        "name": "The spit",
+        "form": "10-14px stripe at -4deg to -24deg, may skewer a plate",
+        "typicalColor": "inchiostro"
+      },
+      {
+        "name": "The glass",
+        "form": "bowl with bottom corners 999px on an 8px stem",
+        "typicalColor": "prugna-soft on prugna"
+      },
+      {
+        "name": "The coins, a deal",
+        "form": "three equal circles in a row, half sunk",
+        "typicalColor": "zafferano, mattone, bianco on oliva"
+      },
+      {
+        "name": "The table set",
+        "form": "bianco disc or half-disc flanked by two 6px uprights",
+        "typicalColor": "bianco and zafferano on mattone-deep"
+      }
+    ],
+    "logos": {
+      "default": "b",
+      "switch": "html[data-logo] set from the pitch bar; persisted in localStorage key via-logo",
+      "a": {
+        "name": "Option A · Refresh",
+        "font": "Cinzel 700 stand-in for VIA master artwork",
+        "color": "oro on inchiostro or prugna"
+      },
+      "b": {
+        "name": "Option B · Rebrand",
+        "symbol": "#mark-b in src/_header.html, viewBox 0 0 294 120",
+        "sunFill": "var(--sun-fill, #eaa42a); mattone on a zafferano ground",
+        "minSize": "64px wide on screen, 18mm print",
+        "clearSpace": "height of the sun on every side"
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Mattone Book button; square, condensed caps, pasted.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Book a table</a>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}"
+    },
+    {
+      "name": "Sun Button",
+      "kind": "button",
+      "refersTo": "button-sun",
+      "description": "Saffron with ink type; \"Find a table\" inside the booking strip.",
+      "html": "<div style=\"background:#a8381f;padding:1.5rem\"><a class=\"ds-btn ds-btn-sun\" href=\"#\">Find a table</a></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-sun{--b-bg:var(--zafferano);--b-fg:var(--inchiostro)}"
+    },
+    {
+      "name": "Door Buttons (paper, plum)",
+      "kind": "button",
+      "refersTo": "button-paper",
+      "description": "Sibling doors on the lead poster: Order takeout, Delivery (paper), Plan an event (plum).",
+      "html": "<div style=\"background:#a8381f;padding:1.5rem;display:flex;gap:.75rem;flex-wrap:wrap\"><a class=\"ds-btn ds-btn-paper\" href=\"#\">Order takeout</a><a class=\"ds-btn ds-btn-paper\" href=\"#\">Delivery</a><a class=\"ds-btn ds-btn-plum\" href=\"#\">Plan an event</a></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-paper{--b-bg:var(--bianco);--b-fg:var(--inchiostro)}.ds-btn-plum{--b-bg:var(--prugna);--b-fg:var(--on-dark)}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Transparent with a printed 2px inset edge in the current colour.",
+      "html": "<div style=\"background:#f3efe7;color:#1c1512;padding:1.5rem\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\">Download PDF</a></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-ghost{--b-bg:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}.ds-btn-ghost:hover{box-shadow:inset 0 0 0 3px currentColor}"
+    },
+    {
+      "name": "Booking Strip",
+      "kind": "input",
+      "refersTo": "booking-strip",
+      "description": "Party + date to Resy inside the lead poster; no time field.",
+      "html": "<div style=\"background:#a8381f;padding:1.5rem\"><form class=\"ds-book\" onsubmit=\"return false\"><label><span>Party</span><select><option>2 guests</option><option>4 guests</option><option>9 or more</option></select></label><label><span>Date</span><select><option>Today</option><option>Tomorrow</option><option disabled>Sun, Oct 25 · closed</option></select></label><button class=\"ds-btn ds-btn-sun\" type=\"submit\">Find a table</button></form></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-btn-sun{--b-bg:var(--zafferano);--b-fg:var(--inchiostro)}.ds-book{display:grid;grid-template-columns:repeat(2,minmax(0,1fr)) auto;gap:2px;background:var(--mattone-deep);padding:2px;max-width:40rem;box-shadow:0 18px 40px -22px rgba(0,0,0,.6);font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-book label{display:grid;gap:2px;background:var(--bianco);color:var(--inchiostro);padding:.5rem .75rem .45rem}.ds-book label span{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:color-mix(in oklab,var(--inchiostro) 74%,var(--bianco))}.ds-book select{font:inherit;font-weight:700;font-size:1.05rem;color:var(--inchiostro);background:transparent;border:0;padding:0;min-height:1.8rem}.ds-book select:focus-visible{outline:2px solid var(--mattone);outline-offset:2px}.ds-book .ds-btn{min-height:100%;box-shadow:none;padding-inline:1.4rem}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Event request form field: paper, 2px ink border, square; error is 3px mattone.",
+      "html": "<div style=\"background:#f3efe7;padding:1.5rem;display:grid;gap:1rem;max-width:22rem\"><label class=\"ds-label\">Guests<input class=\"ds-input\" type=\"number\" value=\"24\"></label><label class=\"ds-label\">Email<input class=\"ds-input\" aria-invalid=\"true\" value=\"maria@\"><span class=\"ds-err\">Enter an email we can reply to.</span></label></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-label{display:grid;gap:.35rem;font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:700;font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;color:var(--inchiostro)}.ds-input{font:inherit;font-size:1rem;text-transform:none;letter-spacing:0;font-weight:500;color:var(--inchiostro);background:var(--bianco);border:2px solid var(--inchiostro);border-radius:0;padding:.7rem .8rem;min-height:3rem}.ds-input:focus-visible{outline:3px solid var(--prugna);outline-offset:3px}.ds-input[aria-invalid=true]{border-color:var(--mattone);border-width:3px}.ds-err{color:var(--mattone);font-size:.9rem;font-weight:700;text-transform:none;letter-spacing:0}"
+    },
+    {
+      "name": "Masthead",
+      "kind": "nav",
+      "refersTo": "masthead",
+      "description": "Sticky paper bar, 3px ink seam, Logo B, condensed caps nav with mattone underline, Book button.",
+      "html": "<header class=\"ds-mast\"><a class=\"ds-brand\" href=\"#\"><svg viewBox=\"0 0 294 120\" style=\"height:2.1rem;width:auto;display:block\" aria-label=\"VIA\"><polygon fill=\"currentColor\" points=\"0,0 34,0 60,82 86,0 120,0 79,120 41,120\"/><rect fill=\"currentColor\" x=\"132\" y=\"0\" width=\"34\" height=\"120\"/><polygon fill=\"currentColor\" points=\"178,120 216,0 256,0 294,120 260,120 236,44 212,120\"/><path fill=\"#eaa42a\" d=\"M216,120 A20,20 0 0 1 256,120 Z\"/></svg><span>Italian<br>Table</span></a><nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Menu</a><a href=\"#\">What's on</a><a href=\"#\">Private dining</a><a href=\"#\">Visit</a></nav><a class=\"ds-btn\" href=\"#\">Book a table</a></header>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;background:var(--b-bg,var(--mattone));color:var(--b-fg,var(--on-dark));font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-stretch:85%;font-variation-settings:'wdth' 85;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;line-height:1.1;text-decoration:none;border:0;border-radius:0;cursor:pointer;box-shadow:var(--paste);transition:transform .25s var(--ease-out),background-color .2s,box-shadow .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 16px 26px -14px rgba(28,21,18,.6)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-mast{display:flex;align-items:center;gap:1.5rem;min-height:4.25rem;padding:0 16px;background:var(--bianco);color:var(--inchiostro);border-bottom:3px solid var(--inchiostro);font-family:Archivo,'Helvetica Neue',Arial,sans-serif;flex-wrap:wrap}.ds-brand{display:inline-flex;align-items:center;gap:.6rem;margin-right:auto;color:inherit;text-decoration:none}.ds-brand span{font-size:.72rem;line-height:1.05;font-weight:700;font-stretch:75%;font-variation-settings:'wdth' 75;letter-spacing:.14em;text-transform:uppercase}.ds-nav{display:flex;gap:1.5rem}.ds-nav a{color:inherit;text-decoration:none;font-weight:700;font-stretch:80%;font-variation-settings:'wdth' 80;text-transform:uppercase;letter-spacing:.04em;font-size:.92rem;padding-block:.5rem;border-bottom:3px solid transparent}.ds-nav a:hover,.ds-nav a[aria-current=page]{border-bottom-color:var(--mattone)}.ds-nav a:focus-visible{outline:3px solid var(--zafferano);outline-offset:3px}.ds-mast .ds-btn{min-height:2.75rem}"
+    },
+    {
+      "name": "Poster with Tear-off Tabs",
+      "kind": "card",
+      "refersTo": "poster",
+      "description": "The signature unit: art band, dates, title, body, tear-off tabs; pasted with a slight tilt.",
+      "html": "<div style=\"background:#d8cfc0;padding:2rem\"><article class=\"ds-poster\"><div class=\"ds-art\" aria-hidden=\"true\"><span style=\"width:8rem;height:8rem;border-radius:0 0 4rem 4rem;background:var(--prugna-soft);right:3rem;top:0\"></span><span style=\"width:8px;height:3rem;background:var(--prugna-soft);right:calc(3rem + 3.75rem - 4px);top:7.9rem\"></span></div><p class=\"ds-dates\"><b>Tuesday, Dec 8 · 6:30 pm</b><span>Wine dinner</span></p><h3 class=\"ds-ptype\">Cake&shy;bread Cellars</h3><p class=\"ds-pbody\">Several courses from the kitchen, each paired with a Cakebread Cellars wine. Register ahead.</p><div class=\"ds-tabs\"><a class=\"ds-tab\" href=\"#\">Reserve a seat</a><a class=\"ds-tab\" href=\"#\">Ask about it</a></div></article></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-poster{--p-bg:var(--prugna);--p-fg:var(--on-dark);position:relative;display:flex;flex-direction:column;gap:1rem;max-width:30rem;background:var(--p-bg);color:var(--p-fg);padding:1.5rem 1.5rem 0;box-shadow:var(--paste);transform:rotate(.4deg);overflow:hidden;font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-art{position:relative;height:9rem;margin:-1.5rem -1.5rem 0;overflow:hidden}.ds-art span{position:absolute}.ds-dates{margin:0;font-size:.9rem;display:flex;gap:.25rem .75rem;flex-wrap:wrap;color:color-mix(in oklab,var(--on-dark) 88%,transparent)}.ds-dates b{color:var(--p-fg);font-weight:800}.ds-ptype{margin:0;font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125;letter-spacing:-.035em;line-height:.86;text-transform:uppercase;font-size:clamp(2rem,1.4rem + 2.4vw,3.4rem)}.ds-pbody{margin:0;max-width:46ch;line-height:1.55;color:color-mix(in oklab,var(--on-dark) 88%,transparent)}.ds-tabs{display:flex;margin:1rem -1.5rem 0;border-top:2px dashed color-mix(in oklab,var(--p-fg) 45%,transparent)}.ds-tab{flex:1 1 0;display:flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.6rem .5rem;font-weight:800;font-stretch:78%;font-variation-settings:'wdth' 78;text-transform:uppercase;letter-spacing:.05em;font-size:.86rem;text-decoration:none;color:var(--p-fg);background:color-mix(in oklab,var(--p-bg) 82%,#000);transform-origin:50% 0;transition:background-color .2s,transform .45s var(--ease-out)}.ds-tab+.ds-tab{border-left:2px dashed color-mix(in oklab,var(--p-fg) 45%,transparent)}.ds-tab:hover{background:color-mix(in oklab,var(--p-bg) 68%,#000)}.ds-tab:active{transform:translateY(14px) rotate(-5deg)}.ds-tab:focus-visible{outline:3px solid var(--zafferano);outline-offset:-3px}"
+    },
+    {
+      "name": "Logo Options A and B",
+      "kind": "custom",
+      "description": "A: existing gold mark (Cinzel stand-in) on ink. B: cut-paper VIA wordmark (#mark-b) with saffron sun.",
+      "html": "<div class=\"ds-logos\"><div class=\"ds-logo-a\"><span class=\"v\">VIA</span><span class=\"s\">Italian Table</span></div><div class=\"ds-logo-b\"><svg viewBox=\"0 0 294 120\" style=\"height:2.1rem;width:auto;display:block\" aria-label=\"VIA\"><polygon fill=\"currentColor\" points=\"0,0 34,0 60,82 86,0 120,0 79,120 41,120\"/><rect fill=\"currentColor\" x=\"132\" y=\"0\" width=\"34\" height=\"120\"/><polygon fill=\"currentColor\" points=\"178,120 216,0 256,0 294,120 260,120 236,44 212,120\"/><path fill=\"#eaa42a\" d=\"M216,120 A20,20 0 0 1 256,120 Z\"/></svg><span>Italian<br>Table</span></div></div>",
+      "css": ":host{--mattone:#a8381f;--mattone-deep:#7c2715;--oliva:#4f5b23;--zafferano:#eaa42a;--prugna:#3e1a33;--prugna-soft:#5b2a4b;--inchiostro:#1c1512;--bianco:#f3efe7;--muro:#d8cfc0;--muro-deep:#b9ad99;--oro:#d9a640;--on-dark:#fbf6ee;--paste:0 1px 0 rgba(0,0,0,.06),0 10px 24px -14px rgba(28,21,18,.55);--ease-out:cubic-bezier(.16,1,.3,1)}.ds-logos{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center;background:var(--muro);padding:1.5rem;font-family:Archivo,'Helvetica Neue',Arial,sans-serif}.ds-logo-a{display:inline-flex;flex-direction:column;align-items:center;background:var(--inchiostro);padding:.35rem .8rem .4rem;line-height:1;color:var(--oro)}.ds-logo-a .v{font-family:Cinzel,'Trajan Pro',Georgia,serif;font-weight:700;font-size:1.7rem;letter-spacing:.06em}.ds-logo-a .s{font-size:.5rem;letter-spacing:.32em;text-transform:uppercase;margin-top:.15rem}.ds-logo-b{display:inline-flex;align-items:center;gap:.6rem;background:var(--mattone);color:var(--on-dark);padding:1rem 1.25rem}.ds-logo-b span{font-size:.72rem;line-height:1.05;font-weight:700;font-stretch:75%;font-variation-settings:'wdth' 75;letter-spacing:.14em;text-transform:uppercase}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Affissioni, the Poster Wall on Shrewsbury Street",
+    "overview": "VIA's site is an Italian billposting wall. The page background is plaster (muro); every offer, event, menu and room is a sheet of drenched poster stock pasted onto it, edge to edge or slightly askew, with a seam of wall showing between sheets. The craft reference is mid-century Italian poster work (Depero, Olivetti, Pirelli): flat fields of brick, olive, saffron and Super Tuscan plum, huge expanded black type, and a small vocabulary of cut-paper shapes that each stand for something real at VIA (the fire, the plate, the spit, the glass, the deal, the table).\n\nThe wall is honest about time. Every poster carries its dates first, and the code takes a poster down the day after its `data-end` date (Worcester time). An expired poster can leave a muro-deep remnant (\"Was Tue, Jun 16 · pasted over\"). Actions are not floating buttons but tear-off tabs cut along the poster's bottom edge, like a street flyer; pressing one tears it before the link follows. Photography is pasted on like a clipping, tilted, never full-bleed behind type; until VIA supplies photos, every photo is a labelled, hatched slot naming the shot and ratio.\n\nDensity is poster-scale: few words, very large, set in one family (Archivo) used across its width axis the way a printer uses wood type. The system deliberately refuses the restaurant category default it replaces (the old viaitaliantable.com look and its peers): a dark full-bleed food photo, a gold serif, and a lone \"Reserve\" button. Gold survives only inside Logo Option A.",
+    "keyCharacteristics": [
+      "Whole fields of colour, never thin accents; colour is what a poster is made of.",
+      "One typeface, Archivo, across widths: 125 to shout, 112 for headlines, 70 to 85 for labels and dates, 100 to read.",
+      "Square-cut rectangles and whole cut-paper curves; nothing in between.",
+      "Depth is paper on plaster: a paste shadow and a hair of rotation, no cards, no glass.",
+      "Dates lead, expired content disappears, and the three doors (book, order, plan an event) are one tap from anywhere.",
+      "Two switchable identities (A: existing gold mark; B: cut-paper VIA wordmark) inside the same poster world."
+    ],
+    "rules": [
+      {
+        "name": "The Drenched Field Rule",
+        "body": "Colour comes as whole poster fields, never as a thin accent stripe or tinted card. A typical page by area runs roughly mattone 24%, muro 20%, oliva 16%, prugna 14%, ink 14%, zafferano 12%.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-or-Paper Rule",
+        "body": "Text on mattone, oliva and prugna is paper (#fbf6ee); text on zafferano, bianco and muro is ink. Paper on saffron (2.0:1) and ink on brick (2.8:1) fail and are never used for text. Measured pairs: paper on mattone 6.0:1, paper on oliva 6.8:1, paper on prugna 13.9:1, ink on saffron 8.4:1, mattone on bianco 5.6:1.",
+        "section": "colors"
+      },
+      {
+        "name": "The Gold Belongs to A Rule",
+        "body": "Oro appears only inside Logo Option A, always on an ink or plum ground. The new world never borrows gold.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Archivo is the only typeface of the world. Contrast comes from the width axis (125 / 112 / 100 / 85 / 70) and weight, never from a second display face. Cinzel exists only as Logo A's placeholder.",
+        "section": "typography"
+      },
+      {
+        "name": "The Date Leads Rule",
+        "body": "On any poster the bold date (start or end) is the first line of text, then the kind of thing it is, in small type: \"Tuesday, Dec 8 · 6:30 pm · Wine dinner\". A poster with no end date says so (\"For a limited time\", \"Any night\").",
+        "section": "typography"
+      },
+      {
+        "name": "The Name, Not a Slogan Rule",
+        "body": "Poster type sets the name of the thing (PigFest, Whole suckling pig, $25 entrées), never a tagline.",
+        "section": "typography"
+      },
+      {
+        "name": "The Three Doors Rule",
+        "body": "Book (Resy), order (Toast / DoorDash) and plan an event (private dining / Tripleseat) are reachable in one tap from every page: masthead Book button and nav on wide screens, the fixed action bar on phones, and the lead poster's strip and doors on home.",
+        "section": "layout"
+      },
+      {
+        "name": "The Pasted, Not Floating Rule",
+        "body": "Every raised element uses the paste shadow and stays square to the wall or tilted by under 1deg (photo clippings up to about 2.2deg). Nothing hovers with a large diffuse glow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do build every offer, event and special as a poster with the five-part anatomy: art band, dates, title, body, tear-off tabs.",
+      "Do give every time-limited poster a `data-end` date so it comes down by itself, and say \"For a limited time\" or \"Any night\" when there is no end date.",
+      "Do fill whole fields with a poster stock (mattone, oliva, zafferano, prugna, ink) and keep bianco for set-text surfaces: masthead, menus, forms, booking fields.",
+      "Do set paper type (#fbf6ee) on mattone, oliva, prugna and ink, and ink type on zafferano, bianco and muro.",
+      "Do use Archivo only, varying width: 125 for poster type, 112 for headlines, 70 to 85 for labels, dates and actions, 100 for reading.",
+      "Do keep rectangles square-cut and use curves only as whole cut-paper circles and half-discs from the six shapes.",
+      "Do paste sheets with the paste shadow (`0 1px 0 rgba(0,0,0,.06), 0 10px 24px -14px rgba(28,21,18,.55)`) and a tilt under 1deg.",
+      "Do keep book, order and plan-an-event one tap away on every page.",
+      "Do put photos in labelled slots, pasted like clippings, with the shot and ratio named."
+    ],
+    "donts": [
+      "Don't fall back to the category default this world replaces: a dark full-bleed food photo with a gold serif and a lone \"Reserve\" button.",
+      "Don't set text over a photo or a cut-paper shape; shapes live in the art band, photos in slots.",
+      "Don't use gold (oro) or Cinzel anywhere outside Logo Option A.",
+      "Don't put paper type on saffron (2.0:1) or ink type on brick (2.8:1).",
+      "Don't add gradients, outlines or textures to cut-paper shapes, or put more than three shapes in one poster.",
+      "Don't round the corners of posters, buttons, tabs or fields.",
+      "Don't stretch, outline or shadow Logo B, recolour its sun beyond saffron (or brick on saffron), or mix Options A and B in one piece.",
+      "Don't let a promotion linger past its date or show a poster before its start date."
+    ]
+  }
+}
