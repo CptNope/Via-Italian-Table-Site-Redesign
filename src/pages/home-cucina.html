@@ -1,0 +1,64 @@
+---
+title: VIA Italian Table · Layout D, Cucina
+desc: Layout variation D for the VIA Italian Table homepage: the kitchen leads, with signature dishes on a paper menu sheet beside the booking strip.
+active: home
+---
+<style>
+  .cu { overflow: hidden; padding-block: var(--s-6) var(--s-8); }
+  .cu-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: var(--s-7); align-items: start; position: relative; }
+  .cu-sheet { background: var(--bianco); color: var(--inchiostro); padding: var(--s-5) clamp(1rem, 2.5vw, 2.25rem) var(--s-4); box-shadow: 0 30px 60px -30px rgba(0,0,0,.7); transform: rotate(-1deg); position: relative; z-index: 2; }
+  .cu-sheet h2 { font-size: var(--t-h1); padding-bottom: .6rem; border-bottom: 3px solid var(--inchiostro); margin-bottom: .4rem; }
+  .cu-sheet .dish h4 { font-size: 1.1rem; }
+  .cu-sheet .grp { font-size: var(--t-micro); font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--oliva); margin: var(--s-4) 0 0; }
+  .cu-sheet .sample-note { padding: var(--s-3) 0 0; }
+  .cu-side { display: grid; gap: var(--s-4); position: relative; z-index: 2; padding-top: var(--s-4); }
+  .cu-side .mega svg { width: min(100%, 18rem); }
+  .cu-art { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
+  .cu-art .sun { width: 36rem; aspect-ratio: 1; right: -14rem; top: -18rem; }
+  .cu-art .spit { position: absolute; height: 12px; width: 34%; background: var(--inchiostro); right: -6%; top: 2.2rem; transform: rotate(-8deg); }
+  .cu-art .meat { position: absolute; width: 4.5rem; aspect-ratio: 1; border-radius: 50%; background: var(--mattone); right: 6%; top: .8rem; }
+  .cu .book-strip { background: var(--oliva-deep); }
+  @media (max-width: 960px) {
+    .cu-grid { grid-template-columns: 1fr; gap: var(--s-6); }
+    .cu-side { order: -1; padding-top: 0; }
+    .cu-sheet { transform: none; }
+    .cu-art .sun { width: 22rem; right: -10rem; top: -12rem; }
+    .cu-art .spit, .cu-art .meat { display: none; }
+  }
+</style>
+
+<section class="field field--oliva cu" aria-labelledby="cu-h">
+  <div class="wrap cu-grid">
+    <div class="cu-art" aria-hidden="true"><span class="sun"></span><span class="spit"></span><span class="meat"></span></div>
+    <div class="cu-sheet">
+      <h2 class="poster-type">From the kitchen</h2>
+      <h3 class="grp">Off the grill and the spit</h3>
+      <div class="dish"><h4>Berkshire Pork Chop</h4><span class="price">$39.99</span><p>One pound, fig and grape agrodolce, cacio e pepe orzo.</p></div>
+      <div class="dish"><h4>Grilled Veal Chop</h4><span class="price">$43.99</span><p>Bone-in, wild mushroom risotto, Gorgonzola dolce butter.</p></div>
+      <h3 class="grp">House pastas</h3>
+      <div class="dish"><h4>Pappardelle Bolognese</h4><span class="price">$32.99</span><p>Beef, pork and sausage ragù finished with cream.</p></div>
+      <div class="dish"><h4>Seafood Fra Diavolo</h4><span class="price">$36.99</span><p>Shrimp, scallops and lobster, orecchiette, spicy red sauce.</p></div>
+      <h3 class="grp">Made here</h3>
+      <div class="dish"><h4>“Michelangelato” sampler</h4><span class="price">$11.99</span><p>Five mini cones of house gelati and sorbetti.</p></div>
+      <p class="sample-note">Sample from VIA's published menu, October 2026. <a href="menu.html">All menus</a>.</p>
+    </div>
+    <div class="cu-side">
+      <h1 id="cu-h" class="mega"><svg viewBox="0 0 294 120" role="img" aria-label="VIA"><use href="#mark-b"/></svg><span class="sr-only"> Italian Table</span></h1>
+      <p class="lead" style="color:var(--on-dark)">A chef-driven Italian kitchen at 89 Shrewsbury Street. Meats turn on the spit, the pasta list is long, and the gelato is made here.</p>
+      <p class="status" data-status><span class="dot" aria-hidden="true"></span><span data-status-text>Lunch Mon–Fri 11:30–4 · dinner from 4</span></p>
+      <form class="book-strip" data-book aria-label="Find a table on Resy">
+        <label for="cu-seats"><span class="lbl">Party</span>
+          <select id="cu-seats" name="seats"><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option><option value="9+">9 or more</option></select>
+        </label>
+        <label for="cu-date"><span class="lbl">Date</span><select id="cu-date" name="date"><option>Choose a date</option></select></label>
+        <button class="btn" type="submit">Find a table <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </form>
+      <div class="doors">
+        <a class="btn btn--paper" href="https://www.toasttab.com/local/order/via-italian-table-89-shrewsbury-st"><svg aria-hidden="true"><use href="#i-bag"/></svg>Order takeout</a>
+        <a class="btn btn--paper" href="https://www.doordash.com/store/via-italian-table-worcester-35208683/80673756/"><svg aria-hidden="true"><use href="#i-scooter"/></svg>Delivery</a>
+        <a class="btn btn--plum" href="private-dining.html"><svg aria-hidden="true"><use href="#i-people"/></svg>Plan an event</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{include:home-wall}}{{include:home-rooms}}{{include:home-awards}}{{include:home-visit}}

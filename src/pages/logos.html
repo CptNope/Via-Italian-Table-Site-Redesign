@@ -1,0 +1,194 @@
+---
+title: Logo variations · VIA Italian Table
+desc: Seven wordmark concepts for VIA Italian Table (option B) and three ways to carry the existing gold mark (option A), with sizes, colourways and SVG files.
+active: brand
+---
+<style>
+  .lv-intro .wrap { display: grid; gap: var(--s-4); }
+  .lv-index { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: var(--s-3); }
+  .lv-index a { font-weight: 800; font-stretch: 85%; font-variation-settings: "wdth" 85; text-transform: uppercase; letter-spacing: .05em; font-size: .85rem; text-decoration: none; padding: .55rem .8rem; background: rgba(28,21,18,.22); color: var(--on-dark); min-height: 2.75rem; display: inline-flex; align-items: center; }
+  .lv-index a:hover { background: var(--inchiostro); }
+  .lv-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: var(--s-7); align-items: center; }
+  .lv-stage { display: grid; place-items: center; min-height: 20rem; }
+  .lv-stage svg { width: min(100%, 30rem); height: auto; max-height: 22rem; }
+  .lv-text { min-width: 0; display: grid; gap: var(--s-4); align-content: start; }
+  .lv-code { font-size: .9rem; letter-spacing: .12em; margin-top: calc(var(--s-3) * -1); }
+  .lv-name { font-size: var(--t-h1); }
+  .lv-blurb { font-size: var(--t-lead); max-width: 40ch; }
+  .lv-facts { display: grid; gap: var(--s-3); margin: 0; }
+  .lv-facts div { display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; border-top: 1px solid color-mix(in oklab, currentColor 25%, transparent); padding-top: .6rem; }
+  .lv-facts dt { font-weight: 800; text-transform: uppercase; letter-spacing: .06em; font-size: .8rem; padding-top: .15rem; }
+  .lv-facts dd { margin: 0; }
+  .lv-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-3); margin-top: var(--s-6); }
+  .lv-tile { margin: 0; display: grid; grid-template-rows: 1fr auto; gap: .6rem; padding: var(--s-4); box-shadow: var(--paste); min-height: 11rem; }
+  .lv-tile figcaption { font-size: var(--t-micro); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+  .lv-art { display: grid; place-items: center; }
+  .lv-art svg { width: 100%; max-width: 15rem; height: auto; max-height: 7.5rem; }
+  .lv-sizes { display: flex; align-items: end; gap: 1.25rem; flex-wrap: wrap; }
+  .lv-sizes span { display: block; max-width: 100%; }
+  .lv-sizes svg { height: 100%; width: auto; max-width: 100%; display: block; }
+  .lv + .lv { border-top: var(--seam) solid var(--muro); }
+  .mark-a { display: grid; justify-items: center; gap: .3rem; color: var(--oro); }
+  .mark-a .v { font-family: var(--f-mark-a); font-weight: 700; font-size: var(--t-h1); letter-spacing: .06em; line-height: .9; }
+  .mark-a .s { font-size: .78rem; letter-spacing: .42em; text-transform: uppercase; font-weight: 600; }
+  .a-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-4); }
+  .a-card { display: grid; gap: var(--s-3); align-content: start; }
+  .a-stage { min-height: 14rem; display: grid; place-items: center; box-shadow: var(--paste); position: relative; overflow: hidden; padding: var(--s-5); }
+  .cmp { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; min-width: 44rem; }
+  .cmp th, .cmp td { text-align: left; padding: .7rem .6rem; border-bottom: 1px solid color-mix(in oklab, var(--inchiostro) 16%, transparent); vertical-align: top; }
+  .cmp thead th { font-size: var(--t-micro); text-transform: uppercase; letter-spacing: .08em; border-bottom: 2px solid var(--inchiostro); }
+  .cmp td:first-child { font-weight: 800; }
+  .dots { display: inline-flex; gap: 4px; }
+  .dots i { width: .8rem; height: .8rem; border-radius: 50%; box-shadow: inset 0 0 0 2px var(--mattone); }
+  .dots i.on { background: var(--mattone); }
+  .pick { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-4); }
+  .pick .lv-tile { min-height: 13rem; }
+  @media (max-width: 960px) {
+    .lv-grid { grid-template-columns: 1fr; gap: var(--s-5); }
+    .lv-stage { min-height: 12rem; }
+    .lv-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .a-row, .pick { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 420px) { .lv-facts div { grid-template-columns: 1fr; gap: .2rem; } }
+</style>
+
+<section class="field field--mattone page-head lv-intro" aria-labelledby="lv-h">
+  <div class="wrap">
+    <span class="sun" aria-hidden="true"></span>
+    <h1 id="lv-h" class="poster-type" style="font-size:var(--t-poster)">Logo variations</h1>
+    <p class="lead" style="color:var(--on-dark-soft);max-width:52ch">Seven ways to cut a new VIA from the same three letters (option B), and three ways to carry VIA's existing gold mark into the poster world (option A). Every B concept uses the same straight-cut letters plus one device from VIA's own kitchen or street.</p>
+    <nav class="lv-index" aria-label="Concepts"><a href="#sole">B1 Sole</a><a href="#spiedo">B2 Spiedo</a><a href="#arco">B3 Arco</a><a href="#targa">B4 Targa</a><a href="#tondo">B5 Tondo</a><a href="#biglietto">B6 Biglietto</a><a href="#monogramma">B7 Monogramma</a><a href="#option-a">Option A</a><a href="#compare">Compare</a></nav>
+  </div>
+</section>
+
+<section class="field field--mattone lv" id="sole" aria-labelledby="h-sole">
+  <div class="wrap lv-grid">
+    <div class="lv-stage">{{logo:sole:paper:zafferano:-}}</div>
+    <div class="lv-text">
+      <h2 id="h-sole" class="poster-type lv-name">Sole</h2>
+      <p class="cond lv-code">B1 · Sun</p>
+      <p class="lv-blurb">A saffron sun rises inside the A: the fire under the spit, the start of an evening on Shrewsbury Street. The mark already running on the site.</p>
+      <dl class="lv-facts"><div><dt>Best for</dt><dd>Primary mark: site header, signage, menus, social.</dd></div><div><dt>Watch out</dt><dd>Under 32px tall the sun gets tiny; switch to Monogramma there.</dd></div><div><dt>SVG files</dt><dd><a href="assets/logos/via-sole-ink.svg">ink</a> · <a href="assets/logos/via-sole-paper.svg">paper</a> · <a href="assets/logos/via-sole-on-mattone.svg">on-mattone</a> · <a href="assets/logos/via-sole-mono.svg">mono</a></dd></div></dl>
+    </div>
+  </div>
+  <div class="wrap lv-row"><figure class="lv-tile field--bianco"><div class="lv-art">{{logo:sole:inchiostro:zafferano:-}}</div><figcaption>On paper</figcaption></figure><figure class="lv-tile field--inchiostro"><div class="lv-art">{{logo:sole:paper:zafferano:-}}</div><figcaption>Reverse</figcaption></figure><figure class="lv-tile field--muro"><div class="lv-art">{{logo:sole:inchiostro:inchiostro:-}}</div><figcaption>One colour</figcaption></figure><figure class="lv-tile field--bianco lv-small"><div class="lv-sizes"><span style="height:64px">{{logo:sole:inchiostro:zafferano:-}}</span><span style="height:32px">{{logo:sole:inchiostro:zafferano:-}}</span><span style="height:16px">{{logo:sole:inchiostro:zafferano:-}}</span></div><figcaption>64 · 32 · 16px tall</figcaption></figure></div>
+</section>
+<section class="field field--zafferano lv" id="spiedo" aria-labelledby="h-spiedo">
+  <div class="wrap lv-grid">
+    <div class="lv-stage">{{logo:spiedo:inchiostro:mattone:-}}</div>
+    <div class="lv-text">
+      <h2 id="h-spiedo" class="poster-type lv-name">Spiedo</h2>
+      <p class="cond lv-code">B2 · The spit</p>
+      <p class="lv-blurb">The spit runs through all three letters and a saffron disc turns on the I. Of all seven, the most VIA-specific: it names the kitchen's signature.</p>
+      <dl class="lv-facts"><div><dt>Best for</dt><dd>Alternate primary if VIA wants the spit to lead; PigFest and menus.</dd></div><div><dt>Watch out</dt><dd>The cut needs about 48px of height to read. In one colour the disc disappears into the I.</dd></div><div><dt>SVG files</dt><dd><a href="assets/logos/via-spiedo-ink.svg">ink</a> · <a href="assets/logos/via-spiedo-paper.svg">paper</a> · <a href="assets/logos/via-spiedo-on-zafferano.svg">on-zafferano</a> · <a href="assets/logos/via-spiedo-mono.svg">mono</a></dd></div></dl>
+    </div>
+  </div>
+  <div class="wrap lv-row"><figure class="lv-tile field--bianco"><div class="lv-art">{{logo:spiedo:inchiostro:mattone:-}}</div><figcaption>On paper</figcaption></figure><figure class="lv-tile field--inchiostro"><div class="lv-art">{{logo:spiedo:paper:zafferano:-}}</div><figcaption>Reverse</figcaption></figure><figure class="lv-tile field--muro"><div class="lv-art">{{logo:spiedo:inchiostro:inchiostro:-}}</div><figcaption>One colour</figcaption></figure><figure class="lv-tile field--bianco lv-small"><div class="lv-sizes"><span style="height:64px">{{logo:spiedo:inchiostro:mattone:-}}</span><span style="height:32px">{{logo:spiedo:inchiostro:mattone:-}}</span><span style="height:16px">{{logo:spiedo:inchiostro:mattone:-}}</span></div><figcaption>64 · 32 · 16px tall</figcaption></figure></div>
+</section>
+<section class="field field--prugna lv" id="arco" aria-labelledby="h-arco">
+  <div class="wrap lv-grid">
+    <div class="lv-stage">{{logo:arco:paper:mattone:-}}</div>
+    <div class="lv-text">
+      <h2 id="h-arco" class="poster-type lv-name">Arco</h2>
+      <p class="cond lv-code">B3 · Sunrise</p>
+      <p class="lv-blurb">The letters stand in front of a half-sun, like the light at the end of a street. Warm and bold at poster scale.</p>
+      <dl class="lv-facts"><div><dt>Best for</dt><dd>Posters, the patio, outdoor banners, the lead poster.</dd></div><div><dt>Watch out</dt><dd>Depends on the sun colour; the weakest of the set in one colour and small sizes.</dd></div><div><dt>SVG files</dt><dd><a href="assets/logos/via-arco-ink.svg">ink</a> · <a href="assets/logos/via-arco-paper.svg">paper</a> · <a href="assets/logos/via-arco-on-prugna.svg">on-prugna</a> · <a href="assets/logos/via-arco-on-oliva.svg">on-oliva</a></dd></div></dl>
+    </div>
+  </div>
+  <div class="wrap lv-row"><figure class="lv-tile field--bianco"><div class="lv-art">{{logo:arco:inchiostro:zafferano:-}}</div><figcaption>On paper</figcaption></figure><figure class="lv-tile field--inchiostro"><div class="lv-art">{{logo:arco:paper:zafferano:-}}</div><figcaption>Reverse</figcaption></figure><figure class="lv-tile field--bianco lv-small"><div class="lv-sizes"><span style="height:64px">{{logo:arco:inchiostro:zafferano:-}}</span><span style="height:32px">{{logo:arco:inchiostro:zafferano:-}}</span><span style="height:16px">{{logo:arco:inchiostro:zafferano:-}}</span></div><figcaption>64 · 32 · 16px tall</figcaption></figure></div>
+</section>
+<section class="field field--muro lv" id="targa" aria-labelledby="h-targa">
+  <div class="wrap lv-grid">
+    <div class="lv-stage">{{logo:targa:inchiostro:mattone:bianco}}</div>
+    <div class="lv-text">
+      <h2 id="h-targa" class="poster-type lv-name">Targa</h2>
+      <p class="cond lv-code">B4 · Street plate</p>
+      <p class="lv-blurb">An Italian street plate. VIA means street, and the plate names it, the way the corner of Shrewsbury Street would in Rome.</p>
+      <dl class="lv-facts"><div><dt>Best for</dt><dd>The building sign, the front door, menu covers, the brand book cover.</dd></div><div><dt>Watch out</dt><dd>The most literal of the seven. The frame adds width and stops it working small.</dd></div><div><dt>SVG files</dt><dd><a href="assets/logos/via-targa-classic.svg">classic</a> · <a href="assets/logos/via-targa-night.svg">night</a> · <a href="assets/logos/via-targa-mono.svg">mono</a></dd></div></dl>
+    </div>
+  </div>
+  <div class="wrap lv-row"><figure class="lv-tile field--bianco"><div class="lv-art">{{logo:targa:inchiostro:mattone:bianco}}</div><figcaption>On paper</figcaption></figure><figure class="lv-tile field--muro"><div class="lv-art">{{logo:targa:paper:zafferano:prugna}}</div><figcaption>Reverse</figcaption></figure><figure class="lv-tile field--muro"><div class="lv-art">{{logo:targa:inchiostro:inchiostro:bianco}}</div><figcaption>One colour</figcaption></figure><figure class="lv-tile field--bianco lv-small"><div class="lv-sizes"><span style="height:64px">{{logo:targa:inchiostro:mattone:bianco}}</span><span style="height:32px">{{logo:targa:inchiostro:mattone:bianco}}</span><span style="height:16px">{{logo:targa:inchiostro:mattone:bianco}}</span></div><figcaption>64 · 32 · 16px tall</figcaption></figure></div>
+</section>
+<section class="field field--oliva lv" id="tondo" aria-labelledby="h-tondo">
+  <div class="wrap lv-grid">
+    <div class="lv-stage">{{logo:tondo:paper:zafferano:mattone}}</div>
+    <div class="lv-text">
+      <h2 id="h-tondo" class="poster-type lv-name">Tondo</h2>
+      <p class="cond lv-code">B5 · Round stamp</p>
+      <p class="lv-blurb">Plate, sun and letters in one disc. A secondary mark that fits anywhere round: stickers, wax seals, avatars.</p>
+      <dl class="lv-facts"><div><dt>Best for</dt><dd>Takeout-bag stickers, social avatar, app icon, coasters, the gift card.</dd></div><div><dt>Watch out</dt><dd>A companion, not a replacement: the letters are small inside the disc.</dd></div><div><dt>SVG files</dt><dd><a href="assets/logos/via-tondo-mattone.svg">mattone</a> · <a href="assets/logos/via-tondo-oliva.svg">oliva</a> · <a href="assets/logos/via-tondo-prugna.svg">prugna</a> · <a href="assets/logos/via-tondo-ink.svg">ink</a></dd></div></dl>
+    </div>
+  </div>
+  <div class="wrap lv-row"><figure class="lv-tile field--bianco"><div class="lv-art">{{logo:tondo:paper:zafferano:inchiostro}}</div><figcaption>On paper</figcaption></figure><figure class="lv-tile field--muro"><div class="lv-art">{{logo:tondo:paper:zafferano:oliva}}</div><figcaption>Reverse</figcaption></figure><figure class="lv-tile field--muro"><div class="lv-art">{{logo:tondo:paper:mattone:prugna}}</div><figcaption>Alternate</figcaption></figure><figure class="lv-tile field--bianco lv-small"><div class="lv-sizes"><span style="height:64px">{{logo:tondo:paper:zafferano:inchiostro}}</span><span style="height:32px">{{logo:tondo:paper:zafferano:inchiostro}}</span><span style="height:16px">{{logo:tondo:paper:zafferano:inchiostro}}</span></div><figcaption>64 · 32 · 16px tall</figcaption></figure></div>
+</section>
+<section class="field field--bianco lv" id="biglietto" aria-labelledby="h-biglietto">
+  <div class="wrap lv-grid">
+    <div class="lv-stage">{{logo:biglietto:inchiostro:mattone:zafferano}}</div>
+    <div class="lv-text">
+      <h2 id="h-biglietto" class="poster-type lv-name">Biglietto</h2>
+      <p class="cond lv-code">B6 · Ticket</p>
+      <p class="lv-blurb">The wordmark as its own little poster, tear-off tabs and all. It carries the site's signature interaction into print.</p>
+      <dl class="lv-facts"><div><dt>Best for</dt><dd>Gift cards, event tickets, a PigFest passport, loyalty cards.</dd></div><div><dt>Watch out</dt><dd>Illustrative: too busy for the masthead or anything under 80px wide.</dd></div><div><dt>SVG files</dt><dd><a href="assets/logos/via-biglietto-zafferano.svg">zafferano</a> · <a href="assets/logos/via-biglietto-mattone.svg">mattone</a> · <a href="assets/logos/via-biglietto-oliva.svg">oliva</a></dd></div></dl>
+    </div>
+  </div>
+  <div class="wrap lv-row"><figure class="lv-tile field--bianco"><div class="lv-art">{{logo:biglietto:inchiostro:mattone:zafferano}}</div><figcaption>On paper</figcaption></figure><figure class="lv-tile field--muro"><div class="lv-art">{{logo:biglietto:paper:zafferano:mattone}}</div><figcaption>Reverse</figcaption></figure><figure class="lv-tile field--muro"><div class="lv-art">{{logo:biglietto:paper:zafferano:oliva}}</div><figcaption>Alternate</figcaption></figure><figure class="lv-tile field--bianco lv-small"><div class="lv-sizes"><span style="height:64px">{{logo:biglietto:inchiostro:mattone:zafferano}}</span><span style="height:32px">{{logo:biglietto:inchiostro:mattone:zafferano}}</span><span style="height:16px">{{logo:biglietto:inchiostro:mattone:zafferano}}</span></div><figcaption>64 · 32 · 16px tall</figcaption></figure></div>
+</section>
+<section class="field field--zafferano lv" id="monogramma" aria-labelledby="h-monogramma">
+  <div class="wrap lv-grid">
+    <div class="lv-stage">{{logo:monogramma:inchiostro:mattone:-}}</div>
+    <div class="lv-text">
+      <h2 id="h-monogramma" class="poster-type lv-name">Mono&shy;gramma</h2>
+      <p class="cond lv-code">B7 · Monogram</p>
+      <p class="lv-blurb">Just the V, with the sun dropped into its valley. The smallest form of the family.</p>
+      <dl class="lv-facts"><div><dt>Best for</dt><dd>Favicon, app icon, embroidery on aprons and napkins, the wax seal.</dd></div><div><dt>Watch out</dt><dd>Needs the full wordmark nearby the first time someone meets it.</dd></div><div><dt>SVG files</dt><dd><a href="assets/logos/via-monogramma-ink.svg">ink</a> · <a href="assets/logos/via-monogramma-on-mattone.svg">on-mattone</a> · <a href="assets/logos/via-monogramma-on-zafferano.svg">on-zafferano</a></dd></div></dl>
+    </div>
+  </div>
+  <div class="wrap lv-row"><figure class="lv-tile field--bianco"><div class="lv-art">{{logo:monogramma:inchiostro:zafferano:-}}</div><figcaption>On paper</figcaption></figure><figure class="lv-tile field--muro"><div class="lv-art">{{logo:monogramma:paper:zafferano:mattone}}</div><figcaption>Reverse</figcaption></figure><figure class="lv-tile field--muro"><div class="lv-art">{{logo:monogramma:inchiostro:mattone:zafferano}}</div><figcaption>Alternate</figcaption></figure><figure class="lv-tile field--bianco lv-small"><div class="lv-sizes"><span style="height:64px">{{logo:monogramma:inchiostro:zafferano:-}}</span><span style="height:32px">{{logo:monogramma:inchiostro:zafferano:-}}</span><span style="height:16px">{{logo:monogramma:inchiostro:zafferano:-}}</span></div><figcaption>64 · 32 · 16px tall</figcaption></figure></div>
+</section>
+
+<section class="field field--inchiostro" id="option-a" aria-labelledby="h-a">
+  <div class="wrap stack-lg">
+    <div class="stack" style="gap:.75rem">
+      <h2 id="h-a" class="h2">Keep the gold mark</h2>
+      <p class="cond lv-code">Option A · Refresh</p>
+      <p style="color:var(--on-dark-soft);max-width:60ch">The existing Roman-capital VIA stays untouched; the poster world grows around it. Shown in Cinzel as a stand-in: final files come from VIA's master artwork.</p>
+    </div>
+    <div class="a-row">
+      <div class="a-card"><div class="a-stage field--inchiostro" style="box-shadow:inset 0 0 0 1px rgba(251,246,238,.14)"><div class="mark-a"><span class="v">VIA</span><span class="s">Italian Table</span></div></div><p class="h3">A1 · As it is</p><p style="color:var(--on-dark-soft)">Gold on ink, exactly today's mark. The masthead and footer only; posters do the talking.</p></div>
+      <div class="a-card"><div class="a-stage field--prugna"><div class="mark-a"><span class="v">VIA</span><span class="s">Italian Table</span></div></div><p class="h3">A2 · On plum</p><p style="color:var(--on-dark-soft)">Gold on the Super Tuscan plum for the wine list, wine dinners and evening pieces.</p></div>
+      <div class="a-card"><div class="a-stage field--mattone"><span aria-hidden="true" style="position:absolute;width:70%;aspect-ratio:2/1;border-radius:999px 999px 0 0;background:var(--zafferano);right:-12%;bottom:0"></span><div style="position:relative;background:var(--inchiostro);padding:1.1rem 1.6rem;transform:rotate(-1.5deg);box-shadow:var(--paste)"><div class="mark-a"><span class="v" style="font-size:3rem">VIA</span><span class="s" style="font-size:.72rem">Italian Table</span></div></div></div><p class="h3">A3 · Pasted on a poster</p><p style="color:var(--on-dark-soft)">The gold mark as an ink label pasted onto a colour poster: how A joins the wall without changing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="field field--bianco" id="compare" aria-labelledby="h-cmp">
+  <div class="wrap stack-lg">
+    <h2 id="h-cmp" class="h2">Side by side</h2>
+    <div style="overflow-x:auto">
+      <table class="cmp">
+        <caption class="sr-only">How each logo concept performs</caption>
+        <thead><tr><th scope="col">Concept</th><th scope="col">Small sizes</th><th scope="col">One colour</th><th scope="col">Says "VIA"</th><th scope="col">Role</th></tr></thead>
+        <tbody>
+          <tr><td>B1 Sole</td><td><span class="dots" role="img" aria-label="3 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td><span class="dots" role="img" aria-label="3 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td><span class="dots" role="img" aria-label="3 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>Primary</td></tr>
+          <tr><td>B2 Spiedo</td><td><span class="dots" role="img" aria-label="2 of 4"><i class="on"></i><i class="on"></i><i></i><i></i></span></td><td><span class="dots" role="img" aria-label="2 of 4"><i class="on"></i><i class="on"></i><i></i><i></i></span></td><td><span class="dots" role="img" aria-label="4 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td>Alternate primary</td></tr>
+          <tr><td>B3 Arco</td><td><span class="dots" role="img" aria-label="1 of 4"><i class="on"></i><i></i><i></i><i></i></span></td><td><span class="dots" role="img" aria-label="1 of 4"><i class="on"></i><i></i><i></i><i></i></span></td><td><span class="dots" role="img" aria-label="3 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>Posters, banners</td></tr>
+          <tr><td>B4 Targa</td><td><span class="dots" role="img" aria-label="1 of 4"><i class="on"></i><i></i><i></i><i></i></span></td><td><span class="dots" role="img" aria-label="4 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td><span class="dots" role="img" aria-label="4 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td>Building sign, door</td></tr>
+          <tr><td>B5 Tondo</td><td><span class="dots" role="img" aria-label="3 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td><span class="dots" role="img" aria-label="2 of 4"><i class="on"></i><i class="on"></i><i></i><i></i></span></td><td><span class="dots" role="img" aria-label="2 of 4"><i class="on"></i><i class="on"></i><i></i><i></i></span></td><td>Stamp, avatar, stickers</td></tr>
+          <tr><td>B6 Biglietto</td><td><span class="dots" role="img" aria-label="1 of 4"><i class="on"></i><i></i><i></i><i></i></span></td><td><span class="dots" role="img" aria-label="2 of 4"><i class="on"></i><i class="on"></i><i></i><i></i></span></td><td><span class="dots" role="img" aria-label="3 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td>Tickets, gift cards</td></tr>
+          <tr><td>B7 Monogramma</td><td><span class="dots" role="img" aria-label="4 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td><span class="dots" role="img" aria-label="3 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td><span class="dots" role="img" aria-label="2 of 4"><i class="on"></i><i class="on"></i><i></i><i></i></span></td><td>Favicon, embroidery</td></tr>
+          <tr><td>A Gold mark</td><td><span class="dots" role="img" aria-label="2 of 4"><i class="on"></i><i class="on"></i><i></i><i></i></span></td><td><span class="dots" role="img" aria-label="3 of 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td><td><span class="dots" role="img" aria-label="2 of 4"><i class="on"></i><i class="on"></i><i></i><i></i></span></td><td>Keep today's mark</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="bb-label" style="font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:var(--t-micro)">Ratings are the designer's judgment, for discussion with VIA.</p>
+    <div class="stack" style="gap:.75rem">
+      <h3 class="h3">A suggested family</h3>
+      <p class="measure">Pick one primary and let two of the others do the small and round jobs. One combination that covers everything: Sole in the masthead and on signage, Tondo on stickers and the avatar, Monogramma as the favicon.</p>
+    </div>
+    <div class="pick">
+      <figure class="lv-tile field--mattone"><div class="lv-art">{{logo:sole:paper:zafferano:-}}</div><figcaption>Primary · Sole</figcaption></figure>
+      <figure class="lv-tile field--muro"><div class="lv-art">{{logo:tondo:paper:zafferano:oliva}}</div><figcaption>Stamp · Tondo</figcaption></figure>
+      <figure class="lv-tile field--muro"><div class="lv-art">{{logo:monogramma:paper:zafferano:mattone}}</div><figcaption>Favicon · Monogramma</figcaption></figure>
+    </div>
+  </div>
+</section>

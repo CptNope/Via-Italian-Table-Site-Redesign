@@ -8,12 +8,15 @@ desc: Meta description
 active: menu|events|private|visit|home|brand
 ---
 """
-import html, json, pathlib, re
+import html, json, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).parent
 SRC, OUT = ROOT / "src", ROOT  # built pages live at the repo root, which GitHub Pages serves from main
 HEADER = (SRC / "_header.html").read_text()
 FOOTER = (SRC / "_footer.html").read_text()
+sys.path.insert(0, str(ROOT / "tools"))
+import logos  # noqa: E402  (wordmark concepts, tools/logos.py)
+
 MENUS = json.loads((ROOT / "data" / "menus.json").read_text())
 
 
@@ -38,7 +41,13 @@ def render(path: pathlib.Path) -> str:
     m = re.match(r"---\n(.*?)\n---\n", raw, re.S)
     meta = dict(line.split(": ", 1) for line in m.group(1).splitlines())
     body = raw[m.end():]
+    # {{include:name}} -> src/_partials/name.html (shared page sections)
+    for _ in range(3):  # partials may include partials
+        body = re.sub(r"\{\{include:([\w-]+)\}\}", lambda mm: (SRC / "_partials" / (mm.group(1) + ".html")).read_text(), body)
     body = re.sub(r"\{\{menu:(\w+)\}\}", lambda mm: menu_html(mm.group(1)), body)
+    # {{logo:concept:ink:accent:ground}} -> inline SVG from tools/logos.py ("-" = no ground)
+    body = re.sub(r"\{\{logo:(\w+):(\w+):(\w+):([\w-]+)\}\}",
+                  lambda mm: logos.make(mm.group(1), mm.group(2), mm.group(3), None if mm.group(4) == "-" else mm.group(4)), body)
     head = HEADER.replace("{{title}}", meta["title"]).replace("{{desc}}", meta["desc"])
     for key in ("menu", "events", "private", "visit"):
         head = head.replace("{{cur:%s}}" % key, ' aria-current="page"' if meta.get("active") == key else "")

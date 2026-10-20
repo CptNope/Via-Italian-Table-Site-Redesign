@@ -426,7 +426,7 @@ html[data-logo="a"] .logo--a { display: inline-flex; }
 .page-head { padding-block: var(--s-8); }
 .page-head .sun { width: clamp(16rem, 10rem + 24vw, 34rem); aspect-ratio: 1; right: -8%; bottom: calc(var(--s-8) * -1 - 40%); position: absolute; z-index: 0; }
 .page-head > .wrap > :not(.sun) { position: relative; z-index: 1; min-width: 0; }
-.page-head h1.poster-type { font-size: clamp(2.6rem, 13vw, 6rem) !important; }
+.page-head h1.poster-type { font-size: clamp(2.2rem, 9.6vw, 6rem) !important; }
 
 /* ---------- Forms ---------- */
 .form { display: grid; gap: var(--s-4); grid-template-columns: repeat(2, minmax(0, 1fr)); }

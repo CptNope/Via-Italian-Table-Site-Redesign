@@ -1,0 +1,130 @@
+---
+title: Layout variations · VIA Italian Table
+desc: Four homepage layouts for the VIA Italian Table redesign, side by side: lead poster, departures board, playbill and kitchen-first.
+active: brand
+---
+<style>
+  .ly-list { display: grid; gap: var(--s-8); }
+  .ly { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: var(--s-6); align-items: start; }
+  .ly:nth-child(even) .ly-shots { order: 2; }
+  .ly-shots { position: relative; padding-bottom: 3rem; }
+  .ly-shots a { display: block; }
+  .ly-shots img { display: block; width: 100%; height: auto; box-shadow: 0 24px 48px -28px rgba(0,0,0,.65); }
+  .ly-desk { transform: rotate(-.6deg); }
+  .ly-phone { position: absolute; width: 24%; right: -1rem; bottom: 0; transform: rotate(2deg); border: 6px solid var(--inchiostro); border-radius: 18px; overflow: hidden; background: var(--inchiostro); }
+  .ly:nth-child(even) .ly-phone { right: auto; left: -1rem; transform: rotate(-2deg); }
+  .ly-text { display: grid; gap: var(--s-4); align-content: start; min-width: 0; }
+  .ly-text .poster-type { font-size: var(--t-h1); }
+  .ly-sub { font-size: .9rem; letter-spacing: .12em; margin-top: calc(var(--s-3) * -1); }
+  .ly-facts { display: grid; gap: var(--s-3); margin: 0; }
+  .ly-facts div { display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; border-top: 1px solid color-mix(in oklab, var(--inchiostro) 18%, transparent); padding-top: .6rem; }
+  .ly-facts dt { font-weight: 800; text-transform: uppercase; letter-spacing: .06em; font-size: .8rem; padding-top: .15rem; }
+  .ly-facts dd { margin: 0; }
+  .ly-tag { display: inline-block; background: var(--oliva); color: var(--on-dark); font-size: var(--t-micro); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: .25rem .5rem; width: fit-content; }
+  .same { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-5); }
+  .same p { color: var(--on-dark-soft); }
+  @media (max-width: 960px) {
+    .ly { grid-template-columns: 1fr; }
+    .ly:nth-child(even) .ly-shots { order: 0; }
+    .ly-phone { width: 28%; right: 0; }
+    .ly:nth-child(even) .ly-phone { left: 0; }
+    .same { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 420px) { .ly-facts div { grid-template-columns: 1fr; gap: .2rem; } }
+</style>
+
+<section class="field field--prugna page-head" aria-labelledby="ly-h">
+  <div class="wrap">
+    <span class="sun" aria-hidden="true" style="background:var(--mattone)"></span>
+    <h1 id="ly-h" class="poster-type" style="font-size:var(--t-poster)">Layout variations</h1>
+    <p class="lead" style="color:var(--on-dark-soft);max-width:54ch">Four ways to open VIA's homepage, all in the same poster world and all with the same working actions: book on Resy, order takeout or delivery, plan an event. Only the first screen changes; the wall, rooms, awards and hours follow underneath. Each one is a full working page.</p>
+  </div>
+</section>
+
+<section class="field field--muro" aria-label="Layouts">
+  <div class="wrap ly-list">
+    <article class="ly" aria-labelledby="ly-a">
+      <div class="ly-shots">
+        <a href="index.html" class="ly-desk"><img src="assets/layouts/layout-a-desktop.jpg" width="960" height="600" alt="Layout A at desktop size: a brick-red lead poster with the VIA wordmark, booking strip and three doors, with the poster wall peeking in below." loading="lazy"></a>
+        <a href="index.html" class="ly-phone" tabindex="-1" aria-hidden="true"><img src="assets/layouts/layout-a-phone.jpg" width="300" height="650" alt="" loading="lazy"></a>
+      </div>
+      <div class="ly-text">
+        <h2 id="ly-a" class="poster-type">Lead poster</h2>
+        <p class="cond ly-sub">Layout A · the current homepage</p>
+        <span class="ly-tag">Live now</span>
+        <p>One big brick-red poster carries the wordmark at full size, the live open/closed status and the booking strip. The next posters on the wall peek in under it.</p>
+        <dl class="ly-facts">
+          <div><dt>Leads with</dt><dd>The brand, then booking.</dd></div>
+          <div><dt>Best for</dt><dd>A first impression that makes the new identity unmistakable.</dd></div>
+          <div><dt>Trade-off</dt><dd>What's on this week sits one scroll down.</dd></div>
+        </dl>
+        <a class="btn" href="index.html">Open layout A <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </article>
+
+    <article class="ly" aria-labelledby="ly-b">
+      <div class="ly-shots">
+        <a href="home-partenze.html" class="ly-desk"><img src="assets/layouts/layout-b-desktop.jpg" width="960" height="600" alt="Layout B at desktop size: a dark split-flap departures board listing today's hours, PigFest, the turkey kit, the Cakebread dinner and more, with a paper ticket for booking." loading="lazy"></a>
+        <a href="home-partenze.html" class="ly-phone" tabindex="-1" aria-hidden="true"><img src="assets/layouts/layout-b-phone.jpg" width="300" height="650" alt="" loading="lazy"></a>
+      </div>
+      <div class="ly-text">
+        <h2 id="ly-b" class="poster-type">Partenze</h2>
+        <p class="cond ly-sub">Layout B · departures board</p>
+        <p>What's coming up at VIA as an Italian railway departures board: today's hours, then each dated special, dinner and offer with its status. The letters flip into place once on arrival. Booking is a paper ticket beside the board.</p>
+        <dl class="ly-facts">
+          <div><dt>Leads with</dt><dd>What's on, in date order, then booking.</dd></div>
+          <div><dt>Best for</dt><dd>Regulars who come back to see what's next.</dd></div>
+          <div><dt>Trade-off</dt><dd>The darkest and busiest opening; the wordmark is smaller.</dd></div>
+        </dl>
+        <a class="btn" href="home-partenze.html">Open layout B <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </article>
+
+    <article class="ly" aria-labelledby="ly-c">
+      <div class="ly-shots">
+        <a href="home-manifesto.html" class="ly-desk"><img src="assets/layouts/layout-c-desktop.jpg" width="960" height="600" alt="Layout C at desktop size: a single paper playbill on a brick-red field with VIA, the hours in condensed type, the booking strip, and PigFest and Cakebread Cellars set large." loading="lazy"></a>
+        <a href="home-manifesto.html" class="ly-phone" tabindex="-1" aria-hidden="true"><img src="assets/layouts/layout-c-phone.jpg" width="300" height="650" alt="" loading="lazy"></a>
+      </div>
+      <div class="ly-text">
+        <h2 id="ly-c" class="poster-type">Manifesto</h2>
+        <p class="cond ly-sub">Layout C · typographic playbill</p>
+        <p>The whole first screen is one paper playbill, set the way wood-type posters were: hours, the booking strip and the two headline events in mixed widths and three inks. No pictures needed.</p>
+        <dl class="ly-facts">
+          <div><dt>Leads with</dt><dd>Hours and booking, then the two big dates.</dd></div>
+          <div><dt>Best for</dt><dd>Launching before VIA's new photography exists.</dd></div>
+          <div><dt>Trade-off</dt><dd>It leans on type alone; the playbill needs editing as events change.</dd></div>
+        </dl>
+        <a class="btn" href="home-manifesto.html">Open layout C <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </article>
+
+    <article class="ly" aria-labelledby="ly-d">
+      <div class="ly-shots">
+        <a href="home-cucina.html" class="ly-desk"><img src="assets/layouts/layout-d-desktop.jpg" width="960" height="600" alt="Layout D at desktop size: an olive field with a tilted paper menu of signature dishes and prices on the left, and the wordmark, booking strip and doors on the right." loading="lazy"></a>
+        <a href="home-cucina.html" class="ly-phone" tabindex="-1" aria-hidden="true"><img src="assets/layouts/layout-d-phone.jpg" width="300" height="650" alt="" loading="lazy"></a>
+      </div>
+      <div class="ly-text">
+        <h2 id="ly-d" class="poster-type">Cucina</h2>
+        <p class="cond ly-sub">Layout D · kitchen first</p>
+        <p>The kitchen leads: a paper menu sheet with dishes from the grill, the spit and the pasta list, with VIA's published prices, beside the wordmark and booking strip. The spit crosses the corner of the poster.</p>
+        <dl class="ly-facts">
+          <div><dt>Leads with</dt><dd>Food and prices, then booking.</dd></div>
+          <div><dt>Best for</dt><dd>First-time visitors deciding whether VIA is for tonight.</dd></div>
+          <div><dt>Trade-off</dt><dd>Prices on the front page need updating whenever the menu changes.</dd></div>
+        </dl>
+        <a class="btn" href="home-cucina.html">Open layout D <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="field field--prugna" aria-labelledby="same-h">
+  <div class="wrap stack-lg">
+    <h2 id="same-h" class="h2">The same in all four</h2>
+    <div class="same">
+      <div class="stack"><p class="h3">Working actions</p><p>The Resy booking strip, takeout, delivery and the event route are on the first screen of every layout, plus the Book · Order · Call bar on phones.</p></div>
+      <div class="stack"><p class="h3">The wall below</p><p>Dated posters that come down when they end, then private rooms, awards and hours, shared from one source.</p></div>
+      <div class="stack"><p class="h3">Either logo</p><p>The A/B logo switch in the proposal bar works on every layout, as do the seven concepts on the <a href="logos.html" style="color:var(--on-dark)">logo page</a>.</p></div>
+    </div>
+  </div>
+</section>
