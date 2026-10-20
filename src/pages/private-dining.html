@@ -62,7 +62,8 @@ active: private
   <div class="wrap visit-grid">
     <div class="stack-lg">
       <h2 id="req-h" class="h2">Send an event request</h2>
-      <form class="form" data-event-form novalidate>
+      <form class="form" data-event-form novalidate aria-describedby="ev-note">
+        <p id="ev-note" class="full hint" style="margin:0">Name, email, date and guests are needed; the rest is optional.</p>
         <label for="ev-name">Your name
           <input id="ev-name" name="name" autocomplete="name" required data-msg="Add your name so Maria knows who to reply to.">
           <span class="err" data-err-for="ev-name"></span>
@@ -71,7 +72,7 @@ active: private
           <input id="ev-email" name="email" type="email" autocomplete="email" required data-msg="Add an email address like name@example.com.">
           <span class="err" data-err-for="ev-email"></span>
         </label>
-        <label for="ev-date">Preferred date <span class="hint">Mon–Fri</span>
+        <label for="ev-date">Preferred date <span class="hint">private events run Mon–Fri</span>
           <input id="ev-date" name="date" type="date" required data-msg="Pick a date. Private events run Monday through Friday.">
           <span class="err" data-err-for="ev-date"></span>
         </label>
@@ -79,13 +80,13 @@ active: private
           <input id="ev-guests" name="guests" type="number" min="1" max="200" inputmode="numeric" required data-msg="Add a headcount, even a rough one.">
           <span class="err" data-err-for="ev-guests"></span>
         </label>
-        <label for="ev-type" class="full">Occasion
+        <label for="ev-type" class="full">Occasion <span class="hint">optional</span>
           <select id="ev-type" name="type">
             <option>Business lunch or dinner</option><option>Birthday</option><option>Rehearsal dinner</option>
             <option>Shower</option><option>Holiday party</option><option>Something else</option>
           </select>
         </label>
-        <label for="ev-notes" class="full">Anything else <span class="hint">menu ideas, budget, A/V</span>
+        <label for="ev-notes" class="full">Anything else <span class="hint">optional · menu ideas, budget, A/V</span>
           <textarea id="ev-notes" name="notes"></textarea>
         </label>
         <div class="full"><button class="btn" type="submit">Send request <svg aria-hidden="true"><use href="#i-arrow"/></svg></button></div>

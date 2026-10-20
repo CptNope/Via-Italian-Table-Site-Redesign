@@ -4,16 +4,17 @@ desc: Layout variation B for the VIA Italian Table homepage: what's coming up at
 active: home
 ---
 <style>
-  .pz { padding-block: var(--s-6) var(--s-7); }
+  .pz { padding-block: var(--s-6) var(--s-7); overflow-x: clip; }
   .pz-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: var(--s-5); align-items: start; }
-  .pz-board { background: #120d0b; padding: var(--s-5); box-shadow: 0 30px 60px -30px rgba(0,0,0,.8), inset 0 0 0 1px rgba(251,246,238,.06); min-width: 0; }
+  .pz-board { container-type: inline-size; background: #120d0b; padding: var(--s-5); box-shadow: 0 30px 60px -30px rgba(0,0,0,.8), inset 0 0 0 1px rgba(251,246,238,.06); min-width: 0; }
   .pz-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--s-3); padding-bottom: var(--s-4); border-bottom: 2px solid rgba(251,246,238,.12); margin-bottom: var(--s-3); }
   .pz-head .mark { display: flex; align-items: center; gap: .75rem; color: var(--on-dark); }
   .pz-head .mark svg { height: 3.25rem; width: auto; }
-  .pz-head h1 { font-size: 1rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--zafferano); }
-  .pz-cols { display: grid; grid-template-columns: 11.5rem minmax(0, 1fr) 9rem; gap: var(--s-4); padding: .2rem .6rem; font-size: var(--t-micro); font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--on-dark-soft); }
+  .pz-head .mark { flex-wrap: wrap; }
+  .pz-head h1 { overflow-wrap: anywhere; font-size: var(--t-body); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--zafferano); }
+  .pz-cols { display: grid; grid-template-columns: minmax(0, 11.5em) minmax(0, 1fr) minmax(0, 9em); gap: var(--s-4); padding: .2rem .6rem; font-size: var(--t-micro); font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--on-dark-soft); }
   .pz-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
-  .pz-row a { display: grid; grid-template-columns: 11.5rem minmax(0, 1fr) 9rem; gap: var(--s-4); align-items: center; padding: .55rem .6rem; text-decoration: none; color: var(--on-dark); background: #1d1613; transition: background-color .2s; }
+  .pz-row a { display: grid; grid-template-columns: minmax(0, 11.5em) minmax(0, 1fr) minmax(0, 9em); gap: var(--s-4); align-items: center; padding: .55rem .6rem; text-decoration: none; color: var(--on-dark); background: #1d1613; transition: background-color .2s; }
   .pz-row a:hover { background: #2a201b; }
   .pz-row a:hover .pz-go { color: var(--zafferano); }
   .flaps { font-weight: 800; font-stretch: 80%; font-variation-settings: "wdth" 80; text-transform: uppercase; letter-spacing: .02em; font-size: var(--t-lead); font-variant-numeric: tabular-nums; line-height: 1.15; overflow-wrap: anywhere; }
@@ -36,10 +37,12 @@ active: home
     .pz-grid { grid-template-columns: 1fr; }
     .ticket { transform: none; }
   }
-  @media (max-width: 620px) {
+  @container (max-width: 44em) {
     .pz-cols { display: none; }
-    .pz-row a { grid-template-columns: 1fr auto; grid-template-areas: "when go" "what what"; gap: .2rem .75rem; }
+    .pz-row a { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "when go" "what what"; gap: .35rem 1.25rem; }
     .pz-row .pz-when { grid-area: when; } .pz-row .pz-what { grid-area: what; } .pz-row .pz-go { grid-area: go; }
+  }
+  @media (max-width: 620px) {
     .pz-board { padding: var(--s-4) var(--s-3); margin-inline: calc(var(--gutter) * -1) calc(var(--gutter-r) * -1); }
   }
 </style>
@@ -68,7 +71,7 @@ active: home
         <label for="pz-seats"><span class="lbl">Party</span>
           <select id="pz-seats" name="seats"><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option><option value="9+">9 or more</option></select>
         </label>
-        <label for="pz-date"><span class="lbl">Date</span><select id="pz-date" name="date"><option>Choose a date</option></select></label>
+        <label for="pz-date"><span class="lbl">Date</span><select id="pz-date" name="date"><option value="">Any date</option></select></label>
         <button class="btn" type="submit">Find a table <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
       </form>
       <p style="font-size:var(--t-small);color:var(--on-light-soft)">On Resy, or call <a href="tel:+15087544842" class="tnum">508-754-4842</a>.</p>

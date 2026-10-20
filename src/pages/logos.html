@@ -6,18 +6,18 @@ active: brand
 <style>
   .lv-intro .wrap { display: grid; gap: var(--s-4); }
   .lv-index { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: var(--s-3); }
-  .lv-index a { font-weight: 800; font-stretch: 85%; font-variation-settings: "wdth" 85; text-transform: uppercase; letter-spacing: .05em; font-size: .85rem; text-decoration: none; padding: .55rem .8rem; background: rgba(28,21,18,.22); color: var(--on-dark); min-height: 2.75rem; display: inline-flex; align-items: center; }
+  .lv-index a { font-weight: 800; font-stretch: 85%; font-variation-settings: "wdth" 85; text-transform: uppercase; letter-spacing: .05em; font-size: var(--t-small); text-decoration: none; padding: .55rem .8rem; background: rgba(28,21,18,.22); color: var(--on-dark); min-height: 2.75rem; display: inline-flex; align-items: center; }
   .lv-index a:hover { background: var(--inchiostro); }
   .lv-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: var(--s-7); align-items: center; }
   .lv-stage { display: grid; place-items: center; min-height: 20rem; }
   .lv-stage svg { width: min(100%, 30rem); height: auto; max-height: 22rem; }
   .lv-text { min-width: 0; display: grid; gap: var(--s-4); align-content: start; }
-  .lv-code { font-size: .9rem; letter-spacing: .12em; margin-top: calc(var(--s-3) * -1); }
-  .lv-name { font-size: var(--t-h1); }
+  .lv-code { font-size: var(--t-small); letter-spacing: .12em; margin-top: calc(var(--s-3) * -1); }
+  .lv-name { font-size: clamp(2rem, 4.2vw, 4.5rem); hyphens: manual; }
   .lv-blurb { font-size: var(--t-lead); max-width: 40ch; }
   .lv-facts { display: grid; gap: var(--s-3); margin: 0; }
   .lv-facts div { display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; border-top: 1px solid color-mix(in oklab, currentColor 25%, transparent); padding-top: .6rem; }
-  .lv-facts dt { font-weight: 800; text-transform: uppercase; letter-spacing: .06em; font-size: .8rem; padding-top: .15rem; }
+  .lv-facts dt { font-weight: 800; text-transform: uppercase; letter-spacing: .06em; font-size: var(--t-small); padding-top: .15rem; }
   .lv-facts dd { margin: 0; }
   .lv-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-3); margin-top: var(--s-6); }
   .lv-tile { margin: 0; display: grid; grid-template-rows: 1fr auto; gap: .6rem; padding: var(--s-4); box-shadow: var(--paste); min-height: 11rem; }
@@ -125,7 +125,7 @@ active: brand
   <div class="wrap lv-grid">
     <div class="lv-stage">{{logo:biglietto:inchiostro:mattone:zafferano}}</div>
     <div class="lv-text">
-      <h2 id="h-biglietto" class="poster-type lv-name">Biglietto</h2>
+      <h2 id="h-biglietto" class="poster-type lv-name">Bigli&shy;etto</h2>
       <p class="cond lv-code">B6 · Ticket</p>
       <p class="lv-blurb">The wordmark as its own little poster, tear-off tabs and all. It carries the site's signature interaction into print.</p>
       <dl class="lv-facts"><div><dt>Best for</dt><dd>Gift cards, event tickets, a PigFest passport, loyalty cards.</dd></div><div><dt>Watch out</dt><dd>Illustrative: too busy for the masthead or anything under 80px wide.</dd></div><div><dt>SVG files</dt><dd><a href="assets/logos/via-biglietto-zafferano.svg">zafferano</a> · <a href="assets/logos/via-biglietto-mattone.svg">mattone</a> · <a href="assets/logos/via-biglietto-oliva.svg">oliva</a></dd></div></dl>

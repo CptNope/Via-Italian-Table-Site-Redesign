@@ -10,7 +10,7 @@
 <meta property="og:description" content="This page has come down. Find menus, what's on, private dining and hours at VIA Italian Table.">
 <meta name="theme-color" content="#a8381f">
 <link rel="icon" type="image/svg+xml" href="assets/logos/via-monogramma-on-mattone.svg">
-<link rel="preload" href="assets/fonts/archivo-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/via.css">
 <script>(function(){var d=document.documentElement,ok=/^(a|sole|spiedo|arco|targa|tondo|biglietto|monogramma)$/,l=null;d.classList.add('js');try{l=new URLSearchParams(location.search).get('logo')}catch(e){}if(!l||!ok.test(l)){try{l=localStorage.getItem('via-logo')}catch(e){}}if(l==='b')l='sole';if(l&&ok.test(l))d.dataset.logo=l})();</script>
 </head>
@@ -42,7 +42,7 @@
     <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 17l-5.2 2.7 1-5.9-4.3-4.1 5.9-.8z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
   </defs>
 </svg>
-<a class="sr-only" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="pitch" role="region" aria-label="About this proposal">
   <div class="wrap">
     <span><strong>Spec redesign for VIA Italian Table</strong> by Jeremy Anderson · photos are placeholders for VIA's own</span>
@@ -78,7 +78,7 @@
     <a class="btn" href="https://resy.com/cities/worcester-ma/venues/via-italian-table">Book a table</a>
   </div>
 </header>
-<main id="main">
+<main id="main" tabindex="-1">
 <section class="field field--mattone lead-poster inner-lead" aria-labelledby="nf-h">
   <div class="wrap lead-grid">
     <div class="lead-copy">
@@ -94,7 +94,7 @@
     </div>
     <div class="lead-art" aria-hidden="true">
       <span class="sun"></span>
-      <div class="remnant" style="position:absolute;left:12%;top:18%;width:58%;min-height:14rem;transform:rotate(4deg)"><p class="cond" style="font-size:.8rem">Was here · pasted over</p><p class="h3" style="font-size:2rem">404</p></div>
+      <div class="remnant" style="position:absolute;left:12%;top:18%;width:58%;min-height:14rem;transform:rotate(4deg)"><p class="cond" style="font-size:var(--t-micro)">Was here · pasted over</p><p class="h3" style="font-size:2rem">404</p></div>
     </div>
   </div>
 </section>

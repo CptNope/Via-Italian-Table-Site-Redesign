@@ -46,8 +46,9 @@ def render(path: pathlib.Path) -> str:
         body = re.sub(r"\{\{include:([\w-]+)\}\}", lambda mm: (SRC / "_partials" / (mm.group(1) + ".html")).read_text(), body)
     body = re.sub(r"\{\{menu:(\w+)\}\}", lambda mm: menu_html(mm.group(1)), body)
     # {{logo:concept:ink:accent:ground}} -> inline SVG from tools/logos.py ("-" = no ground)
+    uid = iter(range(1, 10000))  # each inline mark gets its own mask/clip IDs
     body = re.sub(r"\{\{logo:(\w+):(\w+):(\w+):([\w-]+)\}\}",
-                  lambda mm: logos.make(mm.group(1), mm.group(2), mm.group(3), None if mm.group(4) == "-" else mm.group(4)), body)
+                  lambda mm: logos.make(mm.group(1), mm.group(2), mm.group(3), None if mm.group(4) == "-" else mm.group(4), next(uid)), body)
     head = HEADER.replace("{{marks}}", logos.symbols_html()).replace("{{title}}", meta["title"]).replace("{{desc}}", meta["desc"])
     for key in ("menu", "events", "private", "visit"):
         head = head.replace("{{cur:%s}}" % key, ' aria-current="page"' if meta.get("active") == key else "")

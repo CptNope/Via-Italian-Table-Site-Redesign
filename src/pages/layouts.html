@@ -14,11 +14,11 @@ active: brand
   .ly-phone { position: absolute; width: 24%; right: -1rem; bottom: 0; transform: rotate(2deg); border: 6px solid var(--inchiostro); border-radius: 18px; overflow: hidden; background: var(--inchiostro); }
   .ly:nth-child(even) .ly-phone { right: auto; left: -1rem; transform: rotate(-2deg); }
   .ly-text { display: grid; gap: var(--s-4); align-content: start; min-width: 0; }
-  .ly-text .poster-type { font-size: var(--t-h1); }
-  .ly-sub { font-size: .9rem; letter-spacing: .12em; margin-top: calc(var(--s-3) * -1); }
+  .ly-text .poster-type { font-size: clamp(2rem, 4.2vw, 4.5rem); hyphens: manual; }
+  .ly-sub { font-size: var(--t-small); letter-spacing: .12em; margin-top: calc(var(--s-3) * -1); }
   .ly-facts { display: grid; gap: var(--s-3); margin: 0; }
   .ly-facts div { display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; border-top: 1px solid color-mix(in oklab, var(--inchiostro) 18%, transparent); padding-top: .6rem; }
-  .ly-facts dt { font-weight: 800; text-transform: uppercase; letter-spacing: .06em; font-size: .8rem; padding-top: .15rem; }
+  .ly-facts dt { font-weight: 800; text-transform: uppercase; letter-spacing: .06em; font-size: var(--t-small); padding-top: .15rem; }
   .ly-facts dd { margin: 0; }
   .ly-tag { display: inline-block; background: var(--oliva); color: var(--on-dark); font-size: var(--t-micro); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: .25rem .5rem; width: fit-content; }
   .same { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-5); }
@@ -68,7 +68,7 @@ active: brand
         <a href="home-partenze.html" class="ly-phone" tabindex="-1" aria-hidden="true"><img src="assets/layouts/layout-b-phone.jpg" width="300" height="650" alt="" loading="lazy"></a>
       </div>
       <div class="ly-text">
-        <h2 id="ly-b" class="poster-type">Partenze</h2>
+        <h2 id="ly-b" class="poster-type">Par&shy;tenze</h2>
         <p class="cond ly-sub">Layout B · departures board</p>
         <p>What's coming up at VIA as an Italian railway departures board: today's hours, then each dated special, dinner and offer with its status. The letters flip into place once on arrival. Booking is a paper ticket beside the board.</p>
         <dl class="ly-facts">
@@ -86,7 +86,7 @@ active: brand
         <a href="home-manifesto.html" class="ly-phone" tabindex="-1" aria-hidden="true"><img src="assets/layouts/layout-c-phone.jpg" width="300" height="650" alt="" loading="lazy"></a>
       </div>
       <div class="ly-text">
-        <h2 id="ly-c" class="poster-type">Manifesto</h2>
+        <h2 id="ly-c" class="poster-type">Mani&shy;festo</h2>
         <p class="cond ly-sub">Layout C · typographic playbill</p>
         <p>The whole first screen is one paper playbill, set the way wood-type posters were: hours, the booking strip and the two headline events in mixed widths and three inks. No pictures needed.</p>
         <dl class="ly-facts">

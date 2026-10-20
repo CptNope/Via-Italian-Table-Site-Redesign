@@ -98,9 +98,13 @@ WAYS = {
 }
 
 
-def make(name, ink, accent, ground):
+def make(name, ink, accent, ground, uid=None):
+    """One mark as SVG. Pass uid when several copies share a page so mask/clip IDs stay unique."""
     c = lambda k: PAL[k] if k else None
-    return CONCEPTS[name](c(ink), c(accent), c(ground))
+    svg = CONCEPTS[name](c(ink), c(accent), c(ground))
+    if uid is not None:
+        svg = svg.replace("spit-cut", f"spit-cut-{uid}").replace("tondo-clip", f"tondo-clip-{uid}")
+    return svg
 
 
 if __name__ == "__main__":

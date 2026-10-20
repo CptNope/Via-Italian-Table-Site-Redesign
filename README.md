@@ -136,10 +136,13 @@ One family, **Archivo** (variable, width 62–125 and weight 100–900), self-ho
 
 **Cinzel** appears only as the stand-in for logo option A.
 
+Small text uses exactly two sizes: `--t-micro` (.78rem: captions, tags, form labels) and `--t-small` (.9rem: buttons, tabs, nav, dates, small prose), told apart by weight and case. Display titles use named fluid sizes: `--t-page-title`, `--t-poster-title`, `--t-poster-title-wide` and `--t-poster-title-phone`.
+
 ### Shapes, depth and motion
 
 - **Six cut-paper shapes**, each meaning something at VIA: the sun (the fire), the plate, the spit, the glass, the coins (a deal), the table set. They live in a poster's art band, never behind text.
 - **Square corners** everywhere except discs and half-suns.
+- **Tab shades** are tokens too: each poster colour has a `-tab` and `-tab-hover` shade (for example `--oliva-tab`), used by the tear-off tabs.
 - **One shadow**, `paste`: a sheet glued to a wall. Posters tilt up to 1°.
 - **One motion moment:** posters settle onto the wall on load with a brush-sheen sweep; tear-off tabs drop as you press them; the departures board (layout B) flips its letters into place once. Everything is off under `prefers-reduced-motion`.
 
@@ -178,7 +181,7 @@ Posters live in `src/_partials/home-wall.html` (home) and `src/pages/events.html
 
 ```html
 <article class="poster poster--plum w-5" style="--tilt:.4deg" data-end="2026-12-08" aria-labelledby="p-new">
-  <div class="poster-art" aria-hidden="true"> <!-- 2–3 cut-paper shapes --> </div>
+  <div class="poster-art art-glass" aria-hidden="true"><span class="s-cup"></span><span class="s-stem"></span></div>
   <p class="poster-dates"><b>Tuesday, Dec 8 · 6:30 pm</b><span>Wine dinner</span></p>
   <h3 class="poster-type" id="p-new">Name of the thing</h3>
   <div class="poster-body"><p>One or two plain sentences.</p></div>
@@ -186,7 +189,13 @@ Posters live in `src/_partials/home-wall.html` (home) and `src/pages/events.html
 </article>
 ```
 
-- Colour: `poster--sun`, `poster--olive`, `poster--plum`, `poster--brick`, `poster--ink`, `poster--paper` (default is mattone).
+- Colour: `poster--sun`, `poster--olive`, `poster--plum`, `poster--brick`, `poster--ink`, `poster--paper` (default is mattone). Each sets its own tear-off tab shades.
+- Art band: pick a composition class instead of drawing shapes by hand:
+  - `art-sunspit` (`s-sun`, optional `s-plate`, `s-spit`): a half-sun with the spit across it. Tune with `--sun`, `--sun-w`, `--sun-x`, `--spit`, `--spit-y`, `--spit-tilt`.
+  - `art-coins` (three `s-coin`): a deal.
+  - `art-glass` (`s-cup`, optional second `s-cup`, `s-stem`): wine. Tune with `--cup`, `--glass`, `--glass-2`.
+  - `art-table` (`s-plate`, two `s-bar`): a laid table.
+  - `art-pair` (two `s-disc`): two overlapping discs.
 - Width on the 12-column wall: `w-4` to `w-12`.
 - Always set `data-end` when there's an end date. No end date? Say so in the dates line ("For a limited time").
 - Long single words in titles get a soft hyphen: `Thanks&shy;giving`.
@@ -269,7 +278,7 @@ python3 tools/thumbs.py          # rewrites assets/layouts/*.jpg
 ├── assets/
 │   ├── via.css                                all styles
 │   ├── via.js                                 all behaviour
-│   ├── fonts/                                 Archivo + Cinzel (WOFF, SIL OFL, licences included)
+│   ├── fonts/                                 Archivo + Cinzel (WOFF2 + WOFF fallback, SIL OFL, licences included)
 │   ├── logos/                                 25 SVG logo files (7 concepts × colourways)
 │   └── layouts/                               layout thumbnails for layouts.html
 ├── src/
@@ -297,7 +306,10 @@ python3 tools/thumbs.py          # rewrites assets/layouts/*.jpg
 - Menus are HTML, not image or PDF-only. Gluten-free options are tagged in the menus.
 - All motion respects `prefers-reduced-motion`; content is visible before any animation.
 - Works without JavaScript except for live status, poster expiry, the booking hand-off and menu tabs (all menus still render).
-- Fonts are self-hosted and subset to Latin (about 160KB total); no third-party scripts or trackers; total CSS and JS under 70KB uncompressed.
+- Fonts are self-hosted, subset to Latin and served as WOFF2 (WOFF fallback): Archivo is 92KB and preloaded; Cinzel (36KB) downloads only if logo A is showing. No third-party scripts or trackers. A typical page is about 185KB in 4 requests.
+- Every control is at least 44×44px: buttons, tabs, chips, nav links, copy buttons, booking selects.
+- A "Skip to content" link appears as a paper tab on the first Tab press.
+- Pages reflow without sideways scrolling at 320, 768 and 1024px, and at 200% text size.
 
 ---
 

@@ -194,14 +194,10 @@
       });
     }
     document.querySelectorAll('[data-logo-select]').forEach(function (sel) { sel.value = v; });
-    document.querySelectorAll('[data-logo-pick]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.logoPick === v)); });
     if (remember) { try { localStorage.setItem('via-logo', v); } catch (e) {} }
   }
   document.querySelectorAll('[data-logo-select]').forEach(function (sel) {
     sel.addEventListener('change', function () { setLogo(sel.value, true); });
-  });
-  document.querySelectorAll('[data-logo-pick]').forEach(function (b) {
-    b.addEventListener('click', function () { setLogo(b.dataset.logoPick, true); });
   });
   setLogo(document.documentElement.dataset.logo || 'sole', false);
 

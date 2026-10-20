@@ -9,7 +9,7 @@
 <meta property="og:description" content="Chef-driven Italian on Shrewsbury Street in Worcester: spit-roasted meats, house pastas, grilled pizza, gelato made here, and a year-round patio. Book on Resy, order takeout, or plan an event.">
 <meta name="theme-color" content="#a8381f">
 <link rel="icon" type="image/svg+xml" href="assets/logos/via-monogramma-on-mattone.svg">
-<link rel="preload" href="assets/fonts/archivo-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/via.css">
 <script>(function(){var d=document.documentElement,ok=/^(a|sole|spiedo|arco|targa|tondo|biglietto|monogramma)$/,l=null;d.classList.add('js');try{l=new URLSearchParams(location.search).get('logo')}catch(e){}if(!l||!ok.test(l)){try{l=localStorage.getItem('via-logo')}catch(e){}}if(l==='b')l='sole';if(l&&ok.test(l))d.dataset.logo=l})();</script>
 </head>
@@ -41,7 +41,7 @@
     <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 17l-5.2 2.7 1-5.9-4.3-4.1 5.9-.8z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
   </defs>
 </svg>
-<a class="sr-only" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="pitch" role="region" aria-label="About this proposal">
   <div class="wrap">
     <span><strong>Spec redesign for VIA Italian Table</strong> by Jeremy Anderson · photos are placeholders for VIA's own</span>
@@ -77,7 +77,7 @@
     <a class="btn" href="https://resy.com/cities/worcester-ma/venues/via-italian-table">Book a table</a>
   </div>
 </header>
-<main id="main">
+<main id="main" tabindex="-1">
 <section class="field field--mattone lead-poster" aria-labelledby="lead-title">
   <div class="wrap lead-grid">
     <div class="lead-copy">
@@ -98,7 +98,7 @@
           </select>
         </label>
         <label for="book-date"><span class="lbl">Date</span>
-          <select id="book-date" name="date"><option>Choose a date</option></select>
+          <select id="book-date" name="date"><option value="">Any date</option></select>
         </label>
         <button class="btn" type="submit">Find a table <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
       </form>
@@ -132,11 +132,7 @@
 
     <div class="wall">
       <article class="poster poster--sun w-7" style="--tilt:-.5deg" data-end="2026-10-31" aria-labelledby="p-pig">
-        <div class="poster-art" aria-hidden="true">
-          <span class="shape" style="width:22rem;height:11rem;border-radius:11rem 11rem 0 0;background:var(--mattone);right:6%;bottom:0"></span>
-          <span class="shape" style="width:5.5rem;height:5.5rem;border-radius:50%;background:var(--prugna);right:calc(6% + 23rem);bottom:1.2rem"></span>
-          <span class="shape" style="width:120%;height:10px;background:var(--inchiostro);left:-10%;bottom:3.4rem;transform:rotate(-4deg)"></span>
-        </div>
+        <div class="poster-art art-sunspit" aria-hidden="true" style="--sun-w:22rem;--sun-x:6%;--spit-y:3.4rem;--spit-tilt:-4deg"><span class="s-sun"></span><span class="s-plate"></span><span class="s-spit"></span></div>
         <p class="poster-dates"><b>Through Friday, Oct 31</b><span>Lunch &amp; dinner</span></p>
         <h3 id="p-pig" class="poster-type">Pig&shy;Fest</h3>
         <div class="poster-body">
@@ -155,11 +151,7 @@
       </article>
 
       <article class="poster poster--olive w-5" style="--tilt:.7deg" aria-labelledby="p-25">
-        <div class="poster-art" aria-hidden="true">
-          <span class="shape" style="width:7rem;height:7rem;border-radius:50%;background:var(--zafferano);left:0;bottom:-3.5rem"></span>
-          <span class="shape" style="width:7rem;height:7rem;border-radius:50%;background:var(--mattone);left:5.5rem;bottom:-3.5rem"></span>
-          <span class="shape" style="width:7rem;height:7rem;border-radius:50%;background:var(--bianco);left:11rem;bottom:-3.5rem"></span>
-        </div>
+        <div class="poster-art art-coins" aria-hidden="true"><span class="s-coin"></span><span class="s-coin"></span><span class="s-coin"></span></div>
         <p class="poster-dates"><b>For a limited time</b><span>Dinner</span></p>
         <h3 class="poster-type" id="p-25"><span class="tnum">$25</span> entrées</h3>
         <div class="poster-body">
@@ -172,10 +164,7 @@
       </article>
 
       <article class="poster poster--plum w-5" style="--tilt:.4deg" data-end="2026-12-08" aria-labelledby="p-cake">
-        <div class="poster-art" aria-hidden="true">
-          <span class="shape" style="width:8rem;height:8rem;border-radius:0 0 4rem 4rem;background:var(--prugna-soft);right:3rem;top:0"></span>
-          <span class="shape" style="width:8px;height:3rem;background:var(--prugna-soft);right:calc(3rem + 3.75rem - 4px);top:7.9rem"></span>
-        </div>
+        <div class="poster-art art-glass" aria-hidden="true"><span class="s-cup"></span><span class="s-stem"></span></div>
         <p class="poster-dates"><b>Tuesday, Dec 8 · 6:30 pm</b><span>Wine dinner</span></p>
         <h3 class="poster-type" id="p-cake">Cake&shy;bread Cellars</h3>
         <div class="poster-body">
@@ -187,11 +176,7 @@
       </article>
 
       <article class="poster poster--brick w-4 overlaps-next" style="--tilt:-.9deg" data-end="2026-11-23" aria-labelledby="p-turkey">
-        <div class="poster-art" aria-hidden="true">
-          <span class="shape" style="width:6rem;height:6rem;border-radius:50%;background:var(--bianco);left:50%;bottom:-3rem;transform:translateX(-50%)"></span>
-          <span class="shape" style="width:6px;height:4rem;background:var(--zafferano);left:calc(50% - 4.5rem);bottom:0"></span>
-          <span class="shape" style="width:6px;height:4rem;background:var(--zafferano);left:calc(50% + 4.2rem);bottom:0"></span>
-        </div>
+        <div class="poster-art art-table" aria-hidden="true"><span class="s-plate"></span><span class="s-bar"></span><span class="s-bar"></span></div>
         <p class="poster-dates"><b>Order by Mon, Nov 23</b><span>Pick up Wed, Nov 25</span></p>
         <h3 class="poster-type" id="p-turkey" style="font-size:clamp(1.9rem,1.4rem + 1.2vw,2.4rem)">Thanks&shy;giving turkey kit</h3>
         <div class="poster-body">
@@ -204,15 +189,12 @@
       </article>
 
       <div class="remnant" data-end="2026-06-16" aria-label="Past event, pasted over">
-        <p class="cond" style="font-size:.8rem">Was Tue, Jun 16 · pasted over</p>
+        <p class="cond" style="font-size:var(--t-micro)">Was Tue, Jun 16 · pasted over</p>
         <p class="h3">G4 Tequila cocktail dinner</p>
       </div>
 
       <article class="poster poster--ink w-6" style="--tilt:.3deg" id="suckling-pig-poster" aria-labelledby="p-suck">
-        <div class="poster-art" aria-hidden="true">
-          <span class="shape" style="width:20rem;height:10rem;border-radius:10rem 10rem 0 0;background:var(--mattone);right:8%;bottom:0"></span>
-          <span class="shape" style="width:120%;height:10px;background:var(--zafferano);left:-10%;bottom:4rem;transform:rotate(3deg)"></span>
-        </div>
+        <div class="poster-art art-sunspit" aria-hidden="true" style="--spit:var(--zafferano)"><span class="s-sun"></span><span class="s-spit"></span></div>
         <p class="poster-dates"><b>Any night, by arrangement</b><span>Up to 8 guests</span></p>
         <h3 class="poster-type" id="p-suck">Whole suckling pig</h3>
         <div class="poster-body">
@@ -225,10 +207,7 @@
       </article>
 
       <article class="poster poster--paper w-6" style="--tilt:-.4deg" aria-labelledby="p-home">
-        <div class="poster-art" aria-hidden="true">
-          <span class="shape" style="width:7rem;height:7rem;border-radius:50%;background:var(--zafferano);right:5.5rem;bottom:-2rem"></span>
-          <span class="shape" style="width:7rem;height:7rem;border-radius:50%;background:var(--oliva);right:1.5rem;bottom:-2rem;mix-blend-mode:multiply"></span>
-        </div>
+        <div class="poster-art art-pair" aria-hidden="true"><span class="s-disc"></span><span class="s-disc"></span></div>
         <p class="poster-dates"><b>Every day we're open</b></p>
         <h3 class="poster-type" id="p-home" style="max-width:9ch">VIA at home</h3>
         <div class="poster-body">

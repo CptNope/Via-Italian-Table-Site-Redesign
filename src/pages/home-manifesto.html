@@ -13,6 +13,7 @@ active: home
     outline: 3px solid var(--inchiostro); outline-offset: -14px;
   }
   .bill > * { min-width: 0; max-width: 100%; }
+  .bill { overflow-wrap: break-word; }
   .bill .rule { width: 100%; height: 0; border-top: 3px solid var(--inchiostro); }
   .bill .rule.thin { border-top-width: 1px; }
   .bill-mark svg { width: min(100%, 18rem); height: auto; }
@@ -24,16 +25,16 @@ active: home
   .bill .olive { color: var(--oliva); }
   .bill-sub { font-size: var(--t-lead); }
   .bill-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: .2rem 1.1rem; }
-  .bill-hours .w70 { font-size: var(--t-h2); }
-  .bill-hours .w100 { font-size: .85rem; }
+  .bill-hours .w70 { font-size: clamp(1.5rem, 6vw, 3.25rem); }
+  .bill-hours .w100 { font-size: var(--t-small); }
   .bill-now { display: grid; gap: .35rem; }
   .bill-now a { text-decoration: none; display: grid; gap: .2rem; }
   .bill-now a:hover .w125 { text-decoration: underline; text-decoration-thickness: .06em; text-underline-offset: .12em; }
-  .bill-now .w125 { font-size: var(--t-h1); }
+  .bill-now .w125 { font-size: clamp(1.9rem, 8.5vw, 4.5rem); hyphens: manual; overflow-wrap: break-word; }
   .bill-now .w70 { font-size: var(--t-h3); }
   .bill .book-strip { margin-inline: auto; width: 100%; max-width: 40rem; text-align: left; background: var(--inchiostro); }
   .bill-doors { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem 1.4rem; }
-  .bill-doors a { font-weight: 900; font-stretch: 100%; text-transform: uppercase; letter-spacing: .04em; font-size: 1.05rem; text-decoration-thickness: 3px; text-underline-offset: .25em; display: inline-flex; align-items: center; gap: .45rem; min-height: 2.75rem; }
+  .bill-doors a { font-weight: 900; font-stretch: 100%; text-transform: uppercase; letter-spacing: .04em; font-size: var(--t-body); text-decoration-thickness: 3px; text-underline-offset: .25em; display: inline-flex; align-items: center; gap: .45rem; min-height: 2.75rem; }
   .bill-doors svg { width: 1.1em; height: 1.1em; }
   .bill-foot { font-size: var(--t-small); color: var(--on-light-soft); }
 </style>
@@ -53,13 +54,13 @@ active: home
       <label for="mf-seats"><span class="lbl">Party</span>
         <select id="mf-seats" name="seats"><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option><option value="9+">9 or more</option></select>
       </label>
-      <label for="mf-date"><span class="lbl">Date</span><select id="mf-date" name="date"><option>Choose a date</option></select></label>
+      <label for="mf-date"><span class="lbl">Date</span><select id="mf-date" name="date"><option value="">Any date</option></select></label>
       <button class="btn" type="submit">Find a table <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
     </form>
     <div class="rule thin"></div>
     <div class="bill-now">
       <a href="menu.html#pigfest" data-end="2026-10-31"><span class="w70 olive">Now through Friday, October 31</span><span class="w125 red">PigFest</span></a>
-      <a href="events.html#cakebread" data-end="2026-12-08"><span class="w70 olive">Tuesday, December 8 · 6:30 pm</span><span class="w125 plum">Cakebread Cellars</span><span class="w70">Wine dinner · register ahead</span></a>
+      <a href="events.html#cakebread" data-end="2026-12-08"><span class="w70 olive">Tuesday, December 8 · 6:30 pm</span><span class="w125 plum">Cake&shy;bread Cellars</span><span class="w70">Wine dinner · register ahead</span></a>
     </div>
     <div class="rule thin"></div>
     <nav class="bill-doors" aria-label="Order and events">
